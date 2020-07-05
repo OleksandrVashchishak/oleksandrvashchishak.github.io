@@ -1931,6 +1931,7 @@ margin-top: 16px;
     position: absolute;
     left:65%;
     margin-top: -5000px;
+	dispaly: none;
 }
 
 .burger-menu-visible ul li{
