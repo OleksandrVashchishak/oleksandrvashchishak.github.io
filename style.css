@@ -1930,7 +1930,7 @@ margin-top: 16px;
 .burger-menu-visible{
     position: absolute;
     left:65%;
-    margin-top: -200px;
+    margin-top: -500px;
 }
 
 .burger-menu-visible ul li{
