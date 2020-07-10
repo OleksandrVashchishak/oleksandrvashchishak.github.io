@@ -1918,6 +1918,7 @@ transform: scale(0);
 .burger-top.active{
 position: absolute;
 transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
 transition: all 0.8s ease 0s;
 margin-top: 15px;
 }
@@ -1925,6 +1926,7 @@ margin-top: 15px;
 .burger-bot.active{
 transition: all 0.8s ease 0s;
 transform: rotate(45deg);
+-moz-transform: rotate(45deg);
 margin-top: 16px;
 }
 
