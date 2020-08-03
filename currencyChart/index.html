@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Value</title>
+</head>
+
+<body>
+   <div id="containerFr">
+    <select name="currency" id="currency">
+        <option value="USD">US Dollar</option>
+        <option value="EUR">Euro</option>
+    </select>
+    <input type="date" name="sdate" id="sdate">
+    <input type="date" name="edate" id="edate">
+    <input type="button" value="Get Value" id="btnGet">
+   
+    </div>
+        <hr/>
+    <div id="result"></div>
+
+   
+<!--  -------------------------------------------------------------------------------------- -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <!-- Additional files for the Highslide popup effect -->
+    <script src="https://www.highcharts.com/samples/static/highslide-full.min.js"></script>
+    <script src="https://www.highcharts.com/samples/static/highslide.config.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.highcharts.com/samples/static/highslide.css" />
+
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+    </figure> 
+    <script src="getcurrency.js"></script>
+
+</body>
+
+</html>
