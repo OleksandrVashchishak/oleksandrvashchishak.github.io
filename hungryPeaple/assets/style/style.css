@@ -26,7 +26,7 @@ color: #FFFFFF;
     margin-top: -16px;
     height: 800px;
     width: 100%;
-    background: url(/assets/img/header-bg.png);
+    background: url(../img/header-bg.png);
     background-repeat: no-repeat;
   background-size: cover;
     
@@ -70,7 +70,7 @@ letter-spacing: 0.5em;
     font-family: Banny;
 font-size: 96px;
 line-height: 0px;
-color: #FFFFFF;
+color: #fff;
     text-transform: uppercase;
     text-align: center;
 }
@@ -322,7 +322,7 @@ text-align: center;
 .bg-block-about{
     width: 66%;
     height: 475px;
-        background: url(/assets/img/about-img.png);
+        background: url(../img/about-img.png);
     background-repeat: no-repeat;
   background-size: cover;
     display: flex;
@@ -393,7 +393,7 @@ height: 150px;
 .our-team{
     height: 625px;
     width: 100%;
-    background: url(/assets/img/team-bg.png);
+    background: url(../img/team-bg.png);
     background-repeat: no-repeat;
   background-size: cover;
     margin-top: 50px;
@@ -414,7 +414,7 @@ color: #FFFFFF;
 .bg-our-team{
     width: 66%;
     height: 475px;
-        background: url(/assets/img/gearl-team.png);
+        background: url(../img/gearl-team.png);
     background-repeat: no-repeat;
   background-size: cover;
     display: flex;
@@ -439,7 +439,7 @@ color: #FFFFFF;
 .bg-block-form{
     width: 66%;
     height: 525px;
-        background: url(/assets/img/form-block.png);
+        background: url(../img/form-block.png);
     background-repeat: no-repeat;
   background-size: cover;
     display: flex;
@@ -544,7 +544,7 @@ text-align: center;
 .specialties-block{
     height: 625px;
     width: 100%;
-    background: url(/assets/img/specialtys-bg.png);
+    background: url(../img/specialtys-bg.png);
     background-repeat: no-repeat;
   background-size: cover;
     margin-top: 50px;
@@ -553,7 +553,7 @@ text-align: center;
 .bg-specialties{
     width: 66%;
     height: 475px;
-        background: url(/assets/img/spec.png);
+        background: url(../img/spec.png);
     background-repeat: no-repeat;
   background-size: cover;
     display: flex;
@@ -719,7 +719,7 @@ font-size: 14px;
     margin-top: 40px;
      height: 350px;
     width: 100%;
-    background: url(/assets/img/map.png);
+    background: url(../img/map.png);
     background-repeat: no-repeat;
   background-size: cover;
 }
@@ -880,7 +880,7 @@ margin-top: 16px;
 position: absolute;
 left:0;
 top: -500px;
-background: url(/assets/img/team-bg.png);
+background: url(../img/team-bg.png);
     background-repeat: no-repeat;
   background-size: cover;
 width: 100%;
