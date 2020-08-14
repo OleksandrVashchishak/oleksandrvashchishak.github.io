@@ -5361,7 +5361,8 @@ header{
 .ships{
    max-width: 1115px;
     margin: 0 auto;
-/*    border: 1px solid black;*/
+    position: relative;
+    z-index: 2
 }
 
 .ships > h3{

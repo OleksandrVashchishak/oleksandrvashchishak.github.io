@@ -6,20 +6,24 @@ $(document).ready(function(){
       navRewind: true,
       nav : true,
       navText : ["",""],
+       margin:10,
     responsive:{
         0:{
             items:1,
             stagePadding: 70,
+            margin:20,
             loop: true
         },
         360:{
             items:1,
             stagePadding: 80,
+            margin:20,
             loop: true
         },
         405:{
             items:1,
             stagePadding: 100,
+            margin: 20,
             loop: true
         },
         685:{
