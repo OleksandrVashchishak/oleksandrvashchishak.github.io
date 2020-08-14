@@ -5340,9 +5340,15 @@ p.seo {
   }
 }
 
+.list1, .list2{
+    display: none;
+}
 header{
-    background: url(fon-media.png) !important;
     height: 240px;
+    background-image: url(listik.png),  url(listik2.png), url(fon-media.png);
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-attachment: fixed;
+    background-position: 74% -140px,20% 0,0 0;
     
 }
 
@@ -5424,8 +5430,9 @@ color: black;
 }
 
 #menu-container{
-    background-color: #ffffff;
+    background: url(font-desktop.png);
     width: 100%;
+    z-index: 1000;
 }
 
 .slider-item{
@@ -5507,8 +5514,14 @@ nav p{
 
 
 
-
 @media(max-width :1250px) {
+ 
+header{
+    background-position: 83% -140px,13% 0,0 0;
+    
+}
+    
+    
  .ships{
 max-width: 900px;
     }
@@ -5574,6 +5587,11 @@ max-width: 670px;
     left: -70px;
 } 
 
+    
+    header{
+    background-position: 98% -140px,13% 0,0 0;
+    
+}
 .ships{
 max-width: 540px;
     }       
@@ -5581,6 +5599,14 @@ max-width: 540px;
 
 
 @media (max-width :685px) {
+    .list1, .list2{
+    display: block;
+}
+header{
+    height: 240px;
+    background-image: none,  none, url(fon-media.png);   
+}
+    
     .img-container{
         position: relative;
     }
