@@ -5371,7 +5371,7 @@ line-height: 24px;
     text-align: center;
         margin-top: 40px;
 }
-.owl-carousel, .owl-carousel-one{
+.owl-carousel{
     display: flex !important;
         margin-top: 40px;
     justify-content: center !important;
@@ -5475,6 +5475,10 @@ nav{
     color: #f7933c
 }
 
+
+.root span{
+ margin-left: 10px;       
+}
 nav p{
     margin-top: 10px;
      font-family: "Giorgio Sans LC";
@@ -5485,12 +5489,10 @@ nav p{
     letter-spacing: 3px;
 }
 
-/*
-<nav>
-    <div class="root"><a href="https://www.saperavicafe.com">ГРУЗИНСКИЙ РЕСТОРАН</a><span>→ МЕНЮ</span></div>
-    <p>МЕНЮ</p>
-  </nav>
-*/
+.news, .vine-in, .lime{
+    display: none;
+}
+
 /*MEDIA QUERY*/
 
 
@@ -5511,6 +5513,9 @@ max-width: 900px;
     
 @media (max-width :1025px) {
 
+   
+    
+    
          .ships > p{
     width: 70%;
 } 
@@ -5564,24 +5569,43 @@ max-width: 540px;
 
 
 @media (max-width :685px) {
-    .owl-next, .owl-prev{
+    .img-container{
+        position: relative;
+    }
+    .news-label{
+        position: absolute;
+        top: 0;
+    width: 45px;
+        height: 29px;
+        background-color: #ff6600;
+        color: white;
+font-family: "Giorgio Sans LC";
+font-size: 19px;
+        margin-top: 10%;
+        padding-top: 1%;
+        text-align: center;
+text-transform: uppercase;
+letter-spacing: 0.95px;
+    }
+    
+    .owl-next, .owl-prev, .vine{
      display: none !important;
     }
+    
+     .news, .vine-in, .lime{
+    display: block;
+}
+    
+    
+    #menu-container{
+    background: url(fon-media.png) !important;
+}
+    
     
     .ships{
 max-width: 540px;
     }
     
-    .img-container img{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-border: 4px solid #ffffff;
-        
-}
-    
-/*    ///////////*/
-    .slider-item{
-        height: 500px;
-    }
     
     .img-text-container{
         transform: scale(0)
@@ -5603,10 +5627,9 @@ border: 4px solid #ffffff;
     }   
     
     
-    .img-text-container h4, .img-text-container p{
-        width: 350px;
-        margin-left: -19%;    
-    }   
+   
+    
+    
     
 } 
 
