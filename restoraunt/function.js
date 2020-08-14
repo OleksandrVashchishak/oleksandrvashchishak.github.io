@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
       items: 4,
-      loop: false,
+//      loop: false,
       autoHeight:true,
       navRewind: true,
       nav : true,
@@ -9,15 +9,18 @@ $(document).ready(function(){
     responsive:{
         0:{
             items:1,
-            stagePadding: 70
+            stagePadding: 70,
+            loop: true
         },
         360:{
             items:1,
-            stagePadding: 80
+            stagePadding: 80,
+            loop: true
         },
         405:{
             items:1,
-            stagePadding: 100
+            stagePadding: 100,
+            loop: true
         },
         685:{
             items:2
