@@ -5371,7 +5371,7 @@ line-height: 24px;
     text-align: center;
         margin-top: 40px;
 }
-.owl-carousel{
+.owl-carousel, .owl-carousel-one{
     display: flex !important;
         margin-top: 40px;
     justify-content: center !important;
@@ -5416,7 +5416,6 @@ color: black;
 
 #menu-container{
     background-color: #ffffff;
-    height: 100%;
     width: 100%;
 }
 
@@ -5603,11 +5602,6 @@ border: 4px solid #ffffff;
         margin-top: 0px;
     }   
     
-    
-    #menu-container{
-      background: url(../fon-media.png);
-        height: 1000px;
-}
     
     .img-text-container h4, .img-text-container p{
         width: 350px;
