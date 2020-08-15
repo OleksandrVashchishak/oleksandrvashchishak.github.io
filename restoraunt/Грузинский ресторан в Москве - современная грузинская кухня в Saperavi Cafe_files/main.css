@@ -5794,6 +5794,17 @@ max-width: 540px;
     
 }
 
+@media (max-width :410px) {
+    .img-text-container h4, .img-text-container p, .img-text-container h3{
+        margin-left: -29% !important;    
+    }
+    
+    .img-container img{
+        margin-left: 1.5% !important;
+    } 
+    
+}
+
 @media (max-width :405px) {
  
     .img-container img{
