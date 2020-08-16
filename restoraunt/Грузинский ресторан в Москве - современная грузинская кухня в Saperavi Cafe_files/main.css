@@ -5607,7 +5607,7 @@ header {
 
 .ships > p {
     margin: 0 auto;
-    width: 886px;
+    width: 900px;
     color: #000000;
     font-family: "Cera Pro Medium";
     font-size: 16px;
@@ -5618,7 +5618,7 @@ header {
 
 .owl-carousel {
     display: flex !important;
-    margin-top: 40px;
+    margin-top: 33px;
     justify-content: center !important;
 }
 
@@ -5790,6 +5790,10 @@ header {
 }
 
 @media (max-width :1025px) {
+    
+    .br-descktop{
+        display: none;
+    }
     
     .img-container img {
         height: 250px !important;
