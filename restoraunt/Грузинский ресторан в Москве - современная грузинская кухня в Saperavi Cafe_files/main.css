@@ -5635,7 +5635,7 @@ header {
     letter-spacing: 1.5px;
     color: #ff6600;
     text-align: center;
-    margin-top: 38px;
+    margin-top: 23px;
 }
 
 .img-text-container h4 {
@@ -5644,7 +5644,7 @@ header {
     font-weight: 700;
     letter-spacing: 0.7px;
     text-align: center;
-    margin-top: 18px;
+    margin-top: 13px;
     text-transform: uppercase;
 }
 
@@ -5676,8 +5676,8 @@ header {
 
 .container-slider .owl-next,
 .container-slider .owl-prev {
-    width: 70px !important;
-    height: 246px !important;
+    width: 67px !important;
+    height: 269px !important;
     background-color: #f4eee6 !important;
     cursor: pointer;
     background-image: url(arrow.png) !important;
@@ -5685,7 +5685,7 @@ header {
     background-size: 15px 30px !important;
     background-position: center !important;
     position: absolute !important;
-    top: 130px !important;
+    top: 137px !important;
 }
 
 .container-slider .owl-next.disabled,
@@ -5696,8 +5696,8 @@ header {
 
 
 .container-slider .owl-next {
-    top: 5px !important;
-    right: -70px;
+    top: 2px !important;
+    right: -85px;
     transform: rotate(180deg)
 }
 
@@ -5754,6 +5754,10 @@ header {
     line-height: 30px;
 }
 
+.img-container img {
+        height: 270px !important;
+        width: 270px !important;
+    }
 /*MEDIA QUERY*/
 
 @media(max-width :1250px) {
@@ -5768,7 +5772,7 @@ header {
     }
 
     .container-slider .owl-next {
-        right: -60px;
+        right: -80px;
     }
 
     .container-slider .owl-prev {
@@ -5778,6 +5782,11 @@ header {
 }
 
 @media (max-width :1025px) {
+    
+    .img-container img {
+        height: 250px !important;
+        width: 250px !important;
+    }
     .ships > p {
         width: 70%;
     }
@@ -5785,9 +5794,15 @@ header {
     .ships {
         max-width: 770px;
     }
+    .container-slider .owl-next,
+.container-slider .owl-prev {
+     height: 249px !important;
+    top: 127px !important;
+    }
 
     .container-slider .owl-next {
         right: -80px;
+        top: 2px !important;
     }
 
     .container-slider .owl-prev {
@@ -5952,12 +5967,8 @@ header {
     }
 
     .img-container img {
-        width: 200px !important;
-
-    }
-
-    .img-container img {
         height: 180px !important;
+        width: 200px !important;
         margin-left: 10%;
     }
 
