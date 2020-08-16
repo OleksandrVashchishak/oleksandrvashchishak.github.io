@@ -1,8 +1,14 @@
+@font-face {
+    font-family: "Giorgio Sans LC-Regular"; 
+    src: url('Giorgio Sans LCG Regular.otf'); 
+   }
 
 @font-face {
     font-family: "Giorgio Sans LC"; 
     src: url('Giorgio Sans LCG Bold.otf'); 
    }
+
+
 
 @font-face {
     font-family: "Cera Pro"; 
@@ -5364,6 +5370,10 @@ header{
 
 /*MENU SECTION*/
 
+ .br-ships-block{
+        display: none;
+        }
+
 .speelo__box{
         background-image: url(https://www.saperavicafe.com/local/templates/Saperavi_NEW/i/slon_bg.svg);
     background-position: center;
@@ -5432,22 +5442,22 @@ letter-spacing: 1.2px;
 
 
  .img-text-container h3{
-    font-family: "Giorgio Sans LC";
+    font-family: "Giorgio Sans LC-Regular";
 font-size: 30px;
 font-weight: 700;
 letter-spacing: 1.5px;
      color: #ff6600;
      text-align: center;
-    margin-top: 34px;
+    margin-top: 38px;
 }
 
-.img-text-container  h4{
+.img-text-container h4{
     font-family: "Giorgio Sans LC";
 font-size: 18px;
 font-weight: 700;
 letter-spacing: 0.7px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 18px;
     text-transform: uppercase;
 }
 
@@ -5459,7 +5469,8 @@ font-size: 13px;
 font-weight: 400;
 color: black;
     text-align: center;
-    line-height: 16px
+    line-height: 16px;
+        margin-bottom: -5px;
 }
 
 #menu-container{
@@ -5486,7 +5497,6 @@ width: 70px !important;
     cursor: pointer;
     background-image: url(arrow.png) !important;
     background-repeat: no-repeat !important;
-
     background-size: 15px 30px !important;
     background-position: center !important;
     position: absolute !important;
@@ -5646,7 +5656,8 @@ max-width: 540px;
 
 @media (max-width :685px) {
     
-    .img-text-container h4, .img-text-container p, .img-text-container h3{
+    
+    .img-text-container h4, .img-text-container h3{
         width: 160%;
         margin-left: -29% !important;    
     }
@@ -5655,15 +5666,19 @@ max-width: 540px;
      font-size: 30px;   
         letter-spacing: 1.5px;
 line-height: 30px;
+        font-family: "Giorgio Sans LC";
     }
     
     .img-text-container h3{
         font-size: 42px;
+        font-family: "Giorgio Sans LC";
     }
     
     .img-text-container p{
         font-size: 16px !important;
         line-height: 24px;
+        width: 455px;
+         margin-left: -40.5% !important;
     }
     
     .list1, .list2{
@@ -5687,11 +5702,12 @@ header{
         color: white;
 font-family: "Giorgio Sans LC";
 font-size: 19px;
-        margin-top: 10%;
+        margin-top: 8%;
         padding-top: 1%;
         text-align: center;
 text-transform: uppercase;
 letter-spacing: 0.95px;
+        margin-left: 14px;
     }
     
     .container-slider .owl-next, .container-slider .owl-prev, .vine{
@@ -5718,8 +5734,10 @@ max-width: 540px;
     }
      .img-container img{
         height: 200px !important;
-         opacity: 0.6;
+         width: 220px !important;
+         opacity: 0.7;
          margin-top: 20px;
+         margin-left: 5.5% !important;
     } 
      .owl-item.active .slider-item .img-text-container{
         transform: scale(1)
@@ -5734,11 +5752,19 @@ max-width: 540px;
     
 } 
 
+@media (max-width :480px) {
+    .br-ships-block{
+        display: block;
+        }
+    
+    
+}
+
+
 @media (max-width :465px) {
     
-    
     .news-label{
-      margin-left: 23px;
+      margin-left: 13px;
     }
  
     .img-container img{
@@ -5790,7 +5816,10 @@ max-width: 540px;
     
     .img-container img{
         margin-left: 2% !important;
-    } 
+    }
+    .news-label{
+      margin-left: 7px;
+    }
     
 }
 
@@ -5824,6 +5853,10 @@ max-width: 540px;
   .img-text-container h4, .img-text-container p, .img-text-container h3{
         margin-left: -21% !important;    
     }
+    
+    .news-label{
+      margin-left: 28px;
+    }
 }
 
 @media (max-width :395px){
@@ -5832,6 +5865,10 @@ max-width: 540px;
     }
      .img-text-container h4, .img-text-container p, .img-text-container h3{
         margin-left: -23% !important;    
+    }
+    
+    .news-label{
+      margin-left: 22px;
     }
 }
 
@@ -5848,21 +5885,26 @@ max-width: 540px;
 }
 
 @media (max-width :375px) {
-.img-container img{
-         margin-left: 4.5% !important;
-    } 
-    
-    .img-text-container h4, .img-text-container p, .img-text-container h3{
-           
-        margin-left: -27% !important; 
+    .img-container img {
+        margin-left: 4.5% !important;
+    }
+
+    .img-text-container h4,
+    .img-text-container p,
+    .img-text-container h3 {
+
+        margin-left: -27% !important;
+    }
+
+    .news-label {
+        margin-left: 13px;
     }
 }
 
-
 @media (max-width :365px) {
-    .img-container img{
+    .img-container img {
         margin-left: 2.5% !important;
-    } 
+    }
     
     .img-text-container h4, .img-text-container p, .img-text-container h3{
         margin-left: -30% !important; 
@@ -5913,6 +5955,10 @@ max-width: 540px;
         width: 250px;
         margin-left: -13% !important;    
     }
+    .news-label{
+      margin-left: 15px;
+    }
+    
 }
 
 @media (max-width :305px) {
@@ -5923,6 +5969,9 @@ max-width: 540px;
     
     .img-text-container h4, .img-text-container p, .img-text-container h3{
         margin-left: -17% !important; 
+    }
+    .news-label{
+      margin-left: 5px;
     }
     
 }
