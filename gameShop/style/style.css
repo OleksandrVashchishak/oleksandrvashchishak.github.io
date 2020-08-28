@@ -482,6 +482,10 @@ nav ul li a:hover {
 
 
 @media(max-width :1199px) {
+    
+    .btn-wath-all-input {
+    width: 300px;
+    }
 
     .img-call-of-duty img {
         width: 450px;
@@ -811,7 +815,7 @@ nav ul li a:hover {
 }
 
 @media (max-width :1090px) {
-    .btn-wath-all-games input {
+    .btn-wath-all-games input, .btn-wath-all-input {
         width: 250px;
     }
 
@@ -829,7 +833,7 @@ nav ul li a:hover {
 }
 
 @media (max-width :940px) {
-    .btn-wath-all-games input {
+    .btn-wath-all-games input , .btn-wath-all-input {
         width: 300px;
     }
 
@@ -874,7 +878,7 @@ nav ul li a:hover {
 
 @media (max-width :370px) {
 
-    .btn-wath-all-games input {
+    .btn-wath-all-games input, .btn-wath-all-input {
         width: 250px;
     }
 
