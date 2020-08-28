@@ -79,77 +79,77 @@ initializeClock('countdown', deadline);
 //canwas text
 
 
-let canvas, ctx;
-let bPlay = true;
-let iAngle = 0;
-let sText = 'OFFICIAL DOWNLOAD ';
+// let canvas, ctx;
+// let bPlay = true;
+// let iAngle = 0;
+// let sText = 'OFFICIAL DOWNLOAD ';
 
-function clear() {
-    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-}
+// function clear() {
+//     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+// }
 
-function drawScene() {
-    if (bPlay == 1) {
-        clear();
+// function drawScene() {
+//     if (bPlay == 1) {
+//         clear();
 
-        ctx.fillStyle = 'transparent';
-        ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-        iAngle += 0.005;
-        draw3DTextCircle(sText, canvas.width / 2, canvas.height / 2, 80, Math.PI / 2 - iAngle);
-    }
-}
+//         ctx.fillStyle = 'transparent';
+//         ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+//         iAngle += 0.005;
+//         draw3DTextCircle(sText, canvas.width / 2, canvas.height / 2, 80, Math.PI / 2 - iAngle);
+//     }
+// }
 
-function draw3DTextCircle(s, x, y, radius, iSAngle) {
-    let fRadPerLetter = 2 * Math.PI / s.length;
-    ctx.save();
-    ctx.translate(x, y);
-    ctx.rotate(iSAngle);
-    let iDepth = 4;
-    ctx.fillStyle = '#000000';
+// function draw3DTextCircle(s, x, y, radius, iSAngle) {
+//     let fRadPerLetter = 2 * Math.PI / s.length;
+//     ctx.save();
+//     ctx.translate(x, y);
+//     ctx.rotate(iSAngle);
+//     let iDepth = 4;
+//     ctx.fillStyle = '#000000';
 
-    for (let i = 0; i < s.length; i++) {
-        ctx.save();
-        ctx.rotate(i * fRadPerLetter);
+//     for (let i = 0; i < s.length; i++) {
+//         ctx.save();
+//         ctx.rotate(i * fRadPerLetter);
 
-        for (let n = 0; n < iDepth; n++) {
-            ctx.fillText(s[i], n, n - radius);
-        }
-        ctx.fillStyle = '#000000';
-        ctx.shadowColor = 'black';
-        ctx.shadowBlur = 10;
-        ctx.shadowOffsetX = iDepth + 2;
-        ctx.shadowOffsetY = iDepth + 2;
-        ctx.fillText(s[i], 0, -radius);
-        ctx.restore();
-    }
-    ctx.restore();
-}
-if (window.attachEvent) {
-    window.attachEvent('onload', main_init);
-} else {
-    if (window.onload) {
-        let curronload = window.onload;
-        let newonload = function () {
-            curronload();
-            main_init();
-        };
-        window.onload = newonload;
-    } else {
-        window.onload = main_init;
-    }
-}
+//         for (let n = 0; n < iDepth; n++) {
+//             ctx.fillText(s[i], n, n - radius);
+//         }
+//         ctx.fillStyle = '#000000';
+//         ctx.shadowColor = 'black';
+//         ctx.shadowBlur = 10;
+//         ctx.shadowOffsetX = iDepth + 2;
+//         ctx.shadowOffsetY = iDepth + 2;
+//         ctx.fillText(s[i], 0, -radius);
+//         ctx.restore();
+//     }
+//     ctx.restore();
+// }
+// if (window.attachEvent) {
+//     window.attachEvent('onload', main_init);
+// } else {
+//     if (window.onload) {
+//         let curronload = window.onload;
+//         let newonload = function () {
+//             curronload();
+//             main_init();
+//         };
+//         window.onload = newonload;
+//     } else {
+//         window.onload = main_init;
+//     }
+// }
 
-function main_init() {
-            canvas = document.getElementById('panel');
-            ctx = canvas.getContext('2d');
-            ctx.font = '20px Verdana';
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'middle';
-            ctx.fillStyle = '#000000';
-            ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-            draw3DTextCircle(sText, canvas.width / 2, canvas.height / 2, 200, Math.PI / 2 - iAngle);
-            setInterval(drawScene, 10); 
-        }
+// function main_init() {
+//             canvas = document.getElementById('panel');
+//             ctx = canvas.getContext('2d');
+//             ctx.font = '20px Verdana';
+//             ctx.textAlign = 'center';
+//             ctx.textBaseline = 'middle';
+//             ctx.fillStyle = '#000000';
+//             ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+//             draw3DTextCircle(sText, canvas.width / 2, canvas.height / 2, 200, Math.PI / 2 - iAngle);
+//             setInterval(drawScene, 10); 
+//         }
 
 
 //modal window
