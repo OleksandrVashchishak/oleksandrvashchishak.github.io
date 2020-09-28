@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Elsi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/style.min.css">
+  
+</head>
+
+<body id="body">
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <a href="#"> <img src="img/logo-text.png" alt="logotype" class="header__logo-img"></a>
+      </div>
+      <div class="header__menu">
+        <ul class="header__menu-ul">
+          <li class="header__menu-list"><a href="#home" class="header__menu-link">Home</a></li>
+          <li class="header__menu-list"><a href="#whats-new" class="header__menu-link">What’s new</a></li>
+          <li class="header__menu-list"><a href="#download" class="header__menu-link">Download</a></li>
+          <li class="header__menu-list"><a href="#question" class="header__menu-link">FAQ</a></li>
+          <li class="header__menu-list"><a href="#contact" class="header__menu-link">Contact</a></li>
+        </ul>
+
+        <div class="menu-toggler">
+          <div class="bar half start"></div>
+          <div class="bar"></div>
+          <div class="bar half end"></div>
+        </div>
+        <ul class="header__menu-burger">
+          <li class="header__menu-list burger-list"><a href="#home" class="header__menu-link">Home</a></li>
+          <li class="header__menu-list burger-list"><a href="#whats-new" class="header__menu-link">What’s new</a></li>
+          <li class="header__menu-list burger-list"><a href="#download" class="header__menu-link">Download</a></li>
+          <li class="header__menu-list burger-list"><a href="#question" class="header__menu-link">FAQ</a></li>
+          <li class="header__menu-list burger-list"><a href="#contact" class="header__menu-link">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+  <section class="home" id="home">
+    <div class="home__container">
+      <div class="home__text-block">
+        <h3 class="home__title-h3"> Smart Voice <br class="db-br"> Assistant Elsi <br> &zwj; New version - <br
+            class="db-br"> new things!</h3>
+        <p class="home__text">It’s made on Python</p>
+        <p class="home__text-query"> First ever Voice Assistant <br> made on Python</p>
+      </div>
+      <div class="home__leng leng-bg">
+        <img class="home__leng-img" src="img/header__arrow.png" alt="arrow for select leng">
+        <div class="home__togle-leng ">
+          <a href="appRu/index.html"><div class="home__leng-ru leng-bg">RU</div></a>
+          <a href="appUk/index.html">   <div class="home__leng-uk leng-bg">UK</div></a>
+        </div>
+
+      </div>
+    </div>
+    <div class="home__wave">
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+    </div>
+  </section>
+
+  <section class="what-news" id="whats-new">
+    <div class="what-news__container">
+      <div class="what-news__flex-container">
+        <div class="what-news__left-heading">
+          <div class="what-news__img-block">
+            <img class="what-news__main-img" src="img/what-news-main.png" alt="procesor">
+          </div>
+        </div>
+        <div class="what-news__right-heading">
+          <h3 class="what-news__title">What’s <span class="what-news__title--bold">NEW</span>???</h3>
+          <p class="what-news__text">17! new features</p>
+          <p class="what-news__text">version 0.9</p>
+        </div>
+      </div>
+      <div class="what-news__items">
+        <div class="what-news__left-part">
+          <div class="before-block">
+            <p class="what-news__item">Now <span class="what-news__elsi"> Elsi </span> can say you yours IP and all
+              based on it</p>
+          </div>
+          <div class="before-block">
+            <p class="what-news__item">Now <span class="what-news__elsi"> Elsi </span> can choose any random number,
+              just say "Choose random number from 5 to 359" *</p>
+          </div>
+          <div class="before-block">
+            <p class="what-news__item">Now you can set brightness and volume to any level, for example say "set
+              brightness to 54" **</p>
+          </div>
+        </div>
+
+        <div class="what-news__right-part">
+          <div class="before-block">
+            <p class="what-news__item">Now <span class="what-news__elsi">Elsi </span> searches for films and programs on
+              your device</p>
+          </div>
+          <div class="before-block">
+            <p class="what-news__item">You can say "random film" and<span class="what-news__elsi"> Elsi </span> will
+              randomly choose one</p>
+          </div>
+          <div class="before-block">
+            <p class="what-news__item">Now you can say "Translate hello, how are you to Spanish" ***</p>
+          </div>
+        </div>
+      </div>
+      <div class="what-news__more" id="innerTextId" onclick="innerTextHide()">
+        <img class="what-news__see-img" src="img/header__arrow.png" alt="arrow">
+        <span class="what-news__see" id='innerText'>See more</span>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="what-news see-more-hide" id="see-more-hide" style="margin: 10px 0 10px 0;">
+    <div class="what-news__container">
+      <div class="what-news__items">
+        <div class="what-news__left-part">
+          <div class="before-block">
+            <p class="what-news__item">Now <span class="what-news__elsi"> Elsi </span> can say you yours IP and all
+              based on it</p>
+          </div>
+          <div class="before-block">
+            <p class="what-news__item">Now <span class="what-news__elsi"> Elsi </span> can choose any random number,
+              just say "Choose random number from 5 to 359" *</p>
+          </div>
+          <div class="before-block">
+            <p class="what-news__item">Now you can set brightness and volume to any level, for example say "set
+              brightness to 54" **</p>
+          </div>
+          <div class="before-block">
+            <p class="what-news__item">Now <span class="what-news__elsi"> Elsi </span> can say you yours IP and all
+              based on it</p>
+          </div>
+          <div class="before-block">
+            <p class="what-news__item">Now <span class="what-news__elsi"> Elsi </span> can choose any random number,
+              just say "Choose random number from 5 to 359" *</p>
+          </div>
+          <div class="before-block">
+            <p class="what-news__item">Now you can set brightness and volume to any level, for example say "set
+              brightness to 54" **</p>
+          </div>
+
+        </div>
+        <div class="what-news__right-part">
+          <div class="before-block">
+            <p class="what-news__item">Now <span class="what-news__elsi"> Elsi </span> can say you yours IP and all
+              based on it</p>
+          </div>
+          <div class="before-block">
+            <p class="what-news__item">Now <span class="what-news__elsi"> Elsi </span> can choose any random number,
+              just say "Choose random number from 5 to 359" *</p>
+          </div>
+          <div class="before-block">
+            <p class="what-news__item">Now you can set brightness and volume to any level, for example say "set
+              brightness to 54" **</p>
+          </div>
+          <div class="before-block">
+            <p class="what-news__item">Now <span class="what-news__elsi"> Elsi </span> can say you yours IP and all
+              based on it</p>
+          </div>
+          <div class="before-block">
+            <p class="what-news__item">Now <span class="what-news__elsi"> Elsi </span> can choose any random number,
+              just say "Choose random number from 5 to 359" *</p>
+          </div>
+          <div class="before-block">
+            <p class="what-news__item">Now you can set brightness and volume to any level, for example say "set
+              brightness to 54" **</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="what-news__more hide-block-more" style="position: relative;">
+        <a href="all-command.html"> <span class="what-news__see hide-text-more">See the full list of commands</span></a>
+        <a class="hide-img-more" href="all-command.html"><img class="what-news__see-img " src="img/header__arrow.png" alt="arrow"
+            style="transform: rotate(-90deg); position: absolute; "></a>
+      </div>
+    </div>
+  </div>
+
+  <section class="download" id="download">
+    <div class="download__container">
+      <h3 class="download__title">Download</h3>
+      <div class="download__flex-container">
+        <div class="download__left-part">
+          <h4 class="download__left-title">Current version (0.9)</h4>
+          <p class="download__left-text">was made in September 2020</p>
+          <div>
+            <a href="#whats-new" class="download__see-detal">
+              <img src="img/down-arrow.png" alt="arrow" class="download__arrow-img">
+              <span class="download__details-text">
+                See details
+              </span></a>
+
+          <div class="download__robot">
+            <img class="download__robot-img" src="img/what-news-robot.png" alt="robot">
+          </div>
+        </div>
+        </div>
+        <div class="download__right-part">
+          <div class="download__version-container">
+            <div class="flex-cont-mobile">
+              <a href="free-version-0-9.html">
+                <p class="download__item">Free version</p>
+              </a>
+              <a href="pro-version-0-9.html">
+                <p class="download__item">Pro version</p>
+              </a>
+            </div>
+            <a href="advantag.html">
+              <p class="download__item download__costumer">Differences</p>
+            </a>
+          </div>
+          <h4 class="download__right-title">Previous versions</h4>
+          <a href="free-version-0-8.html">
+            <div class="download__version">
+              <h3 class="download__version-title">Version 0.8</h3>
+              <p class="download__version-text">was made in August 2020</p>
+            </div>
+          </a>
+          <a href="free-version-0-7.html">
+            <div class="download__version">
+              <h3 class="download__version-title">Version 0.7</h3>
+              <p class="download__version-text">was made in July 2020</p>
+            </div>
+          </a>
+          <div class="download__in-arhiv">
+            <a href="arhieve.html#arhieve"> <span class="download__in-arhiv-text">See details in <br class="br-mobile-none">
+                archive</span></a>
+            <a href="arhieve.html#arhieve"><img class="download__arhiv-img" src="img/header__arrow.png" alt="arrow"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="question" id="question">
+    <div class="question__container">
+
+      <h3 class="question__title">Questions & Answers</h3>
+      <div class="js-ui-accordion">
+
+        <button class="accordion button-check">Why my assistant is not working?</button>
+        <div class="panel">
+          <p class="panel-text">Try to restart it, now say show statistics</p>
+        </div>
+
+        <button class="accordion button-check">Why my assistant is not working?</button>
+        <div class="panel">
+          <p class="panel-text">Try to restart it, now say show statistics</p>
+        </div>
+
+        <button class="accordion button-check">Why my assistant is not working?</button>
+        <div class="panel">
+          <p class="panel-text">Try to restart it, now say show statistics</p>
+        </div>
+
+        <button class="accordion button-check">Why my assistant is not working?</button>
+        <div class="panel">
+          <p class="panel-text">Try to restart it, now say show statistics</p>
+        </div>
+
+        <button class="accordion button-check">Why my assistant is not working?</button>
+        <div class="panel">
+          <p class="panel-text">Try to restart it, now say show statistics</p>
+        </div>
+      </div>
+      <div class="question__flex-container">
+        <a href="all-question.html">
+          <p class="question__text">All questions</p>
+        </a>
+        <a href="ask-question.html">
+          <p class="question__text">Ask a question</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact__container" id="back-to-contact">
+      <h3 class="contact__title">Contact</h3>
+      <form class="contact__form">
+
+       <!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Elsi">
+		<input type="hidden" name="admin_email" value="alexzab@ukr.net">
+		<input type="hidden" name="form_subject" value="Contact form">
+		<!-- END Hidden Required Fields -->
+     
+
+        <div class="contact__form-flex">
+          <input class="contact__input contact__input-focus "  type="text" name="Name" placeholder="Name">
+          <input class="contact__input contact__input-focus" type="text" name="Email" placeholder="Email">
+          <input class="contact__input contact__input-focus" type="text" name="Subject" placeholder="Subject">
+          <input class="contact__input input-value" type="text"  readonly name="Status" id="inputValue" value="" placeholder="Your status">
+        </div>
+         <div class="input-status-block" id="inputStatus">
+            <div class="input-status" id="designerValue">I’m a designer</div>
+            <div class="input-status" id="developerValue">I’m a developer</div>
+            <div class="input-status" id="userValue">I’m friendly user</div>
+            <div class="input-status" id="businesValue">I’m bussinesman</div>
+         </div>
+         <div class="help-or-work" id="helpOrWorkDevelop"> Don’t you want to
+             <span class="help-or-work--mod" id="helpSpanDevelop">  help  </span>  or to 
+              <span class="help-or-work--mod" id="workSpanDevelop"> work </span> with us? 
+            </div>
+         <div class="help-or-work" id="helpOrWorkDesign"> Don’t you want to  
+           <span class="help-or-work--mod" id="helpSpanDesign" >  help  </span>  or to 
+           <span class="help-or-work--mod" id="workSpanDesign"> work </span> with us?
+           </div>
+         <div class="help-or-work" id="helpOrWorkBusines"> Don’t you want to  
+           <span class="help-or-work--mod" id="coloboratePopap">  colaborate  </span>  with us? </div>
+        
+        <textarea placeholder="Your question" name="question" id="textarea-question" class="contact__textarea"></textarea>
+        <div class="contact__button-container">
+          <a href="report.html">
+            <p class="question__text contact__link-text">Report an issue </p>
+          </a>
+          <button class="contact__button">Send</button>
+          <a href="your-idea.html">
+            <p class="question__text  contact__link-text">Suggest an idea</p>
+          </a>
+        </div>
+        
+      </form>
+      <a href="#home">
+        <div class="question__to-home contact__home">
+          <img class="question__home-img contact__home-img" src="img/header__arrow.png" alt="arrow">
+        </div>
+      </a>
+     
+    </div>
+  </section>
+
+  <div class="transition-gradient">
+  </div>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo-container">
+        <img class="footer__logo-img" src="img/logo-img.png" alt="logo">
+        <h3 class="footer__title">Smart Voice <br class="br-mobile-footer"> Assistant <span class="footer__elsi"> Elsi
+          </span></h3>
+      </div>
+      <div class=" footer__info-mobile-cont">
+        <p class="footer__info footer__info-mobile ">ELSI</p>
+        <p class="footer__info footer__info-mobile">© 2020</p>
+      </div>
+
+      <div class="footer__info-container">
+        <p class="footer__info">ELSI</p>
+        <p class="footer__info">All rights reserved</p>
+        <p class="footer__info">© 2020</p>
+        <div class="footer__credits-to">
+          <p class="footer__credits-to--click"> Credits to: <br>
+            <span class="footer__hide">
+              Flaticon for all icons <br>
+              Alex Zab for design<br>
+              Alex Vashchishak for site<br>
+              Palibrix for Photoshop<br>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Popaps -->
+
+  <section class="help-us" id="helpUs" style="padding-top: 20px; padding-bottom: 100px;">
+    <div class="help-us__container">
+      <a href="index.html#contact" class="closeW">
+        <div class="back-arrow" >
+          Back
+        </div>
+      </a>
+    <h3 class="help-us__title">Help us</h3>
+    <p class="help-us__text">You have a good idea?</p>
+    <p class="help-us__text">Do you want to share it with us?</p>
+    <p class="help-us__text">We are open to propositions!</p>
+    <input type="button" class="help-us__button" value="CONTACT US" id="helpUsBut">
+    </div>    
+    </section>
+
+    <section class="help-us" id="workWhichDesign" style="padding-top: 20px; padding-bottom: 100px;">
+      <div class="help-us__container">
+        <a href="index.html#contact" class="closeW">
+          <div class="back-arrow" >
+            Back
+          </div>
+        </a>
+      <h3 class="help-us__title">Work with us</h3>
+      <p class="help-us__text">Are you a good designer?</p>
+      <p class="help-us__text">You know Python or UI ?</p>
+      <p class="help-us__text">We are open to propositions!</p>
+      <input type="button" class="help-us__button" value="CONTACT US" id="workWhichDesignBut">
+      </div>
+      </section>
+
+      <section class="help-us" id="workWhichDevelop" style="padding-top: 20px; padding-bottom: 100px;">
+        <div class="help-us__container">
+          <a href="index.html#contact" class="closeW">
+            <div class="back-arrow" >
+              Back
+            </div>
+          </a>
+        <h3 class="help-us__title">Work with us</h3>
+        <p class="help-us__text">Are you a good programer?</p>
+        <p class="help-us__text">You know Python or AI or ML ?</p>
+        <p class="help-us__text">We are open to propositions!</p>
+        <input type="button" class="help-us__button" value="CONTACT US" id="workWhichDevelopBut">
+        </div>
+        </section>
+
+        <section class="help-us" id="coloborateBusines" style="padding-top: 20px; padding-bottom: 100px;">
+          <div class="help-us__container">
+            <a href="index.html#contact" class="closeW" >
+              <div class="back-arrow" >
+                Back
+              </div>
+            </a>
+          <h3 class="help-us__title">Colaborate with us</h3>
+          <p class="help-us__text">Do you have your own products?</p>
+          <p class="help-us__text">Do you want to put Voice Assistant to it?</p>
+          <p class="help-us__text">We are open to propositions!</p>
+          
+          <input type="button" class="help-us__button" value="CONTACT US" id="coloborateBusinesBut">
+          </div>
+          </section>
+
+
+          <div class="contact" id="workPopForm" style="margin-top: -20px; padding-top: 20px; padding-bottom: 100px;">
+            <div class="contact__container" style=" padding-top:0px; padding-bottom:40px;">
+              <a href="index.html#contact" class="closeW">
+                <div class="back-arrow" style="padding-top: 20px; padding-bottom: 20px;">
+                  Back
+                </div>
+              </a>
+              <form  class="contact__form">
+                <div class="contact__form-flex">
+    
+                  <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="Elsi">
+        <input type="hidden" name="admin_email" value="alexzab@ukr.net">
+        <input type="hidden" name="form_subject" value="Contact form">
+        <!-- END Hidden Required Fields -->
+    
+                  <input class="contact__input contact__input-focus" type="text" name="Name" placeholder="Your full name">
+                  <input class="contact__input contact__input-focus" type="text" name="Years of experience" placeholder="Years of experience">
+                  <input class="contact__input contact__input-focus" type="text" name="Field of experience" placeholder="Field of experience">
+                  <input class="contact__input contact__input-focus" type="text" name="Email" placeholder="Email">
+                  <input class="contact__input contact__input-focus" type="text" name="How old are you?" placeholder="How old are you?">
+                  <input class="contact__input contact__input-focus" type="text" name="Your education" placeholder="Your education">
+                </div>
+                <textarea placeholder="History of experience" name="History of experience" id="textarea-question-coloborate-first"
+                  class="contact__textarea help__textarea"></textarea>
+                <textarea placeholder="Tell us about yourself" name="Tell us about yourself" id="textarea-question-coloborate-two"
+                  class="contact__textarea"></textarea>
+                <div class="contact__button-container">
+                  <button class="contact__button" id="formButtWork">Send</button>
+                </div>
+              </form>      
+            </div>
+          </div>
+
+
+          <section class="contact" id="thankPopap" style="margin-top: 0; padding: 0; ">
+            <div class="contact__container">
+            <h3 class="thank-you-title">Thank you! <br>
+                We will contact you as <br>
+                 soon as we can!</h3>
+                 <input type="button" value="Thank you!" class="thank-you-button" id="buttClosePopap" style="display: block; margin-bottom: 120px;"> 
+            </div>
+          </section>
+
+            
+          <div class="contact" id="helpFormPopap" style="margin-top: 0; padding-top: 20px; padding-bottom: 100px;">
+            <div class="contact__container">
+              <a href="index.html#contact" class="closeW">
+                <div class="back-arrow" style="padding-top: 20px;">
+                  Back
+                </div>
+              </a>
+              <form  class="contact__form">
+                <div class="contact__form-flex">
+        
+         <!-- Hidden Required Fields -->
+         <input type="hidden" name="project_name" value="Elsi">
+         <input type="hidden" name="admin_email" value="alexzab@ukr.net">
+         <input type="hidden" name="form_subject" value="Contact form">
+         <!-- END Hidden Required Fields -->
+         
+        
+                  <input class="contact__input contact__input-focus" type="text" name="My_Name" placeholder="Name">
+                  <input class="contact__input contact__input-focus" type="text" name="Email" placeholder="Email">
+                </div>
+                <input class="contact__input arhive__input contact__input-focus" type="text" name="Issue that you found" placeholder="What idea do you have?" >
+                <textarea placeholder="Describe it please?" name="question" id="textarea-question-help"
+                  class="contact__textarea"></textarea>
+                <div class="contact__button-container">
+                  <button class="contact__button" id="helpPopButt">Send</button>
+                </div>
+              </form>      
+            </div>
+          </div>
+
+          <div class="contact" id="coloborateFormPopap" style=" padding-top: 20px; padding-bottom: 100px;">
+            <div class="contact__container">
+              <a href="index.html#contact" class="closeW">
+                <div class="back-arrow" style="padding-top: 20px;">
+                  Back
+                </div>
+              </a>
+              <form class="contact__form">
+                <div class="contact__form-flex">
+        
+         <!-- Hidden Required Fields -->
+         <input type="hidden" name="project_name" value="Elsi">
+         <input type="hidden" name="admin_email" value="alexzab@ukr.net">
+         <input type="hidden" name="form_subject" value="Contact form">
+         <!-- END Hidden Required Fields -->
+                  <input class="contact__input contact__input-focus" type="text" name="Name" placeholder="Name">
+                  <input class="contact__input contact__input-focus" type="text" name="Email" placeholder="Email">
+                  <input class="contact__input contact__input-focus" type="text" name="Company name" placeholder="Company name">
+                  <input class="contact__input contact__input-focus" type="text" name="Phone number" placeholder="Phone number">
+                </div>
+                <input class="contact__input arhive__input contact__input-focus" type="text" name="Issue that you found" placeholder="What products your company do?" >
+                <textarea placeholder="Describe it please?" name="question" id="textarea-question-coloborate"
+                  class="contact__textarea"></textarea>
+                <div class="contact__button-container">
+                  <button class="contact__button" id="colorboratePopButt">Send</button>
+                </div>
+              </form>      
+            </div>
+          </div>
+    
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
