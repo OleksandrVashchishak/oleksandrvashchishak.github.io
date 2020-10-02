@@ -11,8 +11,10 @@
 </head>
 
 <body>
+  
   <header class="header" style=" background: url( <?php the_field('top__bg')?>); background-repeat: no-repeat; background-size: cover;">
     <div class="header__inner">
+      <div class="logo">  <?php the_custom_logo() ?> </div>
       <img src="<?php bloginfo( 'template_url'); ?>/assets/img/home.png" alt="">
       <div class="header__name">
           <?php the_field('header__name')?>
