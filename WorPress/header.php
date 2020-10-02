@@ -29,4 +29,32 @@
         <img src=" <?php the_field('header__sale')?>" alt="">
       </div>
     </div>
+    
+  // add custom menu
+    
+    
+    <?php  wp_nav_menu( [
+	'container'       => 'ul', 
+	'container_class' => 'header__menu-ul', 
+	'menu_class'      => 'header__menu-ul', 
+	'menu_id'         => '',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+	'depth'           => 0,
+	'walker'          => '',
+] ); ?>
+    <ul class="header__menu-ul">
+       //   <li class="header__menu-list"><a href="#home" class="header__menu-link"> <?php the_field('menu__link-home')?></a></li>
+          <li class="header__menu-list"><a href="#whats-new" class="header__menu-link">What’s new</a></li>
+          <li class="header__menu-list"><a href="#download" class="header__menu-link">Download</a></li>
+          <li class="header__menu-list"><a href="#question" class="header__menu-link">FAQ</a></li>
+          <li class="header__menu-list"><a href="#contact" class="header__menu-link">Contact</a></li>
+        </ul>
+    
+    
   </header>
