@@ -26,9 +26,13 @@
       </div>
     </div>
   </main>
+
+Вивід кастомних постів:
+Не забути в розділі "сторінки" в полі "релатіоншіп" вивести пости
+
  
   <?php
-$featured_posts = get_field('project__item');
+$featured_posts = get_field('project__item'); //Вказати ту ж назву, що і в полі релатіоншіп в кастомих полях
 if( $featured_posts ): ?>
     <ul>
     <?php foreach( $featured_posts as $post ): 
