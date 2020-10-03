@@ -28,16 +28,19 @@
   </main>
 
 Вивід кастомних постів:
-Не забути в розділі "сторінки" в полі "релатіоншіп" вивести пости
+1. копіювати цикл
+2.створити кастомні поля і підставити назви
+3. ствоити релатіоншіп в кастомних полях, на тій сторінці, на якій буду виодити пости
+4.створити запис
+5. зайти в сторінку в полі релатіоншіп вивести пости
+
 
  
   <?php
 $featured_posts = get_field('project__item'); //Вказати ту ж назву, що і в полі релатіоншіп в кастомих полях
 if( $featured_posts ): ?>
     <ul>
-    <?php foreach( $featured_posts as $post ): 
-
-       
+    <?php foreach( $featured_posts as $post ):        
         setup_postdata($post); ?>
         <li>
         <li class="project__item">
@@ -58,9 +61,11 @@ if( $featured_posts ): ?>
     <?php endforeach; ?>
     </ul>
     <?php 
-  
     wp_reset_postdata(); ?>
 <?php endif; ?>
+
+
+
   <?php get_footer(); ?>
 
 
