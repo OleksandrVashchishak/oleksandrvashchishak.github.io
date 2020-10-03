@@ -34,6 +34,7 @@
     
     
     <?php  wp_nav_menu( [
+	  'theme_location'  => 'menu_name', // ввести назву свореного меню :вигляд -> меню 
 	'container'       => 'ul', 
 	'container_class' => 'header__menu-ul', 
 	'menu_class'      => 'header__menu-ul', 
