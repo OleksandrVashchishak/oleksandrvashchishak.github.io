@@ -73,6 +73,13 @@ if( $featured_posts ): ?>
         </div>
 /////
 
+ // Вивід панелі мов і її кастомізація
+// просто змінити класи і налаштуватипід себе
+  <ul class="home__togle-leng "> 
+   <?php if(function_exists('pll_the_languages')){ 
+         pll_the_languages(array('show_names'=>1)); 
+    } ?> 
+</ul>
 
   <?php get_footer(); ?>
 
