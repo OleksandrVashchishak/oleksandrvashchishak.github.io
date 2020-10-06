@@ -367,3 +367,26 @@
   right: 28px;
 }
 
+
+#loader{
+  display: none;
+  text-align: center;
+  margin: 0 auto;
+}
+#endProduct{
+  color: #7b8a99;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: -40px;
+}
+
+/* .offers-block__item:nth-child(13){ */
+  /* display: none; */
+/* } */
+
+/* .test{
+  display: block;
+  /* display: none; */
+  /* margin-top: 10000px;
+} */
