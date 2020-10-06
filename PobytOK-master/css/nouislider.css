@@ -188,7 +188,25 @@
  transform:rotate(-90deg)
 }
 
-
+@media (max-width: 1400px) {
+  .noUi-tooltip:after{
+    white-space: pre;
+    content: "ПОКАЗАТЬ 12 890\AРЕЗУЛЬТАТОВ";
+ height: 70px;
+    width: 130px;
+   top: 63px;
+    left: -91px;
+    /* white-space: pre */
+  }
+   
+  
+  .noUi-tooltip:before{
+   left: 0;
+   top:56px;
+   -webkit-transform:rotate(0deg);
+   transform:rotate(0deg)
+  }
+  }
 
 .noUi-tooltip{
  background: transparent !important;
@@ -347,6 +365,7 @@
   transform: translate(0, -5px);
   top: auto;
   right: 28px;
+}
 }
 
 
