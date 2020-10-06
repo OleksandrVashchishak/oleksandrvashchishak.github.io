@@ -90,7 +90,7 @@ load3.style.display = 'none'
 load4.style.display = 'none'
 load5.style.display = 'none'
 load6.style.display = 'none'
-loader = document.getElementById('loader')
+// loader = document.getElementById('loader')
 
 seeMore.addEventListener('click', getNone);
 
