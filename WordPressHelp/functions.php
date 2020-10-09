@@ -28,4 +28,6 @@ function timber_style() {
 
 add_theme_support( 'custom-logo' );
 
+show_admin_bar(false);
+
 ?>
