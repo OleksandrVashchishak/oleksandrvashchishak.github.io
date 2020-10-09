@@ -15460,7 +15460,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _bootstrap_js_bootstrap_min_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../bootstrap/js/bootstrap.min.js */ "./src/bootstrap/js/bootstrap.min.js");
 /* harmony import */ var _bootstrap_js_bootstrap_min_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_bootstrap_js_bootstrap_min_js__WEBPACK_IMPORTED_MODULE_1__);
 
+ // sort by togle script
 
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.sort__by-container').click(function (event) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.sort__category-ul, .sort__by-category').toggleClass('active');
+  });
+}); // visible tags block
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.sort__by-teg-req').click(function (event) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.sort__tags-block, .sort__by-teg-req').toggleClass('active');
+  });
+}); // clear search form in page tags
+
+var clearSearch = document.getElementById('clearSearch');
+var searchInput = document.getElementById('searchInput');
+console.log(searchInput.value);
+clearSearch.addEventListener('click', getClearSearch);
+
+function getClearSearch() {
+  searchInput.value = '';
+}
 
 /***/ }),
 
