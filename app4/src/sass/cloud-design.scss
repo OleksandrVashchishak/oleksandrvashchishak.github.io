@@ -1,0 +1,220 @@
+.banner-bg {
+  background: url(../../img/cloud-design/cloud-design-banner.png);
+  background-position: center;
+  width: 100%;
+  height: 380px;
+}
+.banner-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+.banner-nav {
+  font-weight: normal;
+font-size: 15px;
+line-height: 24px;
+padding-top: 100px;
+}
+.banner-nav__this-page{
+  color: #7582A4;;
+  opacity: 0.4;
+}
+.banner-nav__home{
+  color: #FFFFFF;
+  opacity: none;
+}
+
+.banner-title{
+  font-weight: bold;
+font-size: 54px;
+line-height: 82px;
+color: #FFFFFF;
+margin-top: 73px;
+margin-left: -17px;
+}
+.could-business {
+
+		&__container {
+      max-width: 950px;
+      margin: 0 auto;
+      padding-left: 15px;
+      padding-right: 15px;
+		}
+
+		&__top-title {
+      margin-top: 60px;
+      font-weight: bold;
+font-size: 40px;
+line-height: 52px;
+color: #000000;
+max-width: 340px;
+margin-left: -8px;
+		}
+
+		&__top-text {
+max-width: 540px;
+line-height: 28px;
+color: #2E2E2E;
+margin-top: 60px;
+width: 530px;
+font-size: 15px;
+		}
+
+		&__ul {
+      margin-top: 34px;
+		}
+
+		&__list {
+      font-weight: 600;
+font-size: 18px;
+line-height: 30px;
+color: #000000;
+max-width: 380px;
+position: relative;
+margin-top: 20px;
+margin-left: 20px;
+&:before{
+  position: absolute;
+  content: '';
+  width: 6px;
+height: 6px;
+margin-left: -26px;
+margin-top: 12px;
+background: #2667FF;
+}
+		}
+
+		&__text {
+      margin-top: 42px;
+      font-size: 15px;
+      line-height: 28px;
+    }
+    
+   
+
+		&__title-img { 
+      font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+margin-top: 62px;
+color: #000000;
+		}
+
+		&__first-img {
+      margin-top: 20px;
+      width: 100%;
+		}
+
+		&__item-list {
+      max-width: 405px;
+      width: 100%;
+      min-height: 128px;
+		}
+
+		&__title-list {
+      font-weight: 600;
+font-size: 18px;
+line-height: 30px;
+margin-left: 25px;
+&:before{
+  position: absolute;
+  content: '';
+  width: 12px;
+height: 12px;
+margin-left: -28px;
+margin-top: 10px;
+background: #2667FF;
+}
+		}
+
+		&__text-list {
+      margin-top: 16px;
+
+      font-weight: normal;
+font-size: 15px;
+line-height: 28px;
+color: #000000;
+		}
+
+		&__table {
+      margin-top: 70px;
+      display: flex;
+      justify-content: space-around;
+      background: url(../../img/cloud-design/cloud-table.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 180px;
+      align-items: center;
+      border-radius: 10px;
+		}
+
+		&__table-title {
+      font-weight: bold;
+font-size: 36px;
+line-height: 48px;
+color: #FFFFFF;
+max-width: 360px;
+		}
+
+		&__table-button {
+      background: #6EDED3;
+      border-radius: 10px;
+      max-width: 264px;
+      width: 100%;
+      height: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 30px;
+      text-align: center;
+      color: #FFFFFF;
+      position: relative;
+      &:after{
+        position: absolute;
+        content: '';
+    
+        width: 100%;
+height: 56px;
+background: rgba(110, 222, 211, 0.12);
+border-radius: 6px;
+margin-top: 30px;
+margin-left: 35px;
+
+      }
+		}
+
+	
+    
+    &__line{
+      border-bottom: 1px solid #E0E0E0;
+width: 100%;
+     margin-top: 30px;
+    }
+}
+.could-business-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cloud-line{
+  background: url(../../img/cloud-design/cloud-line.png);
+background-position: -50px 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.text-two-block{
+  margin-top: 20px;
+margin-bottom: 35px;
+}
+
+.cloud-item-container{
+  margin-top: 55px;
+}
