@@ -29,17 +29,18 @@ add_filter('show_admin_bar', '__return_false');
 // кастомайзер, для інфи в футері, або хедері
   add_action('customize_register', 'dco_customize_register');
   function dco_customize_register($wp_customize) {
+  // Створюю секцію - підвал
       $wp_customize->add_section('footer', array(
           'title' => 'Подвал',
           'priority' => 1, 
       ));
-   
+      
       $setting_name = 'footer_text';
       $wp_customize->add_setting($setting_name, array(
           'sanitize_callback' => 'sanitize_textarea_field',
           'transport' => 'postMessage'
       ));
-   
+       // додаю в секцію підвал
       $wp_customize->add_control($setting_name, array(
           'section' => 'footer',
           'type' => 'textarea',
