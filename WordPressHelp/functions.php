@@ -31,19 +31,39 @@ add_theme_support( 'custom-logo' );
 add_filter('show_admin_bar', '__return_false');
 
 // кастомайзер, для інфи в футері, або хедері
+  add_action('customize_register', 'dco_customize_register');
+ 
   function dco_customize_register($wp_customize) {
       $wp_customize->add_section('footer', array(
           'title' => 'Подвал',
-          'priority' => 11, 
+          'priority' => 1, 
       ));
+   
       $setting_name = 'footer_text';
       $wp_customize->add_setting($setting_name, array(
           'sanitize_callback' => 'sanitize_textarea_field',
           'transport' => 'postMessage'
       ));
+   
       $wp_customize->add_control($setting_name, array(
           'section' => 'footer',
-          'type' => 'text',
+          'type' => 'textarea',
+          'label' => 'Текст в подвале',
+      ));
+  }
+
+  add_action('customize_register', 'dco_customize_register1');
+ 
+  function dco_customize_register1($wp_customize) {
+      $setting_name = 'footer_text1';
+      $wp_customize->add_setting($setting_name, array(
+          'sanitize_callback' => 'sanitize_textarea_field',
+          'transport' => 'postMessage'
+      ));
+   
+      $wp_customize->add_control($setting_name, array(
+          'section' => 'footer',
+          'type' => 'textarea',
           'label' => 'Текст в подвале',
       ));
   }
