@@ -30,4 +30,23 @@ add_theme_support( 'custom-logo' );
 // заховати панель
 add_filter('show_admin_bar', '__return_false');
 
+
+  function dco_customize_register($wp_customize) {
+      $wp_customize->add_section('footer', array(
+          'title' => 'Подвал',
+          'priority' => 11, 
+      ));
+      $setting_name = 'footer_text';
+      $wp_customize->add_setting($setting_name, array(
+          'sanitize_callback' => 'sanitize_textarea_field',
+          'transport' => 'postMessage'
+      ));
+      $wp_customize->add_control($setting_name, array(
+          'section' => 'footer',
+          'type' => 'text',
+          'label' => 'Текст в подвале',
+      ));
+  }
+//   <?php echo nl2br(esc_html(get_theme_mod('footer_text'))); ?>
+
 ?>
