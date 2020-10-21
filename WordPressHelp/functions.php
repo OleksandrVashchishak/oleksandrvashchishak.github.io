@@ -30,7 +30,7 @@ add_theme_support( 'custom-logo' );
 // заховати панель
 add_filter('show_admin_bar', '__return_false');
 
-
+// кастомайзер, для інфи в футері, або хедері
   function dco_customize_register($wp_customize) {
       $wp_customize->add_section('footer', array(
           'title' => 'Подвал',
@@ -47,6 +47,15 @@ add_filter('show_admin_bar', '__return_false');
           'label' => 'Текст в подвале',
       ));
   }
+// Функція кастомайзера, яку потрібно вставити в код, в то місце, де має вивестись інформація
 //   <?php echo nl2br(esc_html(get_theme_mod('footer_text'))); ?>
+
+
+// функція для виведення мінюатур постів
+add_action( 'after_setup_theme', 'theme_register_nav_menu' );
+function theme_register_nav_menu() {
+    add_theme_support( 'post-thumbnails', array( 'post' ) );
+    // add_image_size( 'mytheme-mini', 200, 200, true );  
+}
 
 ?>
