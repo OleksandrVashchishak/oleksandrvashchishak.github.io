@@ -74,3 +74,7 @@ function theme_register_nav_menu() {
 // Підключення різних футерів
 // Назва футеруfooter-myfooter.php
 // <?php get_footer('myfooter'); ?>
+
+// включення кастомних полів
+// ACF їх автоматично відключає
+add_filter('acf/settings/remove_wp_meta_box', '__return_false');
