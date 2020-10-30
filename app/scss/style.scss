@@ -1,0 +1,174 @@
+@import "vars";
+@import "fonts";
+
+
+.prices {
+  &__page {
+    margin-top: 200px;
+    max-width: 1815px;
+    margin: 0 auto;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  &__container {
+    max-width: 1815px;;
+    margin: 0 auto;
+    // overflow-x: visible;
+  }
+
+  &__start-titles {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  &__start-season {
+    width: 208px;
+    border-right: 1px solid rgba(87, 100, 112, 0.2);
+    height: 91px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 12%;
+  }
+
+  &__start-category {
+    color: rgba(87, 100, 112, 0.5);
+    text-align: left !important;
+    flex: 0 0 210px;
+  }
+
+  &__lost-border {
+    border-right: none !important;
+  }
+
+  &__start-season-cont {
+    text-align: center;
+  }
+
+  &__item-cont {
+    text-align: center;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item-first-col-img {
+    width: 190px;
+    height: 139px;
+  }
+
+  &__item-col {
+    width: 208px;
+    flex: 0 0 12%;
+    border-right: 1px solid rgba(87, 100, 112, 0.2);
+    height: 340px;
+    border-top: 1px solid rgba(87, 100, 112, 0.2);
+  }
+
+  &__item-first-col {
+    border-right: 1px solid rgba(87, 100, 112, 0.2);
+    flex: 0 0 210px;
+
+  }
+
+  &__date--p {
+    color: #576470;
+    font-weight: 500;
+  }
+
+  &__season--p {
+    margin-top: -9px;
+    color: #1e0000;
+    font-weight: 600;
+  }
+
+  &__start-category {
+    color: rgba(87, 100, 112, 0.5);
+    justify-content: start;
+    
+  }
+
+  &__item-eating{
+    color: #576470;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 30px;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: -15px;
+      width: 8px;
+      height: 8px;
+      background: #576470;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__item-first-col-name{
+    margin-top: 25px;
+    color: #1E0000;
+    line-height: 28px;
+    font-weight: 500;
+  }
+
+  &__gold{
+    color: #C9A96A;
+  }
+
+  &__price-two {
+    font-weight: bold;
+    font-size: 22px;
+    color: #1E0000;
+  }
+
+
+  &__price-first {
+    font-size: 19px;
+    color: #576470;
+  }
+
+  &__sale {
+    font-size: 19px;
+    font-weight: 600;
+    color: #C9A96A;
+  }
+  &__bottom-elem{
+    margin-top: -5px;
+  }
+
+  &__eating-col{
+    height: 120px;
+    justify-content: center;
+  }
+
+  &__eating-col-two{
+    border-top: none;
+  }
+
+  &__eating-col-fc{
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 2px;
+      background: #fff;
+      top: -2px;
+      left: 0;
+    }
+  }
+
+}

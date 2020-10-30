@@ -1,0 +1,65 @@
+//media
+@media(max-width :1580px) {
+  .prices {
+    &__page {
+      font-size: 15px ;
+    }
+    &__price-two {
+      font-size: 19px;
+    }
+  
+    &__price-first {
+      font-size: 17px;
+    }
+  
+    &__sale {
+      font-size: 17px;
+    }
+ 
+  &__item-first-col {
+    flex: 0 0 185px;
+  }
+
+  &__start-category {
+    flex: 0 0 185px;
+  }
+  &__item-first-col-img {
+    width: 175px;
+    height: 119px;
+  }
+  
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width :991px) {
+
+}
+@media (max-width :767px) {
+
+}
+
+@media (max-width :579px) {
+
+}
+@media (max-width :480px) {
+
+}
+@media (max-width :320px) {
+   
+}
