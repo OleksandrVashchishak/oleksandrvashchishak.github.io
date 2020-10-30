@@ -5,7 +5,7 @@
       font-size: 15px ;
     }
     &__price-two {
-      font-size: 19px;
+      font-size: 18px;
     }
   
     &__price-first {
@@ -33,50 +33,51 @@
 
 
 
-@media (max-width :1550px) {
-  .prices {
-  &__page {
 
-    max-width: 1815px;
-    overflow-x: auto;
+
+@media (max-width :1320px) {
+    .prices {
+    &__page {
+      overflow-x: auto;
+    }
+  
+    &__container {
+      padding-top: 30px;
+      width: 1450px;
+      margin: 0 auto;
+
+  
+    }
   }
-
-  &__container {
-    padding-top: 30px;
-    width: 1550px;
-    margin: 0 auto;
-    overflow: hidden;
-
-  }
-  &__item-first-col{
-    position: sticky;
-  }
-}
-body{
-  height: 2000px;
-}
-
 #toScrollBtn, #toScrollBtnRight{
   display: block;
   position: fixed;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+ background: transparent;
 outline: none;
-
-border: none;
-opacity: 0.5;
+border: 1px solid #C9A96A;
 &:after{
-
   content: '';
   position: absolute;
-  width: 0;
-	height: 0;
-	border-top: 15px solid transparent;
-	border-left: 30px solid #C9A96A;
-  border-bottom: 15px solid transparent;
-  top: 20px;
-  right: 15px;
+  top: -10px;
+  right: 10px;
+  border: 1px solid #C9A96A;
+  width: 60px;
+  height: 60px;
+ background: transparent;
+}
+&:before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  border-top: 1px solid #C9A96A;
+  border-right: 1px solid #C9A96A;
+  width: 15px;
+  height: 15px;
+ background: transparent;
+ transform: rotate(43deg) ;
 }
 }
 
@@ -86,18 +87,20 @@ opacity: 0.5;
 }
 
 #toScrollBtnRight{
-  // display: none;
   top: 40%;
   left: 20px;
   &:after{
-  transform: rotate(180deg);
-
-  left: 15px;
+  left: 10px;
+  }
+  &:before{
+    top: 23px;
+    left: 24px;
+   transform: rotate(-135deg) ;
   }
 }
 
+  
 }
-
 
 
 
@@ -129,13 +132,6 @@ opacity: 0.5;
   &__item-first-col-img {
     width: 175px;
     height: 119px;
-  }
-  &__start-season {
-    flex: 0 0 175px;
-  }
-  
-  &__item-col {
-    flex: 0 0 175px;
   }
 }
 }

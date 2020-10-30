@@ -1,8 +1,9 @@
 let toScrollBtn = document.getElementById('toScrollBtn')
 let toScrollBtnRight = document.getElementById('toScrollBtnRight')
-
-
+ 
+let hideEat = document.querySelectorAll('.hideEat')
 let scrollElem = document.getElementById('scrollElem')
+
 toScrollBtn.addEventListener('click', getScroll)
 toScrollBtnRight.addEventListener('click', getScrollRight)
 toScrollBtn.addEventListener('click', hideScroll)
@@ -29,4 +30,13 @@ if(scrollElem.scrollLeft <= 10){
 }
 if(scrollElem.scrollLeft >= 10){
   toScrollBtnRight.style.display = 'block'
+}
+
+
+
+for( let i=0; i<hideEat.length; i++){
+  console.log(hideEat[i])
+  if(hideEat[i].childNodes[1].childNodes[1].textContent == ''){
+    hideEat[i].style.display ='none'
+  }
 }
