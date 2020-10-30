@@ -14,9 +14,8 @@
   }
 
   &__container {
-    max-width: 1815px;;
+    max-width: 1815px;
     margin: 0 auto;
-    // overflow-x: visible;
   }
 
   &__start-titles {
@@ -171,4 +170,28 @@
     }
   }
 
+
+  &__item:hover{
+
+background-color:rgba(201, 169, 106, 0.2);
+transition: all .7s ease-out;
+
+
+  }
+
 }
+
+
+
+
+ .prices__page{
+  scroll-behavior: smooth;
+ 
+}
+
+#toScrollBtn, #toScrollBtnRight {
+  display: none;
+  // background: transparent;
+  border: none;
+}
+@import "media";

@@ -33,6 +33,70 @@
 
 
 
+@media (max-width :1550px) {
+  .prices {
+  &__page {
+
+    max-width: 1815px;
+    overflow-x: auto;
+  }
+
+  &__container {
+    padding-top: 30px;
+    width: 1550px;
+    margin: 0 auto;
+    overflow: hidden;
+
+  }
+  &__item-first-col{
+    position: sticky;
+  }
+}
+body{
+  height: 2000px;
+}
+
+#toScrollBtn, #toScrollBtnRight{
+  display: block;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+outline: none;
+
+border: none;
+opacity: 0.5;
+&:after{
+
+  content: '';
+  position: absolute;
+  width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-left: 30px solid #C9A96A;
+  border-bottom: 15px solid transparent;
+  top: 20px;
+  right: 15px;
+}
+}
+
+#toScrollBtn{
+  top: 40%;
+  right: 20px;
+}
+
+#toScrollBtnRight{
+  // display: none;
+  top: 40%;
+  left: 20px;
+  &:after{
+  transform: rotate(180deg);
+
+  left: 15px;
+  }
+}
+
+}
 
 
 
@@ -40,7 +104,41 @@
 
 
 
+@media(max-width :900px) {
+  .prices {
+  
+    &__price-two {
+      font-size: 17px;
+    }
+  
+    &__price-first {
+      font-size: 16px;
+    }
+  
+    &__sale {
+      font-size: 16px;
+    }
+ 
+  &__item-first-col {
+    flex: 0 0 185px;
+  }
 
+  &__start-category {
+    flex: 0 0 185px;
+  }
+  &__item-first-col-img {
+    width: 175px;
+    height: 119px;
+  }
+  &__start-season {
+    flex: 0 0 175px;
+  }
+  
+  &__item-col {
+    flex: 0 0 175px;
+  }
+}
+}
 
 
 
