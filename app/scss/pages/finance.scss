@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700&display=swap");
 
 .finance__main {
+
   background: url("../../img/png/finance-main.png") no-repeat;
 
   background-size: 100%;
   background-attachment: fixed;
   box-shadow: inset 0 -150px #063453;
+  background-position: 0px 100px;
 }
 @media (max-width: 580px) {
   .index-main {
@@ -19,6 +21,53 @@
   position: relative;
   z-index: -1;
 }
+
+
+.finance {
+
+  &__nav{
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #464646;
+    max-width: 1540px;
+    margin: 0 auto;
+    top: 150px;
+    left: 200px;
+
+  }
+ 
+  &__link {
+ 
+text-transform: uppercase;
+color: #464646;
+  }
+
+  &__dot {
+    display: inline-block;
+position: relative;
+margin-left: 8px;
+margin-right: 13px;
+&::before{
+  position: absolute;
+  content: '';
+  width: 4px;
+height: 4px;
+background: #464646;
+border-radius: 50%;
+margin-top: -7px;
+}
+  }
+  &__this{
+    color: #7B8A99;
+    text-transform: uppercase;
+  }
+}
+
+
 
 .finance {
 
@@ -118,7 +167,20 @@
   }
 }
 
+@media (max-width: 1440px) {
+.finance__nav{
+    top: 100px;
+    left: 150px;
+  }
+}
+
+
 @media (max-width: 996px) {
+  .finance__nav{
+    font-size: 14px;
+    top: 70px;
+    left: 70px;
+  }
   .finance {
     padding-left: 30px;
     padding-right: 30px;
@@ -175,6 +237,16 @@
   }
 }
 
+
+@media (max-width: 776px) {
+  .finance__nav{
+
+    top: 70px;
+    left: 30px;
+  }
+}
+
+
 @media (max-width: 550px) {
   .finance__item-cont-img {
     width: 80px;
@@ -224,7 +296,6 @@
     &__item-text {
       font-size: 16px;
     }
-
   }
 
 
