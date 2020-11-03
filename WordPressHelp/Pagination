@@ -1,0 +1,159 @@
+
+
+<?php
+get_header(); ?>
+
+
+<script>
+
+jQuery(function($){
+ $('#post-date-filter').submit(function(){
+  let filter = $('#post-date-filter');
+  $.ajax({
+   url:filter.attr('action'),
+   data:filter.serialize(), // дані форми
+   type:filter.attr('method'), // POST
+   beforeSend:function(xhr){ filter.find('button').text('Застосовуємо фільтр...'); },
+   success:function(data){ filter.find('button').text('Застосувати фільтр'); $('#filtering-results').html(data); }
+  });
+  return false;
+ });
+});
+
+</script>
+
+<style>
+
+ #filtering-results{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  margin-top: 70px;
+}
+
+.gic{
+  border: 1px solid silver;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  
+} 
+
+.num {
+  display: none;
+  border: 1px solid silver;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.paginator {
+  line-height: 150%;
+}
+.paginator > span {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.paginator_active {
+  color: blue;
+}
+
+</style>
+
+
+
+
+<form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="post-date-filter">
+<?php
+if( $terms = get_terms( 'category', 'orderby=name' ) ) :
+  echo '<select name="categoryfilter"><option>Оберіть категорію...</option>';
+  foreach ( $terms as $term ) :
+    echo '<option value="' . $term->term_id . '">' . $term->name . '</option>';
+  endforeach;
+  echo '</select>';
+endif;
+?>
+
+
+<label>
+  <input type="radio" name="date" value="ASC" /> Дата: за зростанням
+</label>
+<label>
+  <input type="radio" name="date" value="DESC" selected="selected" /> Дата: за зменшенням
+</label>
+<input type="text" name="s" value="" placeholder="Search" />
+<input type="text" name="sa" value="" placeholder="Category" />
+<input type="text" name="cat" value="" placeholder="cat" />
+<button id="paginationBtn">Застосувати фільтр</button>
+<input type="hidden" name="action" value="customfilter">
+</form>
+<div id="filtering-results" class="page"></div>
+<div class="paginator" onclick="getPagination(event)"></div>
+
+<script>
+
+let paginationBtn = document.querySelector("#paginationBtn");
+
+paginationBtn.addEventListener('click', getTime)
+function getTime(){
+  setTimeout( getPagination, 700);
+}
+
+function getPagination(event){
+  let pages = document.querySelector(".page");
+    let count = pages.childNodes.length; 
+let cnt = 2; //сколько отображаем сначала
+let cnt_page = Math.ceil(count / cnt); 
+
+let paginator = document.querySelector(".paginator");
+let page = "";
+for (let i = 0; i < cnt_page; i++) {
+  page += "<span data-page=" + i * cnt + "  id=\"page" + (i + 1) + "\">" + (i + 1) + "</span>";
+}
+paginator.innerHTML = page;
+
+let div_num = document.querySelectorAll(".num");
+for (let i = 0; i < div_num.length; i++) {
+  if (i < cnt) {
+    div_num[i].style.display = "block";
+  }
+}
+
+let main_page = document.getElementById("page1");
+main_page.classList.add("paginator_active");
+
+
+  let e = event || window.event;
+  let target = e.target;
+  let id = target.id;
+  
+  if (target.tagName.toLowerCase() != "span") return;
+  
+  let num_ = id.substr(4);
+  let data_page = +target.dataset.page;
+  main_page.classList.remove("paginator_active");
+  main_page = document.getElementById(id);
+  main_page.classList.add("paginator_active");
+
+  let j = 0;
+  for (let i = 0; i < div_num.length; i++) {
+    let data_num = div_num[i].dataset.num;
+    if (data_num <= data_page || data_num >= data_page)
+      div_num[i].style.display = "none";
+
+  }
+  for (let i = data_page; i < div_num.length; i++) {
+    if (j >= cnt) break;
+    div_num[i].style.display = "block";
+    j++;
+  }
+}
+
+</script>
+</script>
+
+
+</body>
+</html>

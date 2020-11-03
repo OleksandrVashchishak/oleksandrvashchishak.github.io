@@ -1,0 +1,159 @@
+//media
+@media(max-width :1580px) {
+  .prices {
+    &__page {
+      font-size: 15px ;
+    }
+    &__price-two {
+      font-size: 18px;
+    }
+  
+    &__price-first {
+      font-size: 17px;
+    }
+  
+    &__sale {
+      font-size: 17px;
+    }
+ 
+  &__item-first-col {
+    flex: 0 0 185px;
+  }
+
+  &__start-category {
+    flex: 0 0 185px;
+  }
+  &__item-first-col-img {
+    width: 175px;
+    height: 119px;
+  }
+  
+}
+}
+
+
+
+
+
+@media (max-width :1320px) {
+    .prices {
+    &__page {
+      overflow-x: auto;
+    }
+  
+    &__container {
+      padding-top: 30px;
+      width: 1450px;
+      margin: 0 auto;
+
+  
+    }
+  }
+#toScrollBtn, #toScrollBtnRight{
+  display: block;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+ background: transparent;
+outline: none;
+border: 1px solid #C9A96A;
+&:after{
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  border: 1px solid #C9A96A;
+  width: 60px;
+  height: 60px;
+ background: transparent;
+}
+&:before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  border-top: 1px solid #C9A96A;
+  border-right: 1px solid #C9A96A;
+  width: 15px;
+  height: 15px;
+ background: transparent;
+ transform: rotate(43deg) ;
+}
+}
+
+#toScrollBtn{
+  top: 40%;
+  right: 20px;
+}
+
+#toScrollBtnRight{
+  top: 40%;
+  left: 20px;
+  &:after{
+  left: 10px;
+  }
+  &:before{
+    top: 23px;
+    left: 24px;
+   transform: rotate(-135deg) ;
+  }
+}
+
+  
+}
+
+
+
+
+
+
+@media(max-width :900px) {
+  .prices {
+  
+    &__price-two {
+      font-size: 17px;
+    }
+  
+    &__price-first {
+      font-size: 16px;
+    }
+  
+    &__sale {
+      font-size: 16px;
+    }
+ 
+  &__item-first-col {
+    flex: 0 0 185px;
+  }
+
+  &__start-category {
+    flex: 0 0 185px;
+  }
+  &__item-first-col-img {
+    width: 175px;
+    height: 119px;
+  }
+}
+}
+
+
+
+
+
+
+@media (max-width :991px) {
+
+}
+@media (max-width :767px) {
+
+}
+
+@media (max-width :579px) {
+
+}
+@media (max-width :480px) {
+
+}
+@media (max-width :320px) {
+   
+}
