@@ -1,0 +1,170 @@
+.main__search {
+  margin-top: -52px;
+}
+
+.main__search__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__search__category-wrap {
+  width: 25%;
+}
+
+.filter__all-regions-desktop-wrap {
+  width: 32%;
+}
+
+.main__search__input,
+.main__search__category-input,
+.main__search__city-input {
+  width: 26%;
+  margin-bottom: 0;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(30, 30, 30, 0.1);
+  z-index: 1;
+}
+
+input.main__search__input,
+input.main__search__category-input,
+input.main__search__city-input {
+  background: #fff;
+}
+
+.main__search__search-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 15%;
+  height: 58px;
+  border: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Cuprum-Bold", "Arial", sans-serif;
+  font-size: 18px;
+  background: #063453;
+  border-radius: 8px;
+  z-index: 1;
+  transition: all .3s ease;
+}
+
+.main__search__search-submit svg {
+  margin-right: 10px;
+  margin-top: -1px;
+  transition: all .3s ease;
+}
+
+.main__search__search-submit:hover {
+  color: #77CCF9;
+  transition: all .3s ease;
+}
+
+.main__search__search-submit:hover svg path {
+  fill: #77CCF9;
+  stroke: #77CCF9;
+  transition: all .3s ease;
+}
+
+.filter__all-regions-desktop-wrap .main__search__city-input {
+  padding-left: 40px;
+}
+
+.main__search__point {
+  position: absolute;
+  top: 20px;
+  left: 17px;
+  z-index: 2;
+}
+
+.filter__all-regions-desktop-wrap.is-active .select__body,
+.main__search__category-wrap.is-active .select__body {
+  top: 60px;
+}
+
+@media (max-width: 1024px) {
+  .main__search__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .main__search__form > div,
+  input.main__search__input {
+    width: 49%;
+  }
+
+  .main__search__category-wrap,
+  .main__search__input,
+  .main__search__search-submit {
+    width: 100%;
+  }
+
+  .main__search__input,
+  .main__search__search-submit {
+    position: relative;
+  }
+
+  .main__search__category-wrap {
+    margin-bottom: 8px;
+  }
+
+  .main__search__form .select-wrap.is-active .select__body {
+    top: 53px;
+  }
+
+  .filter__all-regions-tablet-wrap .regions-tablet-input,
+  .filter__city-input-wrap .filter__city-input {
+    padding-left: 30px;
+  }
+
+  .tablet-point {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+  }
+
+  .main__search__form .main__search__input {
+    margin-bottom: 8px;
+  }
+
+ .main__search__search-submit {
+    height: 54px;
+  }
+
+ .main__search__form .regions-tablet-input,
+ .main__search__form .filter__city-input {
+   background: #fff;
+ }
+
+ .main__search__search-submit {
+   font-size: 16px;
+ }
+}
+
+@media (max-width: 767px) {
+  .main__search__form {
+    display: block;
+    width: 70%;
+  }
+
+  .main__search__form > div, input.main__search__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+
+  .main__search__form {
+    width: 100%;
+  }
+
+  .vacancy__head--info p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .vacancy__head--bg {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,182 @@
+.legalization__greetings {
+  min-height: 730px;
+  background-color: #E5E5E5;
+}
+
+.legalization__greetings.greetings__container--onload {
+  background: url(../img/svg/ok.svg) no-repeat 65% 10%, url(../img/svg/Ellipse.svg) no-repeat 40% top, #E5E5E5;
+  background-size: 46%;
+}
+
+.legalization__greetings .container {
+  height: 100%;
+}
+
+.legalization__title {
+  font-family: "Khula-Extra-Bold", "Arial", sans-serif;
+  font-size: 60px;
+  line-height: 78px;
+  color: #063453;
+  text-align: center;
+  margin: 85px 0 115px;
+}
+
+.legalization__info-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.legalization__info-wrap .head__info--center:first-child {
+  left: 0;
+}
+
+.legalization__info-wrap .head__info--center:last-child {
+  right: 0;
+}
+
+.legalization__greetings::before {
+  content: '';
+  display: block;
+  height: 215px;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: absolute;
+  bottom: 0;
+}
+
+.legalization__greetings {
+  flex-direction: column;
+}
+
+svg.legalization__info-wrap-icon {
+  top: 110px;
+}
+
+.legalization__greetings-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  max-width: 1438px;
+}
+
+.legalization__desc {
+  margin: 0 auto;
+  width: 62%;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #7B8A99;
+  padding: 85px 0 70px 0;
+}
+
+.legalization__desc-text {
+  color: #464646;
+}
+
+@media (max-width: 1200px) {
+  .legalization__greetings.greetings__container--onload {
+    background-size: 55%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .legalization__greetings {
+    min-height: 655px;
+  }
+
+  .legalization__greetings::before {
+    height: 180px;
+  }
+}
+
+@media (max-width: 865px) {
+  .legalization__greetings.greetings__container--onload {
+    background-size: 62%;
+  }
+
+  .legalization__greetings::before {
+    height: 145px;
+  }
+}
+
+@media (max-width: 810px) {
+  .legalization__greetings.greetings__container--onload {
+    background: url(../img/svg/ok.svg) no-repeat 76% 10%, url(../img/svg/Ellipse.svg) no-repeat 30% top, #e5e5e5;
+    background-size: 68%;
+  }
+}
+
+@media (max-width: 768px) {
+  .legalization__greetings {
+    min-height: 530px;
+  }
+
+  .legalization__title {
+    font-size: 35px;
+    line-height: 55px;
+  }
+
+  .legalization__desc {
+    width: 100%;
+  }
+
+  .legalization__greetings-icon {
+    bottom: 25px;
+  }
+}
+
+@media (max-width: 665px) {
+  .legalization__greetings.greetings__container--onload {
+    background: url(../img/svg/ok.svg) no-repeat 70% 10%, url(../img/svg/Ellipse.svg) no-repeat 40% top, #e5e5e5;
+    background-size: 68%;
+  }
+}
+
+@media (max-width: 640px) {
+  .legalization__greetings {
+    min-height: 485px;
+  }
+}
+
+@media (max-width: 580px) {
+  .legalization__title {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 50px 0 0 0;
+  }
+
+  .legalization__greetings.greetings__container--onload {
+    background: url(../img/svg/ok.svg) no-repeat 90% 3%, url(../img/svg/Ellipse.svg) no-repeat 35% top, #e5e5e5;
+    background-size: 75%;
+  }
+
+  .legalization__greetings::before {
+    height: 95px;
+  }
+
+  .legalization__greetings {
+    min-height: 345px;
+  }
+}
+
+@media (max-width: 480px) {
+  .greetings__container.legalization__greetings.greetings__container--onload {
+    min-height: 285px;
+  }
+
+  .legalization__greetings::before {
+    height: 55px;
+  }
+}
+
+@media (max-width: 320px) {
+  .greetings__container.legalization__greetings.greetings__container--onload {
+    min-height: 260px;
+  }
+  .legalization__greetings-icon {
+    bottom: 10px;
+  }
+}
