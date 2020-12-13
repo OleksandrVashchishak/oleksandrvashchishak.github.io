@@ -1,0 +1,1016 @@
+@media (max-width: 1500px) {
+  .story__img {
+    width: 620px;
+  }
+
+  .story__img-bg {
+    width: 620px;
+    margin-left: -670px;
+  }
+
+  .story__items-block {
+    max-width: 450px;
+  }
+}
+@media (max-width: 1300px) {
+  .animation-about {
+    margin-top: -150px;
+    right: -50px;
+  }
+
+  .animation-about-img {
+    width: 450px;
+    height: 600px;
+  }
+
+  .article__to-top {
+    margin-left: 80%;
+  }
+
+  .story__img {
+    width: 520px;
+  }
+  .story__img-bg {
+    width: 520px;
+    margin-left: -550px;
+    margin-top: 0px;
+  }
+
+  .offices__subtitle {
+font-size: 18px;
+  }
+}
+
+@media (max-width: 1180px) {
+
+.o365-page__left-part .o365-page__left-title {
+  font-size: 40px ;
+
+}
+
+
+  .vacancies {
+    &__sort__close-search {
+      left: -80px;
+    }
+  }
+
+  // .sort__button-vacancies{
+  //   width: 170px;
+  // }
+
+  .story__img {
+    width: 420px;
+    margin-top: 15px;
+  }
+  .story__img-bg {
+    width: 420px;
+    margin-left: -440px;
+    margin-top: 30px;
+  }
+
+  .ou-values__item {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1100px) {
+     .resources__items {
+    width: 90%;
+    margin: 0 auto;
+  }
+    .resources__item {
+      width: 40%;
+    }
+
+  .news__item-title {
+    font-size: 21px;
+  }
+
+
+
+}
+
+@media (max-width: 1075px) {
+.main-cloud{
+  padding-top: 60px;
+}
+}
+@media (max-width: 1050px) {
+
+  
+ .o365-page__form-flex .o365-page__input-select{
+    width: 57%;
+  }
+  .animation-about {
+    margin-top: -40px;
+    right: -50px;
+  }
+
+  .animation-about-img {
+    width: 310px;
+    height: 450px;
+  }
+
+  .news {
+    &__item {
+      margin-top: 30px;
+      width: 47%;
+    }
+  }
+
+  .sort__close-search {
+    right: 110px;
+  }
+
+  .story__img {
+    width: 310px;
+    margin-top: 25px;
+  }
+  .story__img-bg {
+    width: 310px;
+    margin-left: -330px;
+    margin-top: 40px;
+  }
+  .story__items-block {
+    max-width: 400px;
+    margin-left: 40px;
+  }
+
+  .ou-values__item {
+    max-width: 240px;
+  }
+
+  .story__svg {
+    margin-left: -49px;
+  }
+}
+
+@media (max-width: 950px) {
+
+  .o365-page__form-flex .o365-page__input-select{
+    width: 50%;
+  }
+
+  .sort__by-category {
+    width: 110px;
+    &::after {
+      margin-left: 65px;
+    }
+  }
+
+  .vacancies__sort__close-search {
+    display: none;
+  }
+
+  .sort__button-vacancies {
+    width: 96px;
+    height: 46px;
+    background: #2667ff;
+    border-radius: 0px 6px 6px 0px;
+    background-image: url(../../img/our-blog/search_small.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .sort__search-vacancies {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 886px) {
+  .vacancies__item {
+    width: 49%;
+  }
+
+  .flex-container-about-anim {
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .animation-about {
+    margin-top: -130px;
+    position: relative;
+    margin-left: -90px;
+  }
+
+  .could-business {
+    &__container {
+      max-width: 950px;
+      margin: 0 auto;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    &__top-title {
+      font-size: 35px;
+      min-width: 100%;
+    }
+
+    &__top-text {
+      max-width: 100%;
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    &__ul {
+      margin-top: 0px;
+      margin: 0 auto;
+    }
+
+    &__text {
+      margin-top: 30px;
+    }
+
+    &__item-list {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    &__line {
+      border-bottom: 1px solid #e0e0e0;
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    &__table-title {
+      font-size: 26px;
+      line-height: 34px;
+      padding-left: 20px;
+    }
+
+    &__table-button {
+      margin-right: 20px;
+    }
+  }
+
+  .vacancies__join-title {
+    font-size: 35px;
+  }
+  .vacancies__subtitle,
+  .vacancies__join-contact {
+    font-size: 17px;
+  }
+
+  .vacancies__pseude-title {
+    font-size: 20px;
+  }
+
+  .vacancies__list {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 848px) {
+  .o365-page .o365-page__flex-container-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    }
+  
+    .o365-page .o365-page__form{
+      width: 100% ;
+      text-align: center 
+    }
+   
+   .o365-page .o365-page__input{
+        text-align: center ;
+        width: 80% ;
+        padding: 0;
+      }
+    
+   .o365-page .o365-page__form-flex{
+     width: 80%;
+     margin: 0 auto;
+   }
+ 
+   .o365-page__form-flex .o365-page__input-select{
+    width: 60%;
+  }
+
+  .o365-page .o365-page__left-title {
+font-size: 50px;
+margin-top:10px;
+padding-right: 0px; 
+  }
+
+  .o365-page .o365-page__text--blue {
+  margin-top: -130px;
+  }
+
+  .o365-page .o365-page__left-text {
+ 
+font-size: 15px;
+color: #1E1E1E;
+margin-top: 45px;
+margin-bottom: -30px;
+  }
+
+  .o365-page .o365-page__flex-btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .resources__title{
+font-size: 37px;
+  }
+  .resources__items {
+    width: 100%;
+  }
+
+  .story__flex-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .story__items-block {
+    max-width: 400px;
+  }
+  .story__left-block-title {
+    text-align: center;
+  }
+
+  .story__img {
+    width: 410px;
+    margin-top: 25px;
+  }
+  .story__img-bg {
+    width: 410px;
+    margin-left: -430px;
+    margin-top: 40px;
+  }
+
+  .story__title {
+    font-size: 49px;
+    text-align: center;
+  }
+
+  .ou-values {
+    &__flex-container {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item {
+      max-width: 345px;
+      margin-top: 40px;
+      text-align: center;
+    }
+  }
+
+  .about {
+    &__nav-text {
+      text-align: center;
+      font-size: 21px;
+      margin-top: 60px;
+    }
+
+    &__title-bg {
+      font-size: 45px;
+      text-align: center;
+    }
+  }
+
+  .by-from {
+    padding-bottom: 100px;
+    &__text {
+      margin-top: 75px;
+    }
+
+    &__subtitle {
+      text-align: center;
+      font-size: 21px;
+    }
+
+    &__items {
+      margin-top: 7px;
+    }
+
+    &__items-container {
+      margin-top: 55px;
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .about-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+
+@media (max-width: 767px) {
+.resources__items {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: -120px;
+}
+  .resources__item {
+    width: 220px;
+    min-height: 100px;
+    height: auto;
+    margin-top: 70px;
+  }
+
+.vacancies-single__main-title{
+  font-size: 40px;
+  margin-bottom: 0;
+  line-height: 42px;
+}
+
+.o365-page__form-flex .o365-page__input-select{
+  width: 56%;
+}
+
+}
+
+@media (max-width: 690px) {
+
+
+
+  .o365-page .o365-page__input{
+    width: 100% ;
+  }
+
+.o365-page .o365-page__form-flex{
+ width: 100%;
+}
+
+  .o365-page__form-flex .o365-page__input-select{
+    width: 59%;
+  }
+  .article {
+    &__flex-container {
+      margin-top: 50px;
+    }
+
+    &__social-item {
+      width: 55px;
+      height: 55px;
+    }
+
+    &__social-item-img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .news-item-block {
+    .news__item {
+      margin-top: 0px;
+      height: 350px;
+    }
+
+    .news__item-img {
+      height: 170px;
+    }
+
+    .news__data-container {
+      margin-top: -20px;
+    }
+
+    .news__item-title {
+      font-size: 17px;
+    }
+  }
+
+  .margin-article {
+    width: 80px;
+  }
+  .article-blog-bg {
+    height: 300px;
+    .banner-title {
+      font-size: 27px;
+      line-height: 35px;
+    }
+
+    .banner-nav {
+      margin-top: -50px;
+    }
+  }
+
+  .news-item-block {
+    .news__item-title {
+      height: 155px;
+    }
+  }
+
+  .news-item-block-blog {
+    .blog-tag-in {
+      margin: 10px 0 10px 0;
+    }
+    .news__item {
+      height: 420px;
+    }
+  }
+
+  .news {
+    &__item {
+      width: 370px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  }
+
+  .sort__close-search {
+    right: 90px;
+  }
+}
+
+@media (max-width: 600px) {
+.o365-page{
+  .o365-page__pseudo-title {
+    margin: 0;
+    font-size: 17px;
+text-align: center;
+  }
+  .o365-page__flex-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .o365-page__items {
+    margin-top: 140px;
+  }
+  .o365-page__item-text {
+font-size: 15px;
+margin-left: 0px;
+  }
+
+  .o365-page__item-title {
+font-size: 22px;
+margin-left: 0px;
+  }
+
+  .o365-page__first-item, .o365-page__two-item{
+    &:after{
+      content: '';
+      width: 50%;
+      height: 50%;
+      background-size: contain;
+      top: -90px;
+    } 
+  }
+
+  .o365-page__first-item{
+    &:after{
+      content: '';
+      top: -105px;
+
+    } 
+  }
+  .o365-page__big-title{
+font-size: 26px;
+text-align: center;
+  }
+  .o365-page__form-flex .o365-page__input-select{
+    width: 100%;
+  }
+
+ .o365-page__form-flex{
+  flex-direction: column;
+}
+
+.container__select-o365{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.o365-page__form-flex  .select-dropdown {
+  &__button {
+    margin-left: 0;
+    text-align: center;
+width: 100%;
+  }
+
+  &__list {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+.o365-page__left-title{
+  font-size: 40px;
+}
+}
+
+  .animation-about {
+    margin-left: -105px;
+  }
+
+  .vacancies__right-part {
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .sort__tags-block {
+    display: none;
+    margin-bottom: 40px;
+  }
+
+  .sort__tag {
+    display: none;
+  }
+  .mobile-search-blog {
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+  }
+
+  .sort__by-teg-req {
+    display: block;
+  }
+
+  .sort__by-container {
+    width: 100%;
+  }
+
+  .sort__search,
+  .sort__button,
+  .sort__close-search {
+    display: none;
+  }
+
+  .sort__search.mobile-search,
+  .sort__button.mobile-search {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-top: 2px;
+  }
+
+  .sort__search {
+    border-radius: 6px;
+    text-align: center;
+    padding: 0;
+    width: 98%;
+    margin: 0 auto;
+    padding-left: 7px;
+    border-radius: 6px 0px 0px 6px;
+    max-width: 330px;
+  }
+
+  .sort__button {
+    border-radius: 0px 0px 6px 6px;
+    width: 46px;
+    height: 46px;
+    background: #2667ff;
+    border-radius: 0px 6px 6px 0px;
+    background-image: url(../../img/our-blog/search_small.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .sort {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    max-width: 375px;
+    margin: 30px auto 47px auto;
+    width: 100%;
+  }
+
+  .select-dropdown {
+    width: 1000px;
+    &__button--0 {
+      border-radius: 6px;
+      width: 100%;
+    }
+
+    &__button {
+      padding-left: 20px;
+      height: 46px;
+      border: 1px solid #e0e0e0;
+      width: 100%;
+    }
+  }
+
+  .sort__search-vacancies-mobile.mobile-search,
+  .mobile-search.sort__button-vacancies-mobile {
+    margin-top: 55px;
+  }
+
+  .vacancies__sort-container {
+    flex-direction: column;
+  }
+  .vacancies__item-title {
+    font-size: 19px;
+  }
+
+  .vacancies__item-spec {
+    font-size: 13px;
+  }
+  .vacancies__item-data {
+    font-size: 13px;
+  }
+
+  .vacancies__title {
+    font-size: 40px;
+    margin-bottom: -40px;
+  }
+
+  .sort__category-ul {
+    width: 92%;
+    margin-top: 2px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .button-test{
+   width: 92%;
+  }
+
+  .sort__by-category {
+    border-radius: 6px;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #e0e0e0;
+    &::after {
+      right: 20px;
+    }
+  }
+
+  .mobile-search.sort__search-vacancies-mobile {
+    width: 100%;
+    max-width: none;
+  }
+
+  .vacancies__item {
+    width: 100%;
+  }
+
+  .vacancies__join-all {
+    flex-direction: column;
+  }
+
+  .offices__main-title{
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+
+.vacancies-single__input{
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+}
+
+@media (max-width: 480px) {
+
+  .banner-nav__this-blog{
+opacity: 1;
+color: white;
+  }
+
+  .tag-in-container{
+    margin-left: 5px;
+  }
+
+  .sort__category-ul,  .button-test {
+    width: 90.5%;
+  }
+ 
+
+
+  .article__autor-data {
+    margin-bottom: 5px;
+  }
+
+  .article__to-top {
+    display: none;
+  }
+  .article-blog-bg {
+    background: url(../../img/article/article-blog.png);
+    .banner-title {
+      margin-left: -20px;
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    .banner-nav {
+      margin-left: -20px;
+    }
+ 
+  }
+  .vacancies__container .home_tx-t{
+    margin-left: 0px;
+  }
+  .article__social {
+    display: none;
+  }
+  .article__mobile-social {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: -80px;
+  }
+  .article__main-title {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .news-item-block {
+    flex-direction: column;
+    .news__item {
+      width: 80%;
+      margin-top: 40px;
+    }
+  }
+
+  .margin-article {
+    width: 55px;
+  }
+
+  .article {
+    &__social-item {
+      width: 65px;
+      height: 65px;
+    }
+
+    &__social-item-img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .could-business__ul.article {
+    margin-left: 5px;
+    .could-business__list.article {
+      font-size: 14px;
+    }
+  }
+
+  .banner-container-mobile-blog {
+    margin-top: -70px;
+  }
+
+  .our-blog-bg {
+    height: 260px;
+  }
+  .story__img {
+    width: 310px;
+    margin-top: 25px;
+  }
+  .story__img-bg {
+    width: 310px;
+    margin-left: -330px;
+  }
+  .story__title {
+    font-size: 29px;
+    margin-bottom: -30px;
+  }
+
+  .about {
+    &__nav-text {
+      font-size: 20px;
+    }
+
+    &__title-bg {
+      font-size: 25px;
+      line-height: 50px;
+    }
+  }
+
+  .story__text {
+    text-align: center;
+  }
+
+  .about-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .by-from__subtitle {
+    font-size: 19px;
+  }
+
+  .nav-about {
+    text-align: center;
+    margin-bottom: -50px;
+  }
+  .story__items-block {
+    max-width: 300px;
+  }
+
+  .banner-title {
+    font-size: 34px;
+    line-height: 42px;
+    margin-top: 53px;
+  }
+  .could-business {
+    &__top-title {
+      text-align: center;
+    }
+
+    &__table {
+      margin-top: 40px;
+      flex-direction: column;
+      justify-content: center;
+      height: 200px;
+    }
+
+    &__table-button {
+      max-width: 194px;
+      height: 56px;
+      font-size: 15px;
+      margin: 20px 0;
+      &:after {
+        display: none;
+      }
+    }
+
+    &__table-title {
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 28px;
+      padding-right: 20px;
+    }
+  }
+  // .banner-nav {
+  //   margin-left: -20px;
+  // }
+  
+  @media (max-width: 380px) {
+
+   
+
+    .vacancies-single__nav{
+      font-size: 13px;
+    }
+
+    .sort__category-ul,  .button-test {
+      width: 88%;
+    }
+
+    .animation-about-img {
+      width: 250px;
+      height: 380px;
+    }
+
+    .animation-about {
+      margin-left: -105px;
+    }
+  }
+  .story__items-block {
+    max-width: 260px;
+  }
+
+  .news__item-img {
+    height: 180px;
+  }
+
+  .news__item-title {
+    font-size: 19px;
+  }
+  .news__item {
+    height: 450px;
+  }
+  .news-item-block {
+    .news__item {
+      height: 300px;
+    }
+
+    .news__item-img {
+      height: 140px;
+    }
+
+    .news__item-title {
+      margin-bottom: -30px;
+    }
+  }
+
+  .news-item-block-blog {
+    .blog-tag-in {
+      margin: 10px 0 10px 0;
+    }
+    .news__item {
+      height: 350px;
+    }
+  }
+
+  .our-news {
+    height: 410px;
+  }
+}
+
+
+@media (max-width: 350px) {
+.news__item{
+  width: 100% !important;
+}
+}

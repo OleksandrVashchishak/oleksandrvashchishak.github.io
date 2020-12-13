@@ -1,0 +1,105 @@
+.resources {
+
+  &__container {
+    max-width: 1460px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__title {
+    font-weight: bold;
+font-size: 54px;
+line-height: 82px;
+color: #000000;
+  }
+
+  &__items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 45px;
+  }
+
+  &__item {
+    min-height: 240px;
+    width: 25%;
+    margin-left: 70px;
+    margin-top: 30px;
+  } 
+
+  &__item-title {
+    font-weight: bold;
+font-size: 18px;
+line-height: 27px;
+text-transform: uppercase;
+color: #2E2E2E;
+position: relative;
+
+  }
+
+&__item-title-1, &__item-title-2, &__item-title-3, &__item-title-4, &__item-title-5{
+  position: relative;
+  &:before{
+
+    margin-left: -60px;
+    margin-top: -5px;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+&__item-title-1{
+  &:before{
+    background:url(../../img/resources/rosources-icon-1.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+&__item-title-2{
+  &:before{
+    background:url(../../img/resources/rosources-icon-2.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+&__item-title-3{
+  &:before{
+    background:url(../../img/resources/rosources-icon-3.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+&__item-title-4{
+  &:before{
+    background:url(../../img/resources/rosources-icon-4.svg);
+    background-repeat: no-repeat;
+    margin-top: -11px;
+  }
+}
+
+&__item-title-5{
+  &:before{
+    background:url(../../img/resources/rosources-icon-5.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+
+  &__item-text {
+  margin-top: 17px;
+  }
+
+  &__item-link {
+    font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #2667FF;
+  }
+}

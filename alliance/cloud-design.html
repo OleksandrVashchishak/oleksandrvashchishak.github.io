@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alliance-networks</title>
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <!-- npm run watch -->
+  <body>
+    <header>
+      <div class="container_block head-block">
+          <div class="row justify-content-center align-items-center">
+              <div class="logotip col-3">
+               <a href=""><img src="img/logo.png"></a>
+              </div>
+              <div class="col-9">
+                  <ul class="menu-items">
+                      <div class="dropdown">
+                          <li class="more-inf dropbtn">Solutions & Services
+                              <svg width="9" height="5" viewBox="0 0 9 5" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path class="svg-arr" d="M4.5 5L0 0L9 5.04736e-07L4.5 5Z" fill="#0A0908" />
+                              </svg>
+                          </li>
+                          <div class="dropdown-content">
+                              <div>
+                                  <li class="pink-title">Consulting Services</li>
+                                  <li><a href="">Cloud Assessments</a></li>
+                                  <li><a href="">Cloud Design and Delivery</a></li>
+                                  <li><a href="">Cloud Migration and Transition</a></li>
+                              </div>
+                              <div>
+                                  <li class="pink-title">Procurement Advice</li>
+                                  <li><a href="">Procurement Advice</a></li>
+                              </div>
+                              <div>
+                                  <li class="pink-title">Cloud Services</li>
+                                  <li><a href="">Infrastructure as a Service</a></li>
+                                  <li><a href="">Office 365</a></li>
+                                  <li><a href="">Cloud Storage</a></li>
+                                  <li><a href="">Cloud Backup</a></li>
+                                  <li><a href="">Cloud Security</a></li>
+                              </div>
+                              <div>
+                                  <li class="pink-title">Cloud Monitoring and Management</li>
+                                  <li><a href="">Managed Kubernetes Service</a></li>
+                                  <li><a href="">Cloud Native Operations</a></li>
+                                  <li><a href="">Cloud Financial Management</a></li>
+                                  <li><a href="">Cloud Cost Optimization</a></li>
+                                  <li><a href="">Intelligent Cloud Billing</a></li>
+                              </div>
+                              <div>
+                                  <li class="pink-title">Hosting and Connectivity</li>
+                                  <li><a href="">Leverage Spot Instances</a></li>
+                                  <li><a href="">Flexible Reserved Instance Management</a></li>
+                                  <li><a href="">FinOps Services</a></li>
+                              </div>
+                          </div>
+                      </div>
+                      <li class="elem-margin"><a href="">Partners</a></li>
+                      <li><a href="">Resources</a></li>
+                      <li><a href="">News</a></li>
+                      <div class="dropdown">
+                          <li class="more-inf dropbtn">About us
+                              <svg width="9" height="5" viewBox="0 0 9 5" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path class="svg-arr" d="M4.5 5L0 0L9 5.04736e-07L4.5 5Z" fill="#0A0908" />
+                              </svg>
+                          </li>
+                          <div class="dropdown-content second-content">
+                              <div>
+
+                                  <li><a href="">About Us</a></li>
+                                  <li><a href="">Partners</a></li>
+                                  <li><a href="">Our Offices</a></li>
+                              </div>
+
+                          </div>
+                      </div>
+                      <li class="elem-margin">Blog</li>
+                      <li>Careers</li>
+
+
+                  </ul>
+              </div>
+          </div>
+
+          <div class="burger-menu">
+              <a href="" class="burger-menu_button">
+                  <spun class="burger-menu_lines"></spun>
+              </a>
+              <nav class="burger-menu_nav">
+   
+                  <ul class="treemenu">
+                      <li><span class="treeitem burger-dropt">Solutions & Services<svg class="burg-dropt" width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="svg-arr1" d="M4.5 5L0 0L9 5.04736e-07L4.5 5Z" fill="#2E2E2E"/>
+                          </svg>
+                          </span>
+                          <ul class="subtree">
+                              <li><span class="treeitem tree-pink"><svg class="tree-svg" width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M5 4.5L0 9L6.12059e-07 0L5 4.5Z" fill="#FF558D"/>
+                                  </svg>Consulting Services</span>
+                                  <ul class="subtree">
+                                      <li><a href="">Cloud Assessments</a></li>
+                                      <li><a href="">Cloud Design and Delivery</a></li>
+                                      <li><a href="">Cloud Migration and Transition</a></li>
+                                  
+                                  </ul>
+                              </li>
+                              <li><span class="treeitem tree-pink"> <svg class="tree-svg" width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M5 4.5L0 9L6.12059e-07 0L5 4.5Z" fill="#FF558D"/>
+                                  </svg>Procurement Advice</span>
+                                  <ul class="subtree">
+                                      <li><a href="">Procurement Advice</a></li>                                 
+                                  </ul>
+                              </li>
+                              <li><span class="treeitem tree-pink"><svg  class="tree-svg" width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M5 4.5L0 9L6.12059e-07 0L5 4.5Z" fill="#FF558D"/>
+                                  </svg>Cloud Services</span>
+                                  <ul class="subtree">
+                                      <li><a href="">Infrastructure as a Service</a></li>    
+                                      <li><a href="">Office 365</a></li>                                 
+                                      <li><a href="">Cloud Storage</a></li>                                 
+                                      <li><a href="">Cloud Backup</a></li>                                 
+                                      <li><a href="">Cloud Security</a></li>                                 
+                                      <li><a href="">O365</a></li>                                 
+
+                                  </ul>
+                              </li>
+                              <li><span class="treeitem tree-pink"><svg class="tree-svg" class="tree-svg" width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M5 4.5L0 9L6.12059e-07 0L5 4.5Z" fill="#FF558D"/>
+                                  </svg>
+                                  Cloud Monitoring and Management</span>
+                                  <ul class="subtree">
+                                      <li><a href="">Managed Kubernetes Service</a></li>  
+                                      <li><a href=""> Cloud Native Operations</a></li>   
+                                      <li><a href="">Cloud Financial Management </a></li>                                 
+                                      <li><a href=""> Cloud Cost Optimization</a></li>                                 
+                                      <li><a href="">Intelligent Cloud Billing </a></li>                                                                
+                                  </ul>
+                              </li>
+                              <li><span class="treeitem tree-pink"><svg class="tree-svg" width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M5 4.5L0 9L6.12059e-07 0L5 4.5Z" fill="#FF558D"/>
+                                  </svg>
+                                  Hosting and Connectivity</span>
+                                  <ul class="subtree">
+                                      <li><a href="">Leverage Spot Instances</a></li>  
+                                      <li><a href="">Flexible Reserved Instance Management</a></li>   
+                                      <li><a href="">FinOps Services</a></li>                                                                                             
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+                 <ul> <li><a href="">Partners</a></li></ul>
+                  <ul><li><a href="">Resources</a></li></ul>
+                    <ul>     <li><a href="">News</a></li></ul>
+                  <ul class="treemenu">
+                      <li><span class="treeitem burger-dropt-about">About us<svg class="burg-dropt2" width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="svg-arr2" d="M4.5 5L0 0L9 5.04736e-07L4.5 5Z" fill="#2E2E2E"/>
+                          </svg>
+                          </span>
+                          <ul class="subtree">
+                              <li><a href="">About Us</a></li>
+                              <li><a href="">Partners</a></li>
+                              <li><a href="">Our Offices</a></li>    
+                          </ul>
+                      </li>
+                  </ul>
+                  <ul><li><a href="">Blog</a></li></ul>
+                  <ul><li><a href="">Careers</a></li></ul>
+                  
+              </nav>
+              <div class="burger-menu_overlay"></div>
+          </div>
+      </div>
+  </header>
+    <main class="main-cloud">
+    <div class="banner-bg">
+      <div class="banner-container">
+        <nav class="banner-nav"> <a class="banner-nav__home cloud__nav-home"> Home &nbsp; / &nbsp;</a> <a href="#" class="banner-nav__this-page cloud__nav"> Cloud Design and Delivery</a></nav>
+        <h3 class="banner-title">Cloud Design and Delivery</h3>
+      </div>
+    </div>
+<div class="cloud-line">
+    <section class="could-business">
+      <div class="could-business__container">
+        <div class="could-business-flex-container">
+          <h3 class="could-business__top-title">
+            A Tailored Cloud to Suit Your Business
+          </h3>
+          <p class="could-business__top-text">
+            The design of your cloud is an important first step during the
+            transition to a cloud computing system and should never be
+            overlooked. At this stage, critical cloud decisions are made –
+            decisions which will determine the level of success you achieve for
+            your new environment. There are a ton of choices to be made and a
+            wide variety of questions that need to be answered before the
+            migration process begins. Some of the more important of these are:
+          </p>
+        </div>
+        <div class="could-business__line"></div>
+        <div class="could-business-flex-container">
+          <ul class="could-business__ul">
+            <li class="could-business__list">
+              Which cloud provider suits your business?
+            </li>
+            <li class="could-business__list">
+              Which applications and services do you need a provider for?
+            </li>
+            <li class="could-business__list">
+              What is your optimal avenue for accessing and connecting to your
+              cloud?
+            </li>
+            <li class="could-business__list">
+              How will your cloud integrate with your other business platforms?
+            </li>
+            <li class="could-business__list">
+              What is your data recovery and protection plan?
+            </li>
+          </ul>
+          <ul class="could-business__ul">
+            <li class="could-business__list">
+              How will you approach data security?
+            </li>
+            <li class="could-business__list">
+              How will you approach data governance?
+            </li>
+            <li class="could-business__list">
+          
+              How do you plan on migrating to the cloud?
+            </li>
+            <li class="could-business__list">
+              What would you like to manage, and do you have the right skills to
+              do so?
+            </li>
+          </ul>
+        </div>
+        <div class="could-business__line"></div>
+        <p class="could-business__text">
+          All of these questions are difficult to answer, and it’s important not
+          to rush through this part of the process. Getting it right in this
+          stage is key to getting it right during the actual migration.
+        </p>
+
+        <h4 class="could-business__title-img">
+          Meeting the Customer Wherever they are in their Journey
+        </h4>
+        <img
+          src="img/cloud-design/cloud-design-first-img.png"
+          alt=""
+          class="could-business__first-img"
+        />
+        <p class="could-business__text text-two-block" >
+          We’ll help you answer all of these crucial questions and make the
+          right strategic decisions so that we can turn your visions into a
+          production-ready reality. We’ll work with you every step of the way so
+          that all of your objectives and strategies are met. Our design experts
+          will develop a real-world design based on the analysis of your
+          business operations and goals.
+        </p>
+        <p class="could-business__text text-two-block">
+          Simplifying the design process for your cloud migration is essential
+          for a stress-and-risk- free transition. We’ll guide you through the
+          decision-making process so that you make informed decisions to build
+          the optimal cloud environment that works for you now and in the
+          future.
+        </p>
+        <div class="could-business__line"></div>
+        <div class="could-business-flex-container  cloud-item-container">
+          <div class="could-business__item-list">
+            <h5 class="could-business__title-list">Technical Assessment</h5>
+            <p class="could-business__text-list">
+              We’ll conduct a technical review that will support the foundation
+              of the design, as well as highlight key integration touch points
+              including anti-virus, backup, and active directory.
+            </p>
+          </div>
+          <div class="could-business__item-list">
+            <h5 class="could-business__title-list">Solution Design</h5>
+            <p class="could-business__text-list">
+              Comprehensive end-to-end design as well as a transition strategy
+              for cloud or Office 365. This includes operational processes,
+              proof of concept definition, security and backup, and more.
+            </p>
+          </div>
+          <div class="could-business__item-list">
+            <h5 class="could-business__title-list">Business Case</h5>
+            <p class="could-business__text-list">
+              We review any license requirements as well as investments. This
+              service can be extended so that it includes a commercial
+              review/TCO as well as a full business case.
+            </p>
+          </div>
+          <div class="could-business__item-list">
+            <h5 class="could-business__title-list">Procurement and Finance</h5>
+            <p class="could-business__text-list">
+              Throughout the entire process, we work alongside you to ensure the
+              design work and migration is successfully completed. Our services
+              include proof of concepts, project management, planning, user
+              acceptance testing, along with the actual implementation of the
+              migration process.
+            </p>
+          </div>
+          <div class="could-business__item-list">
+            <h5 class="could-business__title-list">Implementation</h5>
+            <p class="could-business__text-list">
+              We review any license requirements as well as investments. This
+              service can be extended so that it includes a commercial
+              review/TCO as well as a full business case.
+            </p>
+          </div>
+          <div class="could-business__item-list">
+            <h5 class="could-business__title-list">
+              Data Protection and Security
+            </h5>
+            <p class="could-business__text-list">
+              Protecting and securing your data is one of the most important
+              aspects of your cloud service. We’ll design heightened security,
+              protection, and backup services that will complement your new or
+              existing cloud, Office 365, or SaaS services.
+              
+            </p>
+          </div>
+        </div>
+        <div class="could-business__line"></div>
+        <div class="could-business-flex-container">
+          <h3 class="could-business__top-title">
+            Flexibility is Key in Cloud Design
+          </h3>
+          <p class="could-business__top-text">
+            We know that every business has unique needs and a
+            “one-size-fits-all” approach just won’t cut it. Our cloud
+            assessments allow us to design a migration approach and cloud
+            functionality that works for your business, staff, and budget. From
+            your data protection to your migration timeline, every part of the
+            process will be created with you in mind, tailored to your
+            specifications and preferences.
+          </p>
+        </div>
+        <h4 class="could-business__title-img">
+          Accelerate the journey to Hybrid, Multicloud
+        </h4>
+        <img
+          src="img/cloud-design/cloud-design-two-img.png"
+          alt=""
+          class="could-business__first-img"
+        />
+
+        <div class="could-business-flex-container">
+          <h3 class="could-business__top-title">
+            A Hybrid Cloud May Be The Way To Go
+          </h3>
+          <p class="could-business__top-text">
+            Modern business IT landscapes are complex and multi-functional. It
+            may not be feasible to attempt to plan out a single cloud design and
+            expect to cover all your bases. You need a platform that is able to
+            support all of your applications and potentially shifting workloads.
+            Our approach accounts for all possibilities and helps you better
+            handle your regulatory, governance, and compliance needs. Our
+            approach also factors in where to place your data for optimal
+            control, as well as how to secure and protect that data once it’s
+            placed.
+          </p>
+        </div>
+
+        <p class="could-business__text">
+          A hybrid cloud design allows us to consider all factors and options at
+          once, ensuring that all of your critical applications and changing
+          workloads are placed on the right platform, in the right location, at
+          the right price. Whether you opt for a public, hosted, or hybrid
+          cloud, we’ll make sure it works fo
+        </p>
+
+        <div class="could-business__table">
+          <h3 class="could-business__table-title">
+            Building a Better, Faster Future Together
+          </h3>
+          <a href="#" class="could-business__table-button">Working together</a>
+        </div>
+
+        <div class="could-business-flex-container">
+          <h3 class="could-business__top-title">
+            Connectivity is Crucial
+          </h3>
+          <div class="could-business__container-in">
+          <p class="could-business__top-text">
+            When searching for the perfect cloud provider, you have to consider
+            more than their features or price tag. It’s important to factor in
+            your need for seamless connectivity to your ecosystem of customers,
+            end-users, and providers.
+          </p>
+          <p class="could-business__top-text could-business__top-text-two">
+            We make it easy to connect this ecosystem to your cloud by taking into account how your current applications will be accessed and used by your customers and other end-users. We’ll address bandwidth and latency deliberations and consider interoperability
+            between hosted, public, and on-premise cloud locations.
+            </p>
+          </div>
+        </div>
+
+        <p class="could-business__text">
+          We’ll also take a look at all of your options for connection and guide you in choosing your best option, whether that be internet, dedicated capacity, or a private cloud provider’s specific connection. We will address your real and potential capacity requirements, review your current capability, and ensure your connection goes smoothly all across the board.
+
+        </p>
+
+        <p class="could-business__text">
+          We’re looking forward to helping you select a provider that offers low latency connectivity, optimal performance, great visibility, and of course, a great price.
+        </p>
+      </div>
+      <div class="preloader-bg" id="preloaderMain">
+        <div class="preloader-main">
+        <div class="loader-item style4" >
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+        </div>  
+        </div>
+        </div>
+    </section>
+  </div>
+</main>
+<footer class="footer-bg-white footer-bg-black">
+  <svg class="footer-svg anim-svg1" width="12" height="12" viewBox="0 0 12 12" fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <circle class="anim-svg1" cx="6" cy="6" r="6" fill="#6EDED3" />
+</svg>
+<svg class="footer-svg anim-svg2" width="19" height="19" viewBox="0 0 19 19" fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <g filter="url(#filter01_f)">
+      <path
+          d="M7.4641 6.00002C9.37727 4.89545 11.8236 5.55095 12.9282 7.46412C14.0328 9.37729 13.3773 11.8237 11.4641 12.9282C9.55093 14.0328 7.10457 13.3773 6 11.4641C4.89543 9.55095 5.55093 7.10459 7.4641 6.00002Z"
+          fill="#2667FF" />
+  </g>
+  <defs>
+      <filter id="filter01_f" x="0" y="0" width="18.9282" height="18.9282" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur" />
+      </filter>
+  </defs>
+</svg>
+<svg class="footer-svg anim-svg3" width="37" height="37" viewBox="0 0 37 37" fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+      d="M11.4757 6.62524C17.8134 2.96617 25.9174 5.13762 29.5765 11.4753C33.2356 17.813 31.0641 25.917 24.7264 29.5761C18.3887 33.2352 10.2847 31.0637 6.62564 24.726C2.96657 18.3883 5.13802 10.2843 11.4757 6.62524Z"
+      fill="#8AC3FC" fill-opacity="0.45" />
+</svg>
+<svg class="footer-svg anim-svg4" width="8" height="8" viewBox="0 0 8 8" fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <circle cx="4" cy="4" r="4" fill="#FF558D" />
+</svg>
+<svg class="footer-svg anim-svg5" width="35" height="35" viewBox="0 0 35 35" fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+      d="M10.8253 6.25C16.804 2.79822 24.4489 4.84666 27.9006 10.8253C31.3524 16.804 29.304 24.4489 23.3253 27.9006C17.3467 31.3524 9.70178 29.304 6.25 23.3253C2.79822 17.3467 4.84666 9.70178 10.8253 6.25Z"
+      fill="#FFEAF1" />
+</svg>
+  <div class="container_block">
+      <div class="footer-box">
+          <div class="footer-logo">
+            <img src="img/logo-b.png" alt="">
+              <div class="general-text">
+                  <button class="btn-general">Working together</button>
+                  <div class="under-btn"></div>
+              </div>
+          </div>
+          <div class="footer-menu">
+              <h4>Company</h4>
+              <nav class="burger-menu_nav footer-menu_nav">
+                  <a class="burger-dropt-d">Solutions & Services <svg class="burg-dropt" width="9" height="5"
+                         viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="svg-arr1" d="M4.5 5L0 0L9 5.04736e-07L4.5 5Z" fill="#FFFFFF" />
+                      </svg>
+                  </a>
+                  <div class="burg-dropt_content">
+
+                      <li class="burg-item1">
+                          <svg class="svg1" width="5" height="9" viewBox="0 0 5 9" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M5 4.5L0 9L6.12059e-07 0L5 4.5Z" fill="#FF558D" />
+                          </svg>
+                          Consulting Services
+                      </li>
+                      <ul class="dropt_dropdown dr1">
+                          <li><a href="">Cloud Assessments</a> </li>
+                          <li><a href="">Cloud Design and Delivery</a> </li>
+                          <li><a href="">Cloud Migration and Transition</a></li>
+                      </ul>
+
+                      <li class="burg-item2">
+                          <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M5 4.5L0 9L6.12059e-07 0L5 4.5Z" fill="#FF558D" />
+                          </svg>
+                          Procurement Advice</li>
+                      <ul class="dropt_dropdown dr2">
+                          <li> <a href="">Procurement Advice</a> </li>
+                      </ul>
+
+                      <li class="burg-item3"><svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M5 4.5L0 9L6.12059e-07 0L5 4.5Z" fill="#FF558D" />
+                          </svg>
+                          Cloud Services</li>
+                      <ul class="dropt_dropdown dr3">
+                          <li> <a href="">Infrastructure as a Service</a> </li>
+                          <li><a href="">Office 365</a> </li>
+                          <li><a href="">Cloud Storage</a></li>
+                          <li><a href="">Cloud Backup</a></li>
+                          <li><a href="">Cloud Securitye</a></li>
+                          <li><a href="">O365</a></li>
+                      </ul>
+
+                      <li class="burg-item4"><svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M5 4.5L0 9L6.12059e-07 0L5 4.5Z" fill="#FF558D" />
+                          </svg>
+                          Cloud Monitoring and Management</li>
+                      <ul class="dropt_dropdown dr4">
+                          <li> <a href="">Managed Kubernetes Service</a> </li>
+                          <li><a href="">Cloud Native Operations</a> </li>
+                          <li><a href="">Cloud Financial Management</a></li>
+                          <li><a href="">Cloud Cost Optimization</a></li>
+                          <li><a href="">Intelligent Cloud Billing</a></li>
+
+                      </ul>
+
+                      <li class="burg-item5"><svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M5 4.5L0 9L6.12059e-07 0L5 4.5Z" fill="#FF558D" />
+                          </svg>
+                          Hosting and Connectivity</li>
+                      <ul class="dropt_dropdown dr5">
+                          <li> <a href="">Leverage Spot Instances</a> </li>
+                          <li><a href="">Flexible Reserved Instance Management</a> </li>
+                          <li><a href="">FinOps Services</a></li>
+                      </ul>
+
+                  </div>
+                  <a href="#" class="burger-menu_link footer-elem">Resources</a>
+                  <a href="#" class="burger-menu_link footer-elem">News</a>
+                  <a class="burger-dropt-about-d footer-elem">About us <svg class="burg-dropt2" width="9" height="5"
+                          viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="svg-arr2" d="M4.5 5L0 0L9 5.04736e-07L4.5 5Z" fill="#FFFFFF" />
+                      </svg>
+                  </a>
+                  <div class="burg-dropt_content2">
+                      <ul class="dropt-about">
+                          <li> <a href="">Cloud Assessments</a> </li>
+                          <li><a href="">Cloud Design and Delivery</a> </li>
+                          <li><a href="">Cloud Migration and Transition</a></li>
+                      </ul>
+                  </div>
+                  <a href="#" class="burger-menu_link footer-elem">Blog</a>
+                  <a href="#" class="burger-menu_link footer-elem">Careers</a>
+              </nav>
+          </div>
+          <div class="footer-contact">
+              <h4>Contacts Us</h4>
+              <div><a href="">Alianceemail@com</a></div>
+              <div><a href="">+65 1234 5678</a></div>
+          </div>
+          <div class="block-subscribe">
+              <h4>Subscribe</h4>
+              <input type="email" placeholder="Enter your email">
+              <button>
+                  <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="mask05" mask-type="alpha" maskUnits="userSpaceOnUse" x="7" y="0" width="24"
+                          height="24">
+                          <path
+                              d="M19 23.5C12.6487 23.5 7.5 18.3513 7.5 12C7.5 5.64872 12.6487 0.499999 19 0.499999C25.3513 0.5 30.5 5.64873 30.5 12C30.5 18.3513 25.3513 23.5 19 23.5Z"
+                              stroke="black" />
+                      </mask>
+                      <g mask="url(#mask05)">
+                          <rect width="26" height="23" transform="matrix(-4.37114e-08 1 1 4.37114e-08 9 -1)"
+                              fill="#2667FF" />
+                      </g>
+                      <path
+                          d="M22.3536 12.3536C22.5488 12.1583 22.5488 11.8417 22.3536 11.6464L19.1716 8.46447C18.9763 8.2692 18.6597 8.2692 18.4645 8.46447C18.2692 8.65973 18.2692 8.97631 18.4645 9.17157L21.2929 12L18.4645 14.8284C18.2692 15.0237 18.2692 15.3403 18.4645 15.5355C18.6597 15.7308 18.9763 15.7308 19.1716 15.5355L22.3536 12.3536ZM0 12.5L22 12.5L22 11.5L0 11.5L0 12.5Z"
+                          fill="#2667FF" />
+                  </svg>
+              </button>
+          </div>
+      </div>
+      <div class="footer-copyright">
+          <div>Copyright © 2020 Alliance Networks</div>
+          <div class="footer-privacy">
+              <div><a href="">Terms & Conditions</a></div>
+             <div><a href="">Privacy Policy</a></div>
+          </div>
+        
+      </div>
+  </div>
+</footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.excursion {
+    padding-top: 100px;
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        text-align: center;
+        color: var(--orange-color);
+        margin-bottom: 64px;
+        padding-bottom: 34px;
+    }
+    &__descr {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 108px;
+    }
+    &__block {
+        width: 48%;
+    }
+    &__text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        line-height: 28px;
+        color: #333333;
+        margin-bottom: 30px;
+    }
+
+    &__nextstep {
+        display: none;
+    }
+}
+
+.map {
+    padding-bottom: 108px;
+}
