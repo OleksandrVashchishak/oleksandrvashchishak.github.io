@@ -14,6 +14,11 @@
   </head>
 
   <body>
+    
+
+
+
+
     <div class="header__container">
       <header class="header">
         <div class="header__logo">
@@ -22,6 +27,21 @@
           </a>
         </div>
 
+          <div class="burger__container">
+            <div class="burger__top"></div>
+            <div class="burger__center"></div>
+            <div class="burger__bot"></div>
+          </div>
+
+
+
+<div class="page-section-change" href='.page-section-1' >1 </div>
+<div class="page-section-change" href='.page-section-2'>2 </div>
+<div class="page-section-change" href='.page-section-3'>3 </div>
+<div class="page-section-change" href='.page-section-4'>4 </div>
+<div class="page-section-change" href='.page-section-5'>5 </div>
+<div class="page-section-change" href='.page-section-6'>6 </div>
+<div class="page-section-change" href='.page-section-7'>7 </div>
         <ul class="header__menu">
           <li class="header_list">
             <a href="#" class="header_link">Digital Marketing</a>
@@ -30,17 +50,19 @@
           <li class="header_list">
             <a href="#" class="header_link">Web Site Design / Development</a>
           </li>
-          <li class="header__burger-closed"></li>
-          <li class="header__burger-open"></li>
-
-          <a href="#" class="header_list header_list-button">
-            <li class="header_link header_link-button">Contact Us</li></a
+          <li href="#" class="header_list header_list-button">
+            <a class="header_link header_link-button">Contact Us</a></li
           >
         </ul>
       </header>
     </div>
-    <div class="sub-header__bg">
+    <div class="sub-header__bg page-section-1" >
+      <img src="img/paper-air.svg" alt="" class="paper-air">
+
       <div class="container container-relative">
+        <div class="observer-scroll-page">
+          <span class="observer-scroll-thumb">  01/07 </span>
+        </div>
         <div class="sub-header">
           <h3 class="sub-header__title">
             <span class="sub-header__title--color"> WE GET YOU</span> Agency
@@ -68,7 +90,7 @@
         />
       </div>
     </div>
-    <div class="about__bg">
+    <div class="about__bg page-section-2">
       <div class="container">
         <p class="about__discover">Discover</p>
         <div class="about__flex-cont">
@@ -88,7 +110,7 @@
     </div>
 
     <div class="for-visible-first-block" id="first-block"></div>
-    <div class="sticky__bg">
+    <div class="sticky__bg " >
       <div class="container">
         <div class="sticky">
           <div class="sticky__fixed">
@@ -143,15 +165,17 @@
             </div>
           </div>
           <div class="sticky__scroll">
-            <div class="sticky__scroll-item">
+            <div class="sticky__scroll-item page-section-3">
               <img
                 src="img/first-block-img.png"
                 alt=""
                 class="sticky__scroll-item-img"
+          
               />
+              <img src="img/req-for-img-1.svg" alt="" class="sticky__scroll-anim-img sticky__scroll-anim-img-1">
             </div>
 
-            <div class="sticky__mobile-item">
+            <div class="sticky__mobile-item ">
               <p class="sticky__service">Our Services</p>
               <h3 class="sticky__title">Digital Marketing</h3>
               <p class="sticky__text sticky__text-first">
@@ -166,12 +190,15 @@
               <a href="#" class="sticky__link">Read More</a>
             </div>
 
-            <div class="sticky__scroll-item" id="two-block">
+            <div class="sticky__scroll-item page-section-4" id="two-block">
               <img
                 src="img/two-block-img.png"
                 alt=""
                 class="sticky__scroll-item-img"
+             
               />
+              <img src="img/req-for-img-2.svg" alt="" class="sticky__scroll-anim-img sticky__scroll-anim-img-2">
+              
             </div>
 
             <div class="sticky__mobile-item">
@@ -189,12 +216,15 @@
               <a href="#" class="sticky__link">Read More</a>
             </div>
 
-            <div class="sticky__scroll-item" id="three-block">
+            <div class="sticky__scroll-item page-section-5" id="three-block">
               <img
                 src="img/three-block-img.png"
                 alt=""
                 class="sticky__scroll-item-img"
+                 
               />
+              <img src="img/req-for-img-3.svg" alt="" class="sticky__scroll-anim-img sticky__scroll-anim-img-3">
+
             </div>
 
             <div class="sticky__mobile-item">
@@ -216,7 +246,7 @@
       </div>
     </div>
 
-    <div class="partners__bg active">
+    <div class="partners__bg active page-section-6" >
       <div class="container partners__container">
         <h5 class="partners__less-title">CLIENTS</h5>
         <h3 class="partners__title">We've had the pleasure of working with</h3>
@@ -254,7 +284,7 @@
       </div>
     </div>
     <footer>
-    <div class="footer__bg">
+    <div class="footer__bg page-section-7"  >
       <div class="container footer__container">
         <div class="footer">
           <div class="footer__left-part">
@@ -341,13 +371,13 @@
                 receive emails that will HELP me run my business, improve my
                 marketing and take new ground!</label
               >
-              <label class="footer__label footer__label-bot"
+              <label class="footer__label footer__label-bot" 
                 ><input type="checkbox" class="footer__checkbox" />I want to be
                 kept in the loop about Ronin workshops, seminars and
                 events.</label
               >
 
-              <button class="header_list header_list-button footer__button">
+              <button class="header_list header_list-button footer__button" type="button" onclick="getAir()">
                 <li class="header_link header_link-button">
                   Book a free consult
                 </li>

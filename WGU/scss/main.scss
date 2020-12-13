@@ -370,6 +370,11 @@ a{
   color: inherit;
 }
 
+
+html{
+  overflow-x: hidden;
+}
+
 button{
   cursor: pointer;
 }
@@ -377,6 +382,12 @@ button{
 li{
   list-style: none;
 }
+
+
+.sticky__scroll-item{
+  overflow: hidden;
+}
+
 
 .container-relative{
   position: relative;
