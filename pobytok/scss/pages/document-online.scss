@@ -1,0 +1,399 @@
+.personal__container-document{
+  .personal__real-table-cont{
+    margin-top: 30px;
+  }
+
+  .personal__real-col-edi,.personal__real-col-edit{
+    flex: 0 0 20%;
+  }
+  .personal__real-col-nam, .personal__real-col-name{
+    flex: 0 0 45%;
+  }
+  .personal__real-col-ca, .personal__real-col-cat{
+    flex: 0 0 30%;
+  }
+}
+
+.document {
+  &__button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+
+  &__button-start {
+    margin: 10px;
+    max-width: 433px;
+    width: 100%;
+background: #063453;
+border-radius: 8px;
+height: 55px;
+display: flex;
+justify-content: center;
+align-items: center;
+&:hover .document__button-text{
+  color: #77CCF9;
+}
+&:hover  svg path{
+  fill: #77CCF9;
+}
+  }
+
+  &__button-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 18px;
+font-family: "Cuprum-Bold";
+color: #FFFFFF;
+transition: all .3s ease-out;
+  }
+
+  &__button-svg {
+    margin-right: 20px;
+    svg path{
+      transition: all .3s ease-out;
+      fill: #FFF;
+    }
+  }
+}
+
+
+
+.personal__container-doc-generation{
+  .legalization-documents {
+background: #fff;
+.container{
+  width: 100%;
+  padding: 50px 0;
+
+}
+  }
+  .legalization-documents__list{
+    width: 100%;
+  }
+}
+
+
+
+.documents__add-new-file {
+.df-cont{
+  display: flex;
+  align-items: center;
+}
+.personal__form-text {
+  max-width: 370px;
+}
+
+.personal__input {
+margin-bottom: 0;
+margin-right: 20px;
+}
+
+.personal__button {
+margin-top: 0px;
+}
+
+.personal__button-last {
+  margin-top: 30px;
+  }
+
+.personal__button-add-white {
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+      margin-right: 10px;
+    }
+  }
+  svg path{
+    transition: all .3s ease-out;
+    fill: #FFF;
+  }
+  &:hover svg path{
+    fill: #063453;
+  }
+}
+}
+
+.doc__button-container{
+opacity: 0;
+display: none;
+margin-top: 10px;
+margin-bottom: 10px;
+justify-content: center;
+align-items: center;
+.doc__button{
+  font-size: 18px;
+
+max-width: 226px;
+height: 58px;
+width: 100%;
+border: 2px solid #063453;
+border-radius: 8px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #063453;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: transparent;
+  font-family: "Cuprum-Bold";
+  text-transform: uppercase;
+  &:hover{
+    transition: all .3s ease-out;
+    background-color: #DFE5EC;
+  }
+}
+}
+
+.doc__button-container.active{
+  display: flex;
+opacity: 1;
+}
+
+.personal__button.personal__button-add-realty.personal__button-add-white{
+margin-top: 0 !important;
+}
+
+
+.personal-data__btn{
+  display: block;
+  max-width: 277px;
+  width: 100%;
+height: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 14px;
+line-height: 18px;
+font-family: "Cuprum-Bold";
+border-radius: 8px;
+transition: all .3s ease-out;
+margin-left: 10px;
+margin-top: 0;
+border: none;
+span svg path{
+  transition: all .3s ease-out;
+}
+
+span{
+  margin-right: 8px;
+  transition: all .3s ease-out;
+}
+}
+
+
+.personal-data__btn-save{
+  background: #00AB5B;
+  margin-left: 20px;
+  color: #FFFFFF;
+  &:hover span svg path{
+    fill: #ADD9F4;
+  }
+  &:hover{
+    color: #ADD9F4;
+  }
+}
+
+.personal-data__btn-upload.personal-data__btn{
+  
+  border: 1px solid #00AB5B;
+  background: #fff;
+  color: #00AB5B;
+  &:hover span svg path{
+    fill: #ADD9F4;
+  }
+  &:hover{
+    color: rgb(6, 52, 83);
+    border: 1px solid rgb(6, 52, 83);
+  }
+  &:hover span svg path{
+    fill: rgb(6, 52, 83);
+  }
+}
+
+.personal-data__btn-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.personal-data__cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+width: 60%;
+}
+
+
+
+
+
+.personal-data {
+
+  &__container-fb {
+    position: relative;
+z-index: 2;
+ background: #F2F2F2;
+  }
+
+  &__bg{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #fff;
+  }
+
+  &__main-bg{
+    box-shadow: 0px 0px 30px rgba(30, 30, 30, 0.1);
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  &__container__white {
+    background: #fff;
+  }
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__btn-document{
+padding-top: 50px;
+padding-bottom: 50px;
+  }
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__up-text {
+    margin-top: 0;
+    line-height: 30px;
+color: #263238;
+font-family: "Khula-Bold", "Arial", sans-serif;
+font-weight: bold;
+padding-bottom: 50px;
+padding-top: 50px;
+font-size: 16px;
+  }
+
+
+
+  &__btn-back {
+    max-width: 180px;
+    span{
+      margin-top: 4px;
+    }
+  }
+
+  
+
+  &__next-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  &__next-text {
+    width: 7%;
+    font-size: 14px;
+line-height: 18px;
+color: #00B0F3;
+font-family: "Cuprum-Bold";
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 5px;
+padding-right: 5px;
+&:first-child{
+justify-content: flex-start;
+}
+&:last-child{
+  justify-content: flex-end;
+}
+&:hover{
+  color: #77CCF9;
+  transition: all .3s ease-out;
+}
+  }
+
+  &__next-line {
+    width: 100%;
+height: 1px;
+background: #ADD9F4;;
+  }
+}
+
+
+
+.instruction {
+background: #e9edef;
+padding-top: 40px;
+padding-bottom: 40px;
+
+
+
+  &__container {
+    box-shadow: 0px 0px 30px rgba(30, 30, 30, 0.1);
+    max-width: 1506px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #FFFFFF;
+  }
+
+  &__border-text {
+    font-family: "Khula-Regular", "Arial", sans-serif;
+font-size: 14px;
+line-height: 24px;
+display: flex;
+align-items: center;
+color: #263238;
+border: 1px solid #DDDDDD;
+padding: 10px;
+margin-bottom: 10px;
+  }
+
+  h1{
+    font-family: "Khula-Bold", "Arial", sans-serif;
+    font-weight: bold;
+font-size: 24px;
+line-height: 36px;
+color: #263238;
+margin-top: 30px;
+margin-bottom: 20px;
+  }
+
+  h3{
+    margin-top: 20px;
+    font-family: "Khula-Bold", "Arial", sans-serif;
+    font-weight: bold;
+font-size: 16px;
+line-height: 30px;
+color: #263238;
+margin-bottom: 0;
+  }
+  p{
+    margin-top: 0px;
+
+    font-family: "Khula-Regular", "Arial", sans-serif;
+font-size: 16px;
+line-height: 30px;
+color: #263238;
+  }
+}

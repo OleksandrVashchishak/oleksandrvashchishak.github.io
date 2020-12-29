@@ -1,0 +1,596 @@
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700&display=swap");
+
+
+
+.finance__main .greetings__container--onload {
+
+  background-size: 50%, 65%;
+}
+
+.finance__main {
+
+  background: url("../img/png/finance-main.png") no-repeat;
+
+  background-size: 100%; 
+  background-attachment: fixed;
+  box-shadow: inset 0 -150px #063453;
+  background-position: 0px 100px;
+}
+.finance__item-br{
+  display: none;
+}
+@media (max-width: 580px) {
+  .finance__item-br{
+    display: block;
+  }
+  .finance__main {
+    box-shadow: none;
+    background: url("../img/png/finance-main.png") no-repeat center 0%;
+    background-size: contain;
+  }
+}
+
+.finance__main .greetings__container {
+  position: relative;
+  z-index: -1;
+}
+
+
+.finance {
+
+  &__nav{
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #464646;
+    max-width: 1540px;
+    margin: 0 auto;
+    top: 110px;
+    left: 200px;
+    z-index: 10;
+
+  }
+ 
+  &__link {
+ 
+text-transform: uppercase;
+color: #464646;
+  }
+
+  &__dot {
+    display: inline-block;
+position: relative;
+margin-left: 8px;
+margin-right: 13px;
+&::before{
+  position: absolute;
+  content: '';
+  width: 4px;
+height: 4px;
+background: #464646;
+border-radius: 50%;
+margin-top: -7px;
+}
+  }
+  &__this{
+    color: #7B8A99;
+    text-transform: uppercase;
+  }
+}
+
+
+
+.finance {
+
+  &__category {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    margin-top: 100px;
+  }
+
+  &__item-cat {
+    transform: translateY(-100px);
+  }
+  &__title {
+    font-family: "Khula-Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 49px;
+    line-height: 70px;
+    max-width: 300px;
+    color: #3d3d3d;
+  }
+
+  &__subtitle {
+    max-width: 300px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #464646;
+  }
+
+  &__item-img {
+    transition: all 0.5s ease-out;
+  }
+
+  &__item-text {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: #063453;
+  }
+  &__item-cont-img {
+    width: 130px;
+    height: 130px;
+    background: #acd9f3;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    &:hover .finance__item-img {
+      transform: scale(1.1);
+    }
+    
+  }
+}
+
+.finance-main {
+  padding-bottom: 100px;
+  &__title {
+    font-family: "Khula-Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 49px;
+    text-align: center;
+    color: #3d3d3d;
+    margin-top: -20px;
+  }
+
+  &__line {
+    width: 86px;
+    height: 3px;
+    background: #add9f3;
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-bottom: 100px;
+  }
+
+  &__flex-cont {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text-cont {
+    max-width: 50%;
+    padding-right: 50px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+
+
+.finance-open__lp-item .finance-open__sticer-cont{
+  top: 33px;
+}
+
+
+.finance-open {
+  display: flex;
+  justify-content: space-between;
+
+		&__left-part {
+      width: 77%;
+      margin-right: 30px;
+		}
+
+		&__lp-item {
+      position: relative;
+   margin-top: 30px;
+   min-height: 250px;
+      background: #FFFFFF;
+box-shadow: 0px 0px 30px rgba(30, 30, 30, 0.1);
+display: flex;
+justify-content: space-between;
+padding-bottom: 20px;
+padding-right: 10px;
+&:hover .finance-open__img-block{
+  transform: scale(1.1);
+}
+
+  &:hover .finance-open__tb-title{
+    color: #03A9F4;
+  }
+ 
+		}
+
+		&__img-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 40%;
+      margin-top: 20px;
+      transition: all .5s ease-out;
+      img{
+        width: 60%;
+      }
+		}
+
+		&__text-block {
+      width: 60%;
+      margin-top: 20px;
+		}
+
+		&__tb-title {
+      font-size: 20px;
+line-height: 30px;
+text-transform: uppercase;
+color: #063453;
+font-style: normal;
+font-weight: 500;
+transition: all 0.4s ease-out; 
+
+		}
+
+	
+		&__tb-list {
+      font-family: "Cuprum-Bold", "Arial", sans-serif;
+      font-weight: bold;
+font-size: 18px;
+line-height: 30px;
+color: #7B8A99;
+position: relative;
+max-width: 570px;
+margin-left: 19px;
+		}
+
+		&__right-part {
+      width: 23%;
+
+		}
+
+		&__time {
+      line-height: 26px;
+      background: #FFFFFF;
+box-shadow: 0px 0px 30px rgba(30, 30, 30, 0.1);
+height: 60px;
+margin-top: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 18px;
+padding-left: 10px;
+padding-right: 10px;
+text-align: center;
+text-transform: uppercase;
+color: #063453;
+		}
+		&__currency-block {
+      margin-top: 30px;
+
+      padding-bottom: 30px;
+background: #FFFFFF;
+box-shadow: 0px 0px 30px rgba(30, 30, 30, 0.1);
+		}
+
+		&__course-part {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin-left: 50px;
+      padding-right: 10px;
+
+      &:before{
+        position: absolute;
+        content: '';
+        width: 25px;
+        height: 15px;
+        top: 6px;
+        left: -30px;
+        
+          }
+
+          &:nth-child(1){
+            margin-left: 20px;
+              }
+      &:nth-child(2):before{
+        background: url(../img/svg/Euro.svg);
+          }
+      &:nth-child(3):before{
+            background: url(../img/svg/Pol.svg);
+              }
+      &:nth-child(4):before{
+            background: url(../img/svg/Ukr.svg);
+              }
+
+      &:nth-child(5):before{
+                background: url(../img/svg/Rus.svg);
+                  }
+
+      &:nth-child(6):before{
+                    background: url(../img/svg/Mold.svg);
+                      }
+
+      &:nth-child(7):before{
+                        background: url(../img/svg/Rum.svg);
+                          }
+
+      &:nth-child(8):before{
+                            background: url(../img/svg/Chech.svg);
+                              }
+		}
+
+		&__course {
+      font-size: 16px;
+line-height: 30px;
+text-transform: uppercase;
+color: #7B8A99;
+
+		}
+
+		&__number {
+      font-size: 16px;
+line-height: 30px;
+text-transform: uppercase;
+color: #7B8A99;
+    }
+    &__normal-font{
+      font-family: "Cuprum-Regular";
+      font-weight: normal;
+font-size: 18px;
+    }
+}
+.first-column {
+  font-size: 20px;
+text-transform: uppercase;
+color: #063453;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  &:nth-child(2){
+    transform: translateX(30px);
+  
+  }
+  &:nth-child(2):before{
+position: absolute;
+content: '';
+width: 25px;
+height: 15px;
+top: 4px;
+left: -30px;
+background: url(../img/svg/usa.svg);
+  }
+}
+
+.select__icon-finance {
+  width: 25px;
+  height: 10px;
+  background: url(../img/svg/select-arrow.svg) no-repeat;
+  position: absolute;
+  right: -60px;
+  top: calc(50% - 1px);
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: 2;
+  display: none;
+
+}
+
+
+
+.pag-section{
+  margin-top: -80px ;
+  padding-top: 80px; 
+}
+
+.finance-pag{
+  width: 75%;
+}
+
+
+ .select__icon-finance {
+  z-index: -1 !important;
+}
+
+.finance-open__currency-block{
+  z-index: 2;
+}
+
+.last-child-finance{
+  margin-top: 7px;
+  margin-left: 0;
+  list-style-type: none;
+}
+
+
+.about-us__desc-transfers{
+  margin-top: 60px;
+ 
+}
+
+.about-us-transfer{
+  padding-top: 100px;
+ 
+}
+
+.head__info-crediting svg{
+top: 33%;
+left: -20px;
+}
+
+.container-table-cred{
+  margin-top: -70px;
+}
+
+.finance__item-text-pad{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ticket__main{
+  background: url(../img/png/ticket-main.png) no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  -webkit-box-shadow: inset 0 -150px #063453;
+  box-shadow: inset 0 -150px #063453;
+  background-position: 0px 100px;
+}
+
+.greetings__title-ticket{
+  max-width: 1000px; 
+}
+
+
+
+
+.ticket {
+padding-top: 30px;
+padding-bottom: 30px;
+		&__item {
+      
+      width: 100%;
+      min-height: 200px;
+      background: #FFFFFF;
+box-shadow: 0px 0px 30px   rgba(30, 30, 30, 0.1);
+display: flex;
+justify-content: space-between;
+margin-top: 30px;
+&:hover .ticket__item-left-img{
+  transform: scale(1.1);
+
+        }
+        &:hover .ticket__item-right-img{
+          transform: scale(1.05);
+                }
+		}
+
+		&__item-left {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 115px;
+        background: #F2F2F2;
+        top: calc(50% +115px);
+        right: 0;
+      }
+		}
+
+		&__item-left-img {
+      width: 50%;
+      transition: all 1s ease-out;
+		}
+
+		&__item-right {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+		}
+
+		&__item-right-img {
+      width: 67%;
+      transition: all 1s ease-out;
+    }
+}
+
+.pag-section-all{
+  width: 100%;
+  padding-bottom: 70px;
+}
+.pag-section-marg{
+  margin-top: 0px;
+  padding-top: 1px;
+}
+
+
+
+.finance-open {
+ 
+
+  &__bunner {
+    margin-top:  30px;
+    width: 100%; 
+position: relative;
+
+  }
+
+  &__sticer-cont-rabat {
+    min-width: 101px;
+    min-height: 42px;
+    border-bottom-right-radius: 30px;
+    background: #F33939;
+    
+  }
+
+&__sticer-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  transition: all 0.5s ease-out;
+}
+
+&__sticer-cont-nic{
+  min-width: 167px;
+  min-height: 42px;
+  background: url(../img/svg/sticker-4.svg) no-repeat;
+  background-size: cover;
+}
+
+  &__sticer-cont-promocja{
+    min-width: 127px;
+    min-height: 42px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background: #00B0F3;
+  }
+
+  &__sticer-cont-podarunkowa{
+    min-width: 197px;
+    min-height: 42px;
+background: #FECA57;
+border-radius: 100px;
+  }
+  &__sticker {
+    font-family: "Cuprum-Bold";
+    font-size: 19px;
+color: #FFFFFF;
+  }
+  &__bunner-img{
+    width: 100%;
+  }
+}
+
+.margin-finance{
+  height: 20px;
+  width: 10px;
+}
+

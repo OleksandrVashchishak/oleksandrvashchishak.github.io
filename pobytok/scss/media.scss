@@ -1,0 +1,2283 @@
+@media (max-width: 1440px) {
+
+  .personal-data__bg{
+  padding-top: 0;
+  padding-bottom: 0;
+  }
+
+
+  .instruction {
+    padding-top: 0px;
+    padding-bottom: 0px;
+      &__container {
+        padding: 20px;
+        padding-top: 50px;
+      }
+    }
+    
+
+
+  .personal-data__cont{
+  width: 70%;
+  }
+
+  .personal-data__btn-document{
+    .personal-data__cont{
+      width: 60%;
+      }
+  }
+
+  .doc__button-container{
+    .doc__button{
+      font-size: 14px;
+    height: 52px;
+      margin-left: 7px;
+      margin-right: 7px;
+    }
+    }
+
+  .finance-open__bunner-img {
+    max-height: 205px;
+  }
+
+  .message-list {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    .finance {
+      &__nav {
+    margin-top: 0px;
+    margin-bottom: -70px;
+      }
+  }
+
+    .personal__form-title{
+      padding-top: 50px;
+    }
+
+  }
+
+
+  .typical-page {
+    &__container {
+      margin-top: -100px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: -40px;
+    }
+  }
+
+
+.messages {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+  .personal {
+    &__bot-fixed-taxa {
+
+padding-left: 15px;
+padding-right: 15px;
+    }
+  }
+
+
+  .personal {
+    &__service-text {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  .ticket__item {
+    min-height: 150px;
+  }
+
+  .finance-pag {
+    width: 100%;
+  }
+  .finance__nav {
+    top: 100px;
+    left: 150px;
+  }
+
+  .finance-open {
+    justify-content: space-between;
+    flex-direction: column-reverse;
+
+    &__left-part {
+      width: 100%;
+      margin-right: 0px;
+    }
+
+    &__right-part {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__time {
+      height: 60px;
+      margin-top: 30px;
+      width: 49%;
+    }
+    &__currency-block {
+      width: 49%;
+      margin-top: 30px;
+      padding-bottom: 30px;
+      height: 60px;
+      transition: all 1s ease-out;
+      overflow: hidden;
+    }
+  }
+  .first-column {
+    margin-top: 15px;
+  }
+
+  .select__icon-finance {
+    display: block;
+  }
+  .finance-open__currency-block.active {
+    padding-bottom: 280px;
+  }
+  .select__icon-finance.active {
+    transform: rotate(180deg);
+  }
+}
+@media (max-width: 1350px) {
+
+  .personal__frame-cv{
+    .select-custom-acc-flex{
+      margin-left: 45px;
+    }
+  }
+
+  .mandatory-registration-popup__bottom-block {
+    .mandatory-selection-flex-cont {
+      padding: 0px 15px 0px 15px;
+    }
+    .mandatory-check-all {
+    font-size: 16px;
+    }
+    .mandatory-bold-text {
+      font-size: 16px;
+    }
+    
+    .mandatory-items-cont {
+      width: calc(100% - 15px);
+      height: 220px;
+    }
+    
+    .mandatory_item {
+      margin: 7px 0;    
+    }
+    
+    .mandatory-label{
+    margin: 20px -10px 0 15px;
+    }
+    .mandatory_item-img {
+    width: 100%;
+    }
+    
+    .mandatory_item-img-cont {
+      width: 84px;
+      height: 84px;
+      padding-left: 4px;
+      padding-right: 4px;
+      border-right: 1px solid #DDDDDD;
+    }
+    
+    .mandatory_item-cont{
+      margin-right: 15px;
+      padding-right: 0px;
+    }
+    .mandatory_item-body {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    
+    .mandatory_item-title {
+      font-size: 17px;
+    line-height: 18px;
+ margin-top: 7px;
+ margin-bottom: -0px;
+    }
+    
+    .mandatory_item-text {
+      font-size: 15px;
+    line-height: 21px;
+    height: 37px;
+    overflow: hidden; 
+    }
+    
+    .mandatory_item-number {
+      font-size: 15px;
+    line-height: 22px;
+   margin-top: 5px;
+    }
+    
+    .mandatory_text-border {
+    width: calc(100% - 30px);
+      padding: 10px;
+      margin: 15px auto;
+    line-height: 22px;
+    }
+    
+    .mandatory_button-calc{
+      height: 50px;
+      font-size: 16px;
+    } 
+    }
+    
+
+
+
+  .personal__stick-cont{
+    flex-direction: column;
+    
+  }
+
+
+  .personal__stick-item{
+width: 100%;
+margin-top: 80px;
+margin-left: 15px;
+&:nth-child(1){
+  margin-top: 0;
+}
+  }
+  .personal__frame {
+    padding-bottom: 40px;
+  }
+
+  .account-img-main {
+    width: 700px;
+  }
+  .account-main-i {
+    height: 250px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .personal-data__cont{
+  width: 100%;
+  }
+
+
+
+  
+
+  
+    .personal-data__btn{
+      max-width: 230px;
+    height: 42px;
+    font-size: 13px;
+    margin-left: 0px;    
+    margin-bottom: 27px;
+    margin-top: 10px;
+    span{
+      margin-right: 6px;
+    }
+    }
+    
+    .personal-data__btn-save{
+      margin-left: 0px;
+
+    }
+        
+    .personal-data__btn-cont{
+    display: block;
+    }
+
+
+    .personal-data__btn-document{
+     display: flex;
+     .personal-data__cont{
+      width: 54%;
+      button{
+        margin-left: 10px;
+      }
+      }
+    }
+  
+
+
+
+  
+.footer__logo{
+  width: 80% !important;
+}
+
+.personal__frame-cv{
+  .select-custom-acc-flex{
+    margin-top: -8px;
+    margin-left: 10px;
+    .personal__radio-two-container{
+      border: none;
+    }
+  }
+}
+
+.personal__all-radio-cont-notice label{
+  width: 50% ;
+}
+
+  .label-radio-state{
+    margin-left: 50px !important;
+  }
+  .messages__frame-coll-text, .messages__frame-your-text{
+padding-right: 70px;
+max-width: 50%;
+width: max-content;
+}
+
+.personal__add-select-cont{
+  display: block;
+}
+
+.personal__all-radio-cont{
+  display: block;
+}
+
+.select-custom-acc {
+  margin-top: 40px;
+}
+.personal__form-text-start {
+  margin-top: -30px;
+}
+
+.personal__radio-btn-three{
+  display: block;
+padding-top: 0px;
+}
+.personal__lead-bunner-add{
+  margin-left: 0px;
+}
+
+.personal__bunner-example-img{
+  width: 100% ;
+}
+
+.personal__bunner-item-img{
+  width: 250px;
+}
+.personal__radio-two-container{
+  display: block;
+}
+.personal__radio-right-part{
+  justify-content:flex-start ;
+padding-left: 47px;
+margin-top: 20px;
+}
+
+.personal__radio-right-part{
+margin-left: -100px;
+}
+.personal__radio-btn-three label{
+  margin-top: 20px;
+}
+
+.personal__frame-service-data{
+  .select-custom-acc  {
+   margin-top: 5px;
+}
+.select-custom-acc-home-marg{
+  margin-top: 23px;
+}
+}
+.tooltip-help-answer{
+  right: auto;
+  margin-left: auto;
+  left: 150px;
+}
+
+
+.personal__add-select-cont-age{
+  margin-top: -30px;
+}
+
+.mandatory-registration-popup-pay-accept {
+  .select-custom-acc{
+margin-top: 0;
+  }
+
+}
+
+.exp-work-сontainer{
+  .select-custom-acc{
+margin-top: 0;
+  }
+}
+.personal__frame-cv{
+  .service__select-custom-acc{
+  margin-top: 30px;
+  }
+  }
+
+  .personal__container-foreigner{
+    .personal__add-select-cont {
+      margin-top: 0px ;
+    }
+  
+    .select-custom-acc{
+      margin-top: 30px ;
+    }
+
+    .personal__add-select-cont-rent-home.active{
+      margin-bottom: -35px;
+    }
+    .personal__input-foreigner-marg{
+      margin-bottom: 0;
+    }
+    .personal__radio-btn-three{
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .doc__button-container{
+    flex-wrap: wrap ;
+    .doc__button{
+      margin-top: 10px;
+      max-width: 166px;
+      height: 48px;
+      font-size: 15px;
+      text-transform: lowercase;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    }
+
+  .personal__button-clear{
+    max-width: 210px;
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  
+  .counter-favorites {
+    font-size: 16px;
+  } 
+  
+  .favorites-title{
+    font-size: 25px;
+  }
+  
+ 
+  .finance-open__bunner-img {
+    max-height: 150px;
+  }
+  .open-notice__resume{
+    .open-notice__user-text{
+      font-size: 20px;
+
+    }
+  }
+
+
+
+  .open-notice {
+ 
+  
+    h4 {
+      font-size: 16px;
+      line-height: 26px;
+
+    }
+  
+    p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  
+
+  
+    &__body-left {
+      width: 62%;
+      padding: 20px;
+    }
+  
+    &__body-title {
+      font-size: 25px;
+      line-height: 25px;
+    }
+  
+    &__body--italic {
+      font-size: 16px;
+      line-height: 25px;
+      margin-bottom: 30px;
+    }
+  
+    &__body-right {
+      width: 38%;
+      margin-left: 20px;
+    }
+  
+    &__body-contact {
+      padding: 15px;
+    }
+  
+    &__textarea {
+      height: 170px;
+    }
+  
+    &__body-phone {
+      padding: 15px;
+      margin-top: 20px;
+
+      p{
+        padding: 10px;
+  font-size: 16px;
+      }
+    }
+  }
+
+  .open-notice {
+    &__start {
+      margin-bottom: 20px;
+    }
+  
+    &__container {
+      padding: 20px;
+    }
+
+  
+    &__start-left {
+      width: 65%;
+    }
+  
+    &__up-title {
+      font-size: 18px;
+
+    }
+  
+    &__title-main {
+      font-size: 28px;
+      line-height: 42px;
+      margin-bottom: 50px;
+    }
+  
+    &__start-right {
+      width: 35%;
+    }
+  
+
+    &__name {
+      font-size: 18px;
+    }
+  
+    &__border-show-phone {
+      font-size: 16px;
+      height: 54px;
+      img {
+        margin-right: 6px;
+      }
+    }
+
+    &__time {
+      span {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .personal {
+    &__service-item {
+      flex-direction: column;
+    }
+
+    &__service-img-cont {
+      width: 100%;
+    }
+
+    &__service-text {
+      padding-right: 10px;
+      width: 100%;
+      padding-left: 10px;
+    }
+  }
+
+  .account-img-main {
+    width: 500px;
+  }
+  .account-main-i {
+    height: 180px;
+  }
+
+  .personal__list {
+    margin-left: 65px;
+    &:before {
+      left: -37px;
+    }
+  }
+
+  .personal__panel {
+    flex: 0 0 270px;
+
+    margin-right: 15px;
+  }
+
+  .ticket__item {
+    min-height: 120px;
+  }
+  .select__icon-finance {
+    right: -12%;
+  }
+
+  .first-column {
+    &:nth-child(2) {
+      transform: translateX(0px);
+    }
+  }
+
+
+  .personal {
+    &__bot-fixed-taxa {
+      box-shadow: 0px 0px 30px rgba(30, 30, 30, 0.2);
+    }
+  
+    &__bot-select {
+      padding-top: 15px;
+      font-size: 16px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  
+    &__bot-radio-cont {
+      padding-bottom: 10px;
+    }
+  
+    &__radio-day {
+      font-family: "Cuprum-Bold";
+      font-size: 14px;
+     &::before{
+       top: -3px !important;
+       left: 5px !important;
+     }
+    }
+  
+    &__radio-price {
+      margin-left: 11px;
+      font-size: 14px;
+      margin-top: 16px;
+    }
+  
+    &__price-item-old {
+      margin-top: 16px ;
+  margin-left: 11px;
+  font-size: 14px;
+    }
+
+  
+
+  &__real-col-edit-i{
+    width: 30px;
+    height: 30px;
+      }
+    }
+
+.personal__real-add-new-worker {
+  max-width: 257px;
+  display: flex;
+  justify-content: center;
+}
+
+.personal__real-add-new-text-worker {
+  line-height: 21px;
+  margin: 0;
+text-align: center;
+  text-transform: none;
+  font-size: 15px;
+  padding: 0;
+}
+}
+
+@media (max-width: 1024px) {
+  .footer{
+  .footer__logo{
+    margin-top: 0px;
+  }
+
+
+  .footer__enter-in-btn{
+    margin-left: -3px;
+  }
+}
+
+  .personal__select-ul{
+  max-width: 370px !important;
+  width: 100%;
+  }
+
+  .account-img-main {
+    margin-top: -50px;
+    width: 100%;
+
+  }
+  .account-main-i {
+    height: 170px;
+  }
+
+  .personal__welcome {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 998px) {
+
+  .personal-data {
+    &__btn-document{
+  padding-top: 20px;
+  padding-bottom: 10px;
+    }
+  }
+
+  .personal__welcome {
+    font-size: 25px;
+  }
+  .account-img-main {
+    margin-top: -50px;
+  }
+  .account-main-i {
+    max-height: 165px;
+    height: auto;
+  }
+
+  .wrapper-withaut-p {
+    padding-top: 0;
+  }
+
+  .br-main-title {
+    display: none;
+  }
+
+  .finance-open__img-b {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .greetings__title.finance {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .finance__nav {
+    font-size: 14px;
+    top: 70px;
+    left: 70px;
+  }
+  .finance {
+    padding-left: 30px;
+    padding-right: 30px;
+    &__title {
+      font-size: 39px;
+      line-height: 50px;
+    }
+
+    &__category {
+      flex-wrap: wrap;
+    }
+
+    &__item-cat {
+      flex: 0 0 100%;
+      text-align: center;
+      margin-bottom: -150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    &__item-text {
+      font-size: 17px;
+    }
+  }
+
+  .personal__price-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .personal__price-wrapper {
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  .personal__form-title {
+    font-size: 20px;
+  }
+
+  .personal__frame-cont {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .finance-main {
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &__title {
+      font-size: 39px;
+      padding-top: 100px;
+      margin-top: -20px;
+    }
+
+    &__line {
+      margin-bottom: 80px;
+    }
+
+    &__text-cont {
+      max-width: 60%;
+      padding-right: 30px;
+    }
+
+    &__text {
+      font-size: 17px;
+      line-height: 26px;
+    }
+  }
+
+  .input-avatar-acc {
+    font-size: 16px;
+    margin-top: -15px;
+    margin-bottom: -200px;
+  }
+
+  .uloads-new-ava {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+  }
+  .uloads-new-ava-text {
+    font-size: 16px;
+  }
+  .popap-account-ava p {
+    padding-bottom: 30px;
+  }
+
+  .button-save-file-in {
+    font-size: 16x;
+    margin-top: 0px;
+  }
+  .subbtn-text-form {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0px;
+  }
+
+  .personal {
+
+  
+    &__bot-select {
+      padding-top: 10px;
+      padding-bottom: 15px;
+    }
+  
+    &__bot-radio-cont {
+  flex-wrap: wrap;
+  justify-content: center;
+    }
+  
+  
+    &__radio-day {
+    margin-left: 20px;
+   
+    }
+  
+    &__bot-radio-item {
+     margin-top: -15px;
+     margin-bottom: 0;
+      
+    }
+  }
+
+  
+
+}
+
+@media (max-width: 995px) {
+
+.personal__frame-cont--fav{
+  margin-top: 40px;
+}
+
+  .open-notice {
+    &__vacansion-title {
+      font-size: 18px;
+  margin-bottom: 17px;
+  margin-top: 17px;
+    }
+  
+    &__vacansion-text, .open-notice__vacansion-text-p {
+      font-size: 16px;
+  line-height: 18px;
+    }
+  
+    &__character-item {
+      margin-right: 15px;
+      margin-top: 15px;
+  font-size: 16px;
+  padding: 6px;
+    }
+  }
+  
+  
+  .open-notice__vacansion-body{
+  .about-us {
+
+    &__desc {
+      font-size: 16px;
+    }
+  
+    &__add-desc {
+      font-size: 16px;
+    }
+  }
+  }
+
+  .open-notice {
+    &__resume-df {
+  flex-wrap: wrap;
+    }
+  }
+
+.message-list {
+  &__sort-cont {
+      margin-top: 20px;
+  }
+
+  &__item {
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+
+  &__checkbox {
+      font-size: 16px;
+  }
+
+  &__advent-cont {
+      width: 65%;
+  }
+
+  &__advent-name {
+      font-size: 16px;
+      line-height: 24px;
+  }
+
+  &__advent-date {
+      font-size: 16px;
+  }
+
+  &__advent-text{
+font-size: 15px;
+margin-top: -10px;
+  }
+
+
+  &__checkbox-select{
+      width: 335px;
+  }
+
+}
+
+
+  .personal {
+
+		&__real-add-new {
+
+      margin-top: 20px;
+      margin-bottom: 20px;
+      position: static;
+      top: -10px;
+      right: 0;
+height: 40px;
+max-width: 220px;
+padding-left: 7px;
+padding-right: 7px;
+    }
+    
+    &__real-add-new-text{
+      font-size: 16px;
+      padding-left: 6px;
+    }
+}
+
+  .account-img-main {
+    margin-top: -50px;
+    width: 70%;
+
+  }
+
+
+  .personal__form-title {
+    font-size: 20px;
+    padding-right: 80px;
+  }
+  .backgrount-opacity-all {
+    display: block;
+  }
+  .close-mobile-acc,
+  .personal .personal__mobile-menu-cont {
+    display: flex;
+  }
+
+ .personal {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin-top: -20px;
+
+    &__mobile-menu {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    &__container {
+      width: 100%;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+
+    &__panel {
+      transform: translateX(-270px);
+      width: 270px;
+      padding-bottom: 60px;
+      background: #ffffff;
+      height: 100vh;
+      box-shadow: none;
+      top: 0;
+      z-index: 20;
+      position: fixed;
+      overflow: scroll;
+    }
+    &__panel-ul {
+      margin-top: 10px;
+    }
+
+    &__frame {
+      width: 100%;
+      background: #ffffff;
+      box-shadow: none;
+      padding-bottom: 0px;
+    }
+  }
+
+  .personal {
+    &__bot-fixed-taxa {
+      box-shadow: 0px 0px 30px rgba(30, 30, 30, 0.2);
+      bottom: 57px;
+    }
+  }
+
+  .message-list {
+    .finance {
+      &__nav {
+    margin-top: -10px;
+    margin-bottom: -80px;
+      }
+  }
+  }
+
+  .personal__real-add-new-worker {
+height: 50px;
+max-width: 240px;
+  }
+}
+
+@media (max-width: 880px) {
+
+
+  .instruction {
+      &__container {
+        padding: 20px;
+      }
+
+      h1{
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 23px;
+    margin-bottom: 16px;
+      }
+    
+      h3{
+        margin-top: 15px;
+    font-size: 14px;
+      }
+      p{
+    font-size: 14px;
+    line-height: 28px;
+
+      }
+    }
+    
+
+
+    .personal-data__btn-document{
+     display: block;
+     .personal-data__cont{
+      width: 100%;
+      button{
+        margin-left: 0px;
+      }
+      }
+    }
+
+  .open-notice__vacansion{
+  .open-notice__subtitle-vacansion{
+font-size: 20px;
+margin-bottom: 15px;
+  }
+  }
+
+  .messages__adver-name {
+font-size: 16px;
+}
+
+
+  .account-main-i {
+    height: 130px;
+  }
+
+	.personal__type-advert-b {
+font-size: 15px ;
+}
+
+}
+
+@media (max-width: 776px) {
+  .personal-data__up-text {
+    line-height: 27px;
+font-weight: bold;
+padding-bottom: 35px;
+padding-top: 35px;
+font-size: 14px;
+  }
+  
+
+
+
+  .open-notice__resume{
+    .open-notice__title-main{
+      margin-bottom: -9px;
+    }
+    .open-notice__user-text{
+      font-size: 18px;
+   
+    }
+  }
+
+  .open-notice {
+    &__container-df {
+      margin-top: 0px;
+display: block;
+    }
+  
+    h4 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__body-left {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    &__body-title {
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 26px;
+    }
+  
+    &__body--italic {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 25px;
+    }
+  
+    &__body-right {
+      width: 100%;
+      margin-left: 0px;
+    }
+  
+    &__body-contact {
+      padding: 15px;
+      margin-top: 20px;
+    }
+  
+  
+    &__body-input {
+      input{
+        max-width: none;
+      }
+      .personal__button{
+        max-width: 320px;
+        margin: 0 auto;
+      }
+    }
+
+    &__textarea {
+      max-width: none;
+    }
+  
+    &__body-phone {
+      padding: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      p{
+  font-size: 16px;
+  line-height: 22px;
+      }
+      img{
+        max-width: 115px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+
+
+.open-notice__start{
+  .open-notice__container-shadow{
+padding-bottom: 25px;
+padding-top: 25px;
+  }
+}
+
+
+  .open-notice {
+
+    &__start {
+      margin-bottom: 15px;
+    }
+  
+    &__container {
+      padding: 15px;
+    }
+
+    &__up-title {
+      font-size: 16px;
+    }
+  
+    &__title-main {
+      font-size: 20px;
+      margin-top: 30px;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+  
+    &__border-show-phone {
+      max-width: 175px;
+      font-size: 14px;
+      height: 50px;
+    }
+
+  }
+
+
+  .typical-page {
+    &__big-title {
+  font-size: 25px;
+  line-height: 30px;
+    }
+  
+    &__title {
+      font-size: 20px;
+  line-height: 28px;
+    }
+  
+    &__list {
+  line-height: 27px;
+    }
+  
+    &__text {
+  line-height: 26px;
+    }
+  
+  }
+
+
+  .personal__welcome {
+    font-size: 20px;
+  }
+  .finance__nav {
+    top: 70px;
+    left: 15px;
+  }
+
+  .container-table-cred {
+    margin-top: -40px;
+  }
+  .account-main-i {
+    height: 100px;
+    overflow: hidden;
+  }
+  .personal__register-status,
+  .personal__your-name {
+    font-size: 15px;
+  }
+
+  .account-img-main {
+    margin-top: -40px;
+    width: 300px;
+    overflow: hidden;
+  }
+
+
+  .message-list {
+
+    &__container {
+     padding: 10px;
+  }
+
+
+    &__sort-cont {
+        display: block;
+    }
+
+    &__item {
+      
+     padding: 15px;
+        align-items: flex-start;
+   flex-direction: column;
+      
+    }
+
+    &__advent-cont {
+        width: 100%;
+    }
+
+    &__checkbox-select{
+        width: 260px;
+        margin-top: 20px;
+    }
+    &__advent-date {
+      margin-top: -5px;
+      margin-right: 0;
+      margin-left: auto;
+      margin-bottom: 0;
+  }
+
+  &__news{
+    &:before{
+      height: 15px;
+      width: 15px;
+        }
+  }
+  }
+
+  .personal__select-ul-cv{
+    margin-top: 70px;
+  }
+
+
+  
+.documents__add-new-file {
+  padding-bottom: 50px;
+  .df-cont{
+    display: block;
+  }
+
+  .personal__input {
+  margin-right: 0px;
+  }
+  
+  .personal__button {
+  margin-top: 30px;
+  }
+    
+  .personal__button-add-white {
+    max-width: 370px;
+  }
+  }
+  
+}
+
+@media (max-width: 650px) {
+  .personal-data {
+    &__next-text {
+      width: 10%;
+    }
+
+    &__next-line {
+      width: 80%;
+    }
+  }
+
+  .flex-cont-favorites{
+   display: block;
+   padding-top: 20px;
+   padding-bottom: 15px;
+  } 
+
+  .personal__frame.personal__frame-favorites {
+  .fovorites-bg{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  }
+
+.favories-left {
+  width: 70%;
+ transform: translateY(-0px);
+} 
+
+.favorites-right {
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} 
+
+.counter-favorites {
+  font-size: 15px;
+  margin-right: 10px;
+} 
+
+
+.favorites-title{
+  font-size: 22px;
+}
+
+.personal__button-clear{
+font-size: 15px;
+  max-width: 200px;
+  margin-left: 0px;
+}
+
+
+
+
+  .open-notice__vacansion{
+  .open-notice__subtitle-vacansion{
+    font-size: 18px;
+      }
+
+    }
+
+  .open-notice {
+    
+    &__resume-field-cont {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__resume-img {
+      height: 80%;
+      padding-right: 0px;
+    }
+  
+  }
+
+  .service__wrapper-radio {
+display: block;
+  }
+
+  .service__cont-radio{
+    margin-top: 20px;
+  }
+
+  .bunner-button-upload{
+    width: 281px;
+    height: 80px;
+    background: #EDF5FA;
+  }
+  
+  .bunner-button-upload .photo-uplods-wrap span img{
+    width: 281px;
+    height: 80px;
+  }
+  
+  .bunner-button-upload .photo-uplods-wrap {
+    width: 281px;
+    height: 80px;
+  }
+
+
+  .personal__cont-img-stick {
+    width: 100%;
+}
+
+.messages{
+  &__frame-coll-text, &__frame-your-text{
+padding: 20px;
+padding-right: 20px;
+max-width: 85%;
+line-height: 24px;
+}
+
+&__img{
+  width: 100%;
+}
+&__container {
+  padding: 0px 15px;
+}
+
+&__send {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+&__advert-img-cont {
+padding-right: 20px;
+}
+
+
+
+&__adver-see-link {
+  line-height: 22px;
+  }
+
+  &__advert-name-cont {
+    padding-left: 0px;
+
+}
+&__advert-cont {
+  padding: 0px 15px;
+}
+
+
+&__adver-price {
+font-size: 16px;
+margin-bottom: -10px;
+margin-top: -5px;
+}
+
+&__textarea {
+  height: 170px;
+}
+
+}
+
+
+  .personal {
+		&__real-table-cont {
+      width: 100%;
+      overflow: scroll;
+		}
+
+		&__real-table {
+      width: 600px;
+		}
+}
+
+  .personal__form-title {
+    font-size: 20px;
+    padding-right: 80px;
+  }
+  .backgrount-opacity-all {
+    display: block;
+  }
+  .close-mobile-acc,
+  .personal .personal__mobile-menu-cont {
+    display: flex;
+  }
+  .personal {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin-top: -20px;
+
+    &__mobile-menu {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    &__img-cont {
+      margin-top: 36px;
+
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &__container {
+      width: 100%;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+
+    &__panel {
+      transform: translateX(-270px);
+      width: 270px;
+      padding-bottom: 60px;
+      background: #ffffff;
+      height: 100vh;
+      box-shadow: none;
+      top: 0;
+      z-index: 20;
+      position: fixed;
+      overflow: scroll;
+    }
+    &__panel-ul {
+      margin-top: 10px;
+    }
+
+    &__frame {
+      width: 100%;
+      background: #ffffff;
+      box-shadow: none;
+      padding-bottom: 0px;
+    }
+    &__register-status {
+      margin-top: 0;
+    }
+    &__welcome {
+      margin-top: -25px;
+    }
+  }
+
+  .finance-open {
+    &__sticer-cont-rabat {
+      min-width: 55px;
+      min-height: 26px;
+      border-bottom-right-radius: 20px;
+      top: 0px;
+    }
+
+    &__sticker {
+      font-size: 12px;
+    }
+
+    &__sticer-cont-nic {
+      top: -10px;
+      min-width: 93px;
+      min-height: 45px;
+      background-size: 93px 45px;
+      background-repeat: no-repeat;
+    }
+
+
+
+    &__sticer-cont-nic  div{
+      margin-left: -10px;
+    }
+
+    &__sticer-cont-promocja {
+      top: 0px;
+      min-width: 75px;
+      min-height: 22px;
+    }
+
+    &__sticer-cont-podarunkowa {
+      top: 0px;
+      min-width: 130px;
+      min-height: 20px;
+      background: #feca57;
+      border-radius: 100px;
+    }
+  }
+
+  .personal__stick-cont{
+ margin-bottom: 60px; 
+  }
+
+  .personal__stick-item{
+margin-top: 50px;
+
+  }
+
+  .personal-open__sticer-cont{
+top: 30px;
+  }
+
+.st-ct{
+  top: 17px;
+}
+
+.aad-place-work-cv{
+  font-size: 16px;
+  span{
+    margin-top: 3px;
+  }
+}
+
+.select-custom-acc-lang{
+  .aad-place-work-cv{
+    span{
+      margin-top: 30px;
+    }
+  }
+}
+
+.remove-this-education-place-1{
+  top: -5px;
+}
+
+.remove-this-work-place-1{
+  top: 10px;
+}
+}
+
+@media (max-width: 550px) {
+
+
+
+  .mandatory-registration-popup-activation {
+
+    .mandatory-registration-popup__bottom-block{
+      padding-top: 0px;
+      padding-bottom: 30px;
+    }
+  .activation-popup {
+  
+      &__title {
+       padding-top: 35px;
+       padding-bottom: 35px;
+        font-size: 16px;
+      }
+  
+      &__text--gray {
+        font-size: 16px;
+  line-height: 22px;
+  margin: 7px auto;
+      }
+  
+      &__text-red {
+        font-size: 16px;
+  line-height: 22px;
+  margin: 15px auto;
+      }
+  
+      &__output {
+        font-size: 16px;
+  line-height: 22px;
+  height: 50px;
+  margin: 15px auto;
+      }
+  
+      &__text-link {
+        font-size: 16px;
+  line-height: 22px;
+  margin: 15px auto;
+  
+      }
+  
+      &__link {
+        font-size: 16px;
+  line-height: 22px;
+      }
+
+  }
+  }
+
+
+
+  .personal-data__btn-save{
+  margin-bottom: 10px;
+
+  }
+  .personal-data__cont{
+    display: block;
+    }
+
+  .open-notice-greetings.greetings__container--onload {
+    height: 259px;
+    margin-bottom: -150px;
+    background-position: center 10px;
+    &:after {
+      display: none;
+    }
+  }
+
+  .open-notice {
+  
+    &__df {
+    display: block;
+    }
+  
+    &__start-left {
+      width: 100%;
+    }
+  
+  
+
+  
+    &__title-main {
+      font-size: 18px;
+      padding-right: 50px;
+      margin-bottom: 20px;
+    }
+  
+    &__start-right {
+      width: 100%;
+      align-items: flex-start;
+    }
+  
+    &__like {
+      button {
+        top: 15px;
+        right: 15px;
+        position: absolute;
+        margin: 0;
+      }
+    }
+  
+    &__name {
+      font-size: 15px;
+    }
+
+    .personal__button{
+      margin-bottom: 20px;
+    }
+  
+  }
+
+  .document {
+    &__button-container {
+ display: block;
+    }
+  
+    &__button-start {
+      margin: 15px auto;
+    }
+  
+    &__button-text {
+  font-size: 16px;
+    }
+  
+  }
+  
+.service__checkbox-container-flex{
+  display: block;
+}
+
+.service__checkbox-container{
+  margin-left: 0;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.service__onvisual-text{
+  margin-left: 40px;
+  margin-top: -10px;
+}
+  .messages{
+    &__frame-coll-text, &__frame-your-text{
+  max-width: 92%;
+  }
+  &__file {
+  font-size: 14px;
+}
+
+&__btn {
+  font-size: 14px;
+  max-width: 180px;
+}
+
+&__advert-cont {
+      flex-direction: column-reverse;
+}
+
+&__advert-img-cont {
+  margin-top: 10px;
+  margin-left: 10px;
+  order: 4;
+  }
+  
+
+&__adver-name {
+  max-width: 100%;
+  width: 100%;
+}
+&__advert-name-cont {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+&__adver-date {
+ margin-left: 38px;
+ order: 5;
+  }
+
+  &__adver-date {
+    order: 5;
+    }
+}
+
+
+
+
+.www-on-link{
+  width: 70px;
+right: 10px;
+bottom: 10px;
+}
+
+  .ticket__item-first {
+    margin-top: 0;
+  }
+  .ticket {
+    padding-top: 0px;
+    &__item {
+      min-height: 100px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 20px;
+      &:hover .ticket__item-left-img {
+        transform: none;
+      }
+      &:hover .ticket__item-right-img {
+        transform: none;
+      }
+    }
+
+    &__item-left {
+      min-height: 50px;
+      width: 300px;
+      &::before {
+        display: none;
+      }
+    }
+
+    &__item-left-img {
+      width: 130px;
+    }
+
+    &__item-right {
+      width: 300px;
+    }
+
+    &__item-right-img {
+      width: 270px;
+    }
+  }
+
+  .finance-open__time {
+    margin-top: -55px;
+  }
+
+  .finance-open {
+    &__lp-item {
+      margin-top: 30px;
+      flex-direction: column;
+      padding-bottom: 20px;
+      padding-right: 10px;
+    }
+
+    &__img-block {
+      width: 90%;
+      margin: 30px auto;
+      text-align: center;
+    }
+
+    &__text-block {
+      width: 90%;
+      margin-top: 20px;
+      margin: 0 auto;
+    }
+
+    &__tb-title {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &__tb-list {
+      font-size: 16px;
+    }
+
+    &__right-part {
+      flex-direction: column;
+    }
+
+    &__time {
+      width: 100%;
+    }
+    &__currency-block {
+      width: 100%;
+    }
+  }
+
+  .finance__nav {
+    font-size: 12px;
+    top: 55px;
+  }
+
+  .finance__item-cont-img {
+    width: 80px;
+    height: 80px;
+  }
+  .finance__item-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .finance-main {
+    &__flex-cont {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+
+    &__text-cont {
+      max-width: 100%;
+      padding-right: 0px;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: -80px;
+    }
+
+    &__text {
+      font-family: "Cuprum-Regular";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+
+  .finance {
+    padding-left: 15px;
+    padding-right: 15px;
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    &__item-text {
+      font-size: 16px;
+    }
+  }
+
+
+  .remove-worker-email-svg{
+   position: absolute;
+   top: 42px;
+   right: 40px;
+  }
+
+  .mandatory-registration-popup__bottom-block {
+    .mandatory-selection-flex-cont {
+      flex-direction: column-reverse ;
+      justify-content: flex-start;
+      padding: 0px;
+    }
+    .mandatory-check-all {
+      margin-left: 10px;
+      margin-right: auto;
+    font-size: 15px;
+    }
+    .mandatory-bold-text {
+      font-size: 15px;
+      margin: 10px auto -10px 10px;
+    }
+    
+    .mandatory-items-cont {
+      width: calc(100% - 10px);
+      height: 150px;
+    }
+    
+  
+    .mandatory-label{
+    margin: 20px -15px 0 10px;
+    }
+    
+    .mandatory_item-img-cont {
+      width: 74px;
+      height: 74px;
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+    
+    .mandatory_item-cont{
+      margin-right: 10px;
+    }
+    .mandatory_item-body {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    
+    .mandatory_item-title {
+      font-size: 11px;
+    line-height: 16px;
+ margin-bottom: -2px;
+    }
+    
+    .mandatory_item-text {
+      font-size: 14px;
+    line-height: 18px;
+    height: 32px;
+    }
+    
+    .mandatory_item-number {
+      font-size: 14px;
+    line-height: 22px;
+   margin-top: 2px;
+    }
+    
+    .mandatory_text-border {
+    width: calc(100% - 20px);
+      padding: 5px;
+      margin: 10px auto;
+    line-height: 18px;
+    font-size: 14px;
+    height: 70px;
+
+    }
+    
+    .mandatory_button-calc{
+      height: 40px;
+      font-size: 15px;
+    } 
+    }
+
+ .open-notice__start{
+
+  .open-notice__like button {
+    top: 25px;
+}
+   .open-notice__container-shadow{
+     padding-top: 25px;
+     padding-bottom: 25px;
+   }
+ }
+
+ .open-notice__vacansion-text .about-us__add-btn-realty {
+padding-bottom: 7px;
+ }
+
+
+
+    .select-custom-acc-checkbox-national{
+      .personal__radio-btn-two-cantry{
+        flex-wrap: wrap;
+      }
+    }
+
+    .container-flex-worker-time.date{
+      display: block;
+      .personal__input-date{
+        margin-top: 9px;
+    
+      }
+    }
+
+}
+
+@media (max-width: 465px) {
+
+  .personal-data {
+    &__next-text {
+      width: 18%;
+    }
+
+    &__next-line {
+      width: 66%;
+    }
+  }
+
+
+ .personal__frame-service-data{
+    .select-custom-acc{
+      position: relative;
+    }
+    .tooltip{
+      position: absolute;
+      right: 20px;
+       top: 43px;
+    }
+    .personal__select-ul{
+      margin-top: 27px;
+    }
+  }
+
+  .container-flex-brutto{
+  display: block;
+  }
+
+  .work-time-item-cont{
+    margin-top: 10px;
+    display: block;
+    max-width: 120px;
+    .select-dropdown__button{
+margin-top: 13px;
+    }
+
+  }  
+
+}
+
+@media (max-width: 380px) {
+
+
+  .open-notice-greetings.greetings__container--onload {
+    background-position: center 30px;
+  }
+
+  .container-flex-brutto{
+    input{
+      padding: 10px;
+    }
+  }
+  .remove-worker-email-svg{
+    right: 20px;
+   }
+
+  .www-on-link{
+    width: 50px;
+  right: 7px;
+  bottom: 7px;
+  }
+
+  .personal__bot-radio-cont {
+    justify-content: space-between;
+      }
+
+
+  .finance__category {
+    justify-content: space-between;
+  }
+
+  .mandatory-registration-popup-top-tooltipe{
+     button:nth-child(2){
+     margin-top: 25px;
+    }
+    .popup-button-flex-cont{
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .open-notice-greetings.greetings__container--onload {
+background: url(../img/svg/notice-greetings.svg) no-repeat ,#E5E9EE;
+background-size: 100%;
+  }
+
+
+  .open-notice-greetings.greetings__container--onload {
+    background-position: center 45px;
+  }
+}
+

@@ -1,0 +1,422 @@
+.header-nav {
+  margin-left: 60px;
+}
+
+.header-nav__list {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0;
+}
+
+.header-nav__item:first-child {
+  display: none;
+}
+
+.message-count-wrap {
+  position: relative;
+}
+
+.header-nav__link {
+  font-family: "Cuprum-Bold", "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 58px;
+  padding: 20px 35px 20px 35px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .3s ease;
+  color: #fff;
+}
+
+.user-name span {
+  transition: all .3s ease;
+}
+
+.login-btn:hover,
+.login-btn:focus,
+.user-name:hover span,
+.user-name:focus span {
+  color: #77CCF9;
+  transition: all .3s ease;
+}
+
+.header-nav__link.registration-btn:hover {
+  border: 2px solid #77CCF9;
+}
+
+.registration-btn:hover,
+.registration-btn:focus {
+  color: #77CCF9;
+}
+
+.header-nav__link.registration-btn {
+  border: 2px solid #FFFFFF;
+}
+
+.header-nav__link.user-name {
+  padding: 20px 0 20px 35px;
+  background: transparent;
+  border: none;
+}
+
+.header-nav__link.user-name:hover span {
+  color: #77CCF9;
+}
+
+button.header-nav__link.user-name::after {
+  display: none;
+}
+
+.header-nav__link.user-name span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 165px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.header-nav__item--message-item {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.header-nav__message-btn-text {
+  display: none;
+}
+
+.login-btn--icon,
+.registration-btn--icon {
+  margin-right: 15px;
+}
+
+.header-nav__message-btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.message-count {
+  font-family: "Cuprum-Bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background-color: #FF9066;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  position: absolute;
+  right: -10px;
+  top: -5px;
+}
+
+.message-icon-mobile,
+.registration-btn--icon-mobile {
+  display: none;
+}
+
+.header-nav__user-wrap {
+  position: relative;
+}
+
+.header-nav__user-desktop-list.select__body {
+  list-style: none;
+  position: absolute;
+  z-index: 5;
+  width: 315px;
+  top: 50px;
+  left: 33px;
+  padding: 0;
+}
+
+.header-nav__user-desktop-list {
+  padding: 0;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.header-nav__user-desktop-list::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  margin: 0 auto;
+  width: 0px;
+  height: 0px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 5px solid #fff;
+  border-top: 0px solid transparent;
+}
+
+.header-nav__user-desktop-list li {
+  padding: 20px 30px;
+}
+
+.header-nav__user-desktop-list li:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.header-nav__user-desktop-list li:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+.header-nav__avatar-wrap {
+  width: 70px;
+  height: 67px;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.header-nav__avatar-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.header-nav__user-desktop-user-name {
+  width: 170px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  font-family: "Cuprum-Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #7B8A99;
+}
+
+.header-nav__user-desktop-item a {
+  color: #464646;
+  text-transform: none;
+  font-family: "Cuprum-Regular", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.header-nav__user-desktop-link {
+  display: flex;
+  align-items: center;
+}
+
+.panel.header-nav__user-dropdown {
+  position: absolute;
+  left: 34px;
+  top: 50px;
+  z-index: 5;
+  padding: 0;
+  width: 315px;
+  background-color: transparent;
+}
+
+.header-nav__user-name-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__link.active-user span {
+  color: #77CCF9;
+}
+
+.header-nav__item-user-mobile {
+  display: none;
+}
+
+.message-icon-desktop{
+  fill: #77CCF9;
+  transition: all .3s ease;
+}
+
+.message-icon-desktop:hover {
+  fill: #fff;
+  transition: all .3s ease;
+}
+
+.like-count-wrap {
+  position: relative;
+  height: 100%;
+}
+
+.like-count-btn {
+  padding: 5px 0 0px 35px;
+}
+
+@media (max-width: 995px) {
+  .message-icon-desktop,
+  .registration-btn--icon {
+    display: none;
+  }
+
+  .message-icon-mobile,
+  .registration-btn--icon-mobile {
+    display: block;
+  }
+
+  .header-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    background: #fff;
+    text-transform: capitalize;
+    z-index: 5;
+    box-shadow: 0px 0px 24px rgba(6, 52, 83, 0.1);
+  }
+
+  .login-btn--icon,
+  .registration-btn--icon {
+    margin-right: 0;
+  }
+
+  .header-nav__message-btn {
+    flex-direction: column;
+    padding: 10px 0 5px;
+    justify-content: space-between;
+  }
+
+  .header-nav__list {
+    justify-content: space-between;
+    text-transform: capitalize;
+  }
+
+  .header-nav__item:first-child {
+    display: block;
+  }
+
+  .header-nav__item {
+    font-size: 16px;
+    line-height: 18px;
+    color: #063453;
+    width: 33.33%;
+  }
+
+  .header-nav__item--active {
+    font-family: "Cuprum-Bold", "Arial", sans-serif;
+  }
+
+  .header-nav__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 0 5px;
+    font-family: "Cuprum-Regular", "Arial", sans-serif;
+  }
+
+  .header-nav__link::before {
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    left: calc(50% - 8px);
+  }
+
+  .header-nav__link.user-name span,
+  .header-nav__link.main-btn,
+  .header-nav__link.login-btn,
+  .header-nav__link.registration-btn {
+    color: #063453;
+  }
+
+  .header-nav__message-btn-text {
+    display: block;
+    color: #063453;
+    font-family: "Cuprum-Regular", "Arial", sans-serif;
+    text-align: center;
+  }
+
+  .header-nav__link.user-name {
+    padding: 10px 0 5px;
+    width: 100%;
+  }
+
+  .tablet-container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .header-nav__link.registration-btn {
+    border: none;
+  }
+
+  .header-nav__link.registration-btn.sign-in-active-btn-registration,
+  .header-nav__link.registration-btn:hover {
+    color: #063453;
+    border: none;
+  }
+
+  .message-count {
+    width: 16px;
+    height: 16px;
+    font-size: 11px;
+    line-height: 11px;
+    right: -6px;
+    top: -6px;
+  }
+
+  .header-nav__link.user-name span {
+    text-transform: none;
+    max-width: 100%;
+  }
+
+  .login-btn--icon {
+    height: 14px;
+  }
+
+  .header-nav__user-desktop-list {
+    display: none;
+  }
+
+  .header-nav__link.user-name.active-user span,
+  .header-nav__link.user-name:hover span {
+    color: #063453;
+  }
+
+  .header-nav__item-user-mobile {
+    display: flex;
+  }
+
+  .header-nav__user-wrap {
+    display: none;
+  }
+
+  .header-nav__item-user-mobile-link {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 5px;
+  }
+
+  .header-nav__item-user-mobile-link span {
+    color: #063453;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Cuprum-Regular", "Arial", sans-serif;
+  }
+
+  .header-nav__item--message-item {
+    padding: 0;
+  }
+}
