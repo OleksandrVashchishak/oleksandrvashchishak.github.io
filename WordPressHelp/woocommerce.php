@@ -10,7 +10,7 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 // спочатку відключаю хук з дефолтими значеннями, а потім підключаю свій кастомний
 remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
 function my_custom_title(){
-	echo '<p>'.get_the_title().'</p>';
+	echo '<h1>'.get_the_title().'</h1>';
 }
 
 add_action( 'woocommerce_shop_loop_item_title', 'my_custom_title', 10 );
