@@ -93,3 +93,5 @@ function my_save_account($user_id) {
 // Плагіни для авторизації, за допомогою соц.мереж
 Super socializer
 Nextend social login
+
+// Плагіни для особистого кабінету
