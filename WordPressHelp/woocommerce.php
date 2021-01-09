@@ -95,3 +95,4 @@ Super socializer
 Nextend social login
 
 // Плагіни для особистого кабінету
+WP-Recall
