@@ -33,3 +33,10 @@ function remove_my_account_links( $menu_links ){
 	return $menu_links;
  
 }
+
+// Переіеновування вкладок
+function misha_rename_downloads( $menu_links ){
+	$menu_links['downloads'] = 'My Files';
+	return $menu_links;
+}
+
