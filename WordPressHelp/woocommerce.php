@@ -68,8 +68,26 @@ function misha_my_account_endpoint_content() {
  
 	// of course you can print dynamic content here, one of the most useful functions here is get_current_user_id()
 	echo 'Last time you logged in: yesterday from Safari.';
- 
 }
+
+// Добавляти нові поля в базу даних
+// html втисувати в формочу з form-edit-account.php
+// html розмітка
+	<p class="form-row form-row-wide">
+        <label for="phone">Телефон</label>
+        <input type="text" class="input-text" name="phone" id="phone" value="<?php echo esc_attr( $user->phone ); ?>" />
+        </p>
+// Код в function.php
+$tag             = 'woocommerce_save_account_details'; 
+$function_to_add = 'my_save_account';
+$priority        = 10;
+$accepted_args   = 1; 
+add_action( $tag, $function_to_add, $priority, $accepted_args ); 
+function my_save_account($user_id) {
+  $phone  = ! empty( $_POST[ 'phone' ] ) ? $_POST[ 'phone' ] : '';
+  update_user_meta($user_id, 'phone', $phone);
+}
+
 
 
 // Плагіни для авторизації, за допомогою соц.мереж
