@@ -70,3 +70,8 @@ function misha_my_account_endpoint_content() {
 	echo 'Last time you logged in: yesterday from Safari.';
  
 }
+
+
+// Плагіни для авторизації, за допомогою соц.мереж
+Super socializer
+Nextend social login
