@@ -89,6 +89,20 @@ function my_save_account($user_id) {
 }
 
 
+// Виведення інфомації з бази даних про поточного юзера
+wp_cookie_constants();
+require ABSPATH . WPINC . '/pluggable.php';
+
+$current_user = wp_get_current_user();
+
+echo 'Username: '         . $current_user->user_login     . '<br />';
+echo 'email: '            . $current_user->user_email     . '<br />';
+echo 'first name: '       . $current_user->user_firstname . '<br />';
+echo 'last name: '        . $current_user->user_lastname  . '<br />';
+echo 'Отображаемое имя: '   . $current_user->display_name   . '<br />';
+echo 'ID: '               . $current_user->ID             . '<br />';
+echo 'ID: '               . $current_user->phone             . '<br />';
+
 
 // Плагіни для авторизації, за допомогою соц.мереж
 Super socializer
