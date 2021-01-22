@@ -21,6 +21,36 @@ add_action( 'woocommerce_shop_loop_item_title', 'my_custom_title', 10 );
 // Шорткод, для того щоб вивести три останіх добавлених товари, будь-де
 echo do_shortcode('[recent_products per_page="3"]');
 
+// функція для зміни месседжа, що з"являється при добавленні товарів в корзину
+add_filter( 'wc_add_to_cart_message_html', 'custom_add_to_cart_message_html', 10, 2 );
+function custom_add_to_cart_message_html( $message, $products ) {
+    $titles = array();
+    $count  = 0;
+
+    foreach ( $products as $product_id => $qty ) {
+        $titles[] = ( $qty > 1 ? absint( $qty ) . ' &times; ' : '' ) . sprintf( _x( '&ldquo;%s&rdquo;', 'Item name in quotes', 'woocommerce' ), strip_tags( get_the_title( $product_id ) ) );
+        $count += $qty;
+    }
+
+    $titles     = array_filter( $titles );
+    $added_text = sprintf( _n( '%s added to cart.', '%s added to cart.', $count, 'woocommerce' ), wc_format_list_of_items( $titles ) );
+
+    // The custom message is just below
+    $added_text = sprintf( _n(" %s item  %s", "%s items  %s" , $count, "woocommerce" ),
+        $count, __("added to cart.", "woocommerce") );
+
+    // Output success messages
+    if ( 'yes' === get_option( 'woocommerce_cart_redirect_after_add' ) ) {
+        $return_to = apply_filters( 'woocommerce_continue_shopping_redirect', wc_get_raw_referer() ? wp_validate_redirect( wc_get_raw_referer(), false ) : wc_get_page_permalink( 'shop' ) );
+        $message   = sprintf( '<a href="%s" class="button wc-forward">%s</a> %s', esc_url( $return_to ), esc_html__( 'Continue shopping', 'woocommerce' ), esc_html( $added_text ) );
+    } else {
+        $message   = sprintf( '<a href="%s" class="button wc-forward">%s</a> %s', esc_url( wc_get_page_permalink( 'cart' ) ), esc_html__( 'Go to cart', 'woocommerce' ), esc_html( $added_text ) );
+    }
+    return $message;
+}
+
+
+
 
 // Особистий кабінет
 
