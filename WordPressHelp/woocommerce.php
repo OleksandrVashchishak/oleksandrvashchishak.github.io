@@ -49,6 +49,24 @@ function custom_add_to_cart_message_html( $message, $products ) {
     return $message;
 }
 
+// видаляємо поля чекаута
+add_filter( 'woocommerce_checkout_fields' , 'customize_checkout_fields' );
+function customize_checkout_fields( $fields ) {
+	unset($fields['billing']['billing_first_name']);
+	unset($fields['billing']['billing_last_name']);
+	unset($fields['billing']['billing_company']);
+	unset($fields['billing']['billing_address_1']);
+	unset($fields['billing']['billing_address_2']);
+	unset($fields['billing']['billing_city']);
+	unset($fields['billing']['billing_postcode']);
+	unset($fields['billing']['billing_country']);
+	unset($fields['billing']['billing_state']);
+	unset($fields['billing']['billing_phone']);
+	unset($fields['order']['order_comments']);
+	unset($fields['billing']['billing_email']);
+	unset($fields['account']['account_username']);
+	unset($fields['account']['account_password']);
+    return $fields;}
 
 
 
@@ -67,6 +85,7 @@ function remove_my_account_links( $menu_links ){
 	return $menu_links;
  
 }
+
 
 // Переіеновування вкладок
 function misha_rename_downloads( $menu_links ){
