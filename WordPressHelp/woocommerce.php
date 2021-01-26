@@ -122,6 +122,20 @@ function my_save_account($user_id) {
   update_user_meta($user_id, 'phone', $phone);
 }
 
+// добвляємо нові поля БД при реєстраціїї
+
+// Код в html
+    $billing_last_name = ! empty( $_POST[ 'billing_last_name' ] ) ? $_POST[ 'billing_last_name' ] : '';
+    <input type="text" class="input-text" name="billing_first_name" id="kind_of_name" value="<?php  $billing_first_name  ?>" />
+
+// Код в functions.php
+add_action( 'woocommerce_created_customer', 'truemisha_save_fields', 25 );
+function truemisha_save_fields( $user_id ) {
+	if ( isset( $_POST[ 'billing_first_name' ] ) ) {
+		update_user_meta( $user_id, 'first_name', sanitize_text_field( $_POST['billing_first_name'] ) );
+	}
+}
+
 
 // Виведення інфомації з бази даних про поточного юзера
 wp_cookie_constants();
