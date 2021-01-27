@@ -178,4 +178,7 @@ Nextend social login
 // Плагіни для особистого кабінету
 WP-Recall
 	
+// плагін для вибору часу самовивозу, з обмеженнями
+iconic-woo-delivery-slots-premium	
+	
 	?>
