@@ -82,6 +82,13 @@ function wc_login_redirect( $redirect_to ) {
    return $redirect_to;
 }
 
+// logout redirect
+add_action('wp_logout','logout_redirect');
+function logout_redirect(){
+  wp_redirect( home_url() );
+  exit();
+  }
+
 // redirect to thank page
 add_action( 'woocommerce_thankyou', 'bbloomer_redirectcustom');
 function bbloomer_redirectcustom( $order_id ){
