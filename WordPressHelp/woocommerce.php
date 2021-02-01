@@ -68,7 +68,61 @@ function customize_checkout_fields( $fields ) {
 	unset($fields['account']['account_password']);
     return $fields;}
 
+// редірект з корзини в чекаут
+function skip_cart_page_redirection_to_checkout() {
+  if( is_cart() )
+      wp_redirect( WC()->cart->get_checkout_url() );
+}
+add_action('template_redirect', 'skip_cart_page_redirection_to_checkout');
 
+// змінити порядокі назву сторінок
+function my_account_menu_order() {
+  $menuOrder = array(
+    'edit-account'       => __( 'Profile', 'woocommerce' ),
+    'orders'             => __( 'Order', 'woocommerce' ),
+    'customer-logout'    => __( 'Exit', 'woocommerce' ),
+  );
+  return $menuOrder;
+}
+add_filter ( 'woocommerce_account_menu_items', 'my_account_menu_order' );
+
+// redirect to thank page
+add_action( 'woocommerce_thankyou', 'bbloomer_redirectcustom');
+ 
+function bbloomer_redirectcustom( $order_id ){
+    $order = new WC_Order( $order_id );
+ 
+//    $url = 'http://yoursite.com/custom-url';
+if ( function_exists('icl_object_id') ) {
+    if(ICL_LANGUAGE_CODE=='en'){
+     $url = '/babushka/en/woocommerce-thank-you-page-en/';
+    } elseif(ICL_LANGUAGE_CODE=='fr'){
+     $url = '/babushka/woocommerce-thank-you-page-de/';
+    }
+} 
+else {
+//    $url = '/woocommerce-thank-you-page/';
+    $url = '/';
+} 
+    if ( $order->status != 'failed' ) {
+        wp_redirect($url);
+        exit;
+    }
+ 
+	// зробити поля чекаута необов"язковими
+	    function custom_override_default_address_fields( $address_fields ) {
+    $address_fields['state']['required'] = false;
+    $address_fields['company']['required'] = false;
+      return $address_fields;
+ }
+
+// зробити метод оплати необов"язковим
+    add_filter('woocommerce_cart_needs_payment', 'disabled_payment');
+function disabled_payment () {
+return false;
+}
+	
+	
 
 // Особистий кабінет
 
