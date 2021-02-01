@@ -75,20 +75,15 @@ function skip_cart_page_redirection_to_checkout() {
 }
 add_action('template_redirect', 'skip_cart_page_redirection_to_checkout');
 
-// змінити порядокі назву сторінок
-function my_account_menu_order() {
-  $menuOrder = array(
-    'edit-account'       => __( 'Profile', 'woocommerce' ),
-    'orders'             => __( 'Order', 'woocommerce' ),
-    'customer-logout'    => __( 'Exit', 'woocommerce' ),
-  );
-  return $menuOrder;
+// редірект при вході в особистий кабінет
+add_filter('woocommerce_login_redirect', 'wc_login_redirect'); 
+function wc_login_redirect( $redirect_to ) {
+   $redirect_to = "/".the_title()."/my-account";
+   return $redirect_to;
 }
-add_filter ( 'woocommerce_account_menu_items', 'my_account_menu_order' );
 
 // redirect to thank page
 add_action( 'woocommerce_thankyou', 'bbloomer_redirectcustom');
- 
 function bbloomer_redirectcustom( $order_id ){
     $order = new WC_Order( $order_id );
  
@@ -140,7 +135,18 @@ function remove_my_account_links( $menu_links ){
  
 }
 
+// змінити порядокі назву сторінок
+function my_account_menu_order() {
+  $menuOrder = array(
+    'edit-account'       => __( 'Profile', 'woocommerce' ),
+    'orders'             => __( 'Order', 'woocommerce' ),
+    'customer-logout'    => __( 'Exit', 'woocommerce' ),
+  );
+  return $menuOrder;
+}
+add_filter ( 'woocommerce_account_menu_items', 'my_account_menu_order' );
 
+	
 // Переіеновування вкладок
 function misha_rename_downloads( $menu_links ){
 	$menu_links['downloads'] = 'My Files';
