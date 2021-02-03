@@ -239,7 +239,7 @@ function my_save_account($user_id) {
 // добвляємо нові поля БД при реєстраціїї
 
 // Код в html
-    $billing_last_name = ! empty( $_POST[ 'billing_last_name' ] ) ? $_POST[ 'billing_last_name' ] : '';
+    $billing_first_name = ! empty( $_POST[ 'billing_first_name' ] ) ? $_POST[ 'billing_first_name' ] : '';
     <input type="text" class="input-text" name="billing_first_name" id="kind_of_name" value="<?php  $billing_first_name  ?>" />
 
 // Код в functions.php
