@@ -124,6 +124,34 @@ function disabled_payment () {
 return false;
 }
 	
+// Вивести cross-sell в чекаутті
+function add_cart_collaterals() {
+  if (is_checkout()) {
+      add_action( 'woocommerce_after_cart_contents', 'woocommerce_cross_sell_display' );
+  }
+}
+add_action('wp', 'add_cart_collaterals');
+// Продовження верхньої функції
+function show_cross_sell() {
+  $cross_sells = array_filter( array_map( 'wc_get_product', WC()->cart->get_cross_sells() ), 'wc_products_array_filter_visible' );
+  if ( $cross_sells ) : 
+      echo '<div class="cross-sells"><h2>';
+      _e( 'You may be interested in&hellip;', 'woocommerce' );
+      echo '</h2>';
+      woocommerce_product_loop_start();
+          foreach ( $cross_sells as $cross_sell ) :
+              $post_object = get_post( $cross_sell->get_id() );
+              setup_postdata( $GLOBALS['post'] =& $post_object );
+              wc_get_template_part( 'content', 'product' ); 
+          endforeach;
+      woocommerce_product_loop_end();
+      echo '</div>';
+  else : {
+      echo 'No cross sells to display';
+  }
+  endif;
+}
+add_action( 'woocommerce_after_cart_table', 'show_cross_sell', 10 );	
 	
 
 // Особистий кабінет
