@@ -82,6 +82,18 @@ function wc_login_redirect( $redirect_to ) {
    return $redirect_to;
 }
 
+// редірект при вході в особистий кабінет при логінізації, але з чекауту не редіректить
+    add_filter('woocommerce_login_redirect', 'wc_login_redirect');
+function wc_login_redirect($redirect_to)
+{
+  if ( $redirect_to == wc_get_page_permalink( 'checkout' ) ){
+    return $redirect_to;
+}else{
+    $redirect_to = "/" . the_title() . "/my-account";
+    return $redirect_to;
+}
+}
+
 // logout redirect
 add_action('wp_logout','logout_redirect');
 function logout_redirect(){
