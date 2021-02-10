@@ -94,6 +94,13 @@ function wc_login_redirect($redirect_to)
 }
 }
 
+// замінити всі силки які ведуть в корзину на силків в чекаутє
+add_filter( 'woocommerce_add_to_cart_redirect', 'bbloomer_redirect_checkout_add_cart' );
+function bbloomer_redirect_checkout_add_cart() {
+   return wc_get_checkout_url();
+}
+
+
 // logout redirect
 add_action('wp_logout','logout_redirect');
 function logout_redirect(){
