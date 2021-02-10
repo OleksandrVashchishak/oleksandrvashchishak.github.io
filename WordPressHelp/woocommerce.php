@@ -165,6 +165,15 @@ function show_cross_sell() {
 }
 add_action( 'woocommerce_after_cart_table', 'show_cross_sell', 10 );	
 	
+	
+// Зробити валідацію кастомних полів при реєстрації
+add_filter( 'woocommerce_registration_errors', 'fn_validate_registration', 25 );
+function fn_validate_registration( $errors ) {
+if ( empty( $_POST[ 'billing_first_name' ] )   ) {
+	$errors->add( 'name_err', ' Please provide a first name.' );
+}
+return $errors;
+}
 
 // Особистий кабінет
 
