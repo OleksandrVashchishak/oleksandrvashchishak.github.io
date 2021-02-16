@@ -182,6 +182,34 @@ if ( empty( $_POST[ 'billing_first_name' ] )   ) {
 return $errors;
 }
 
+// відправлення даних php з js	
+// в js	
+  $.ajax({
+          type: 'POST',
+          url: 'https://flyfox.us/b/wp-admin/admin-ajax.php',
+          data: {
+            'action': 'ajax_mail',
+            'myEmail': email
+          },
+          success: function (result) {
+            console.log(result); 
+          },
+        })	
+// в функшинс	
+add_action('wp_ajax_ajax_mail', 'submited_ajax_mail_data');
+add_action( 'wp_ajax_nopriv_ajax_mail', 'submited_ajax_mail_data' );
+
+function submited_ajax_mail_data(){
+  $email = $_POST['myEmail'];
+  $attachments = array(WP_CONTENT_DIR . '/uploads/attach.zip');
+  $headers = 'From: Babouchka <grandmaman@babouchka.ch>' . "\r\n";
+  $message = 'In fifteen minutes you need to pick up your order at the restaurant "Babouchka"';
+  // $theme = 'Pick up your order in Babouchka';
+  wp_mail($email, 'Тема', $message, $headers, $attachments);
+  echo $email;
+  die();
+}	
+
 // Особистий кабінет
 
 // Видаляємо пункти меню
