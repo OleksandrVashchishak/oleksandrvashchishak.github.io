@@ -1,3 +1,361 @@
-@media (max-width: 1515px) {
-  
+@media (max-width: 1250px) {
+    .button-item {
+        padding: 7px;
+        font-size: 15px;
+    }
+
+    .header {
+        &__inner {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        &__menu-item {
+            font-size: 16px;
+        }
+    }
+
+    .slider {
+        &__item {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        &__item-title {
+            margin-top: 100px;
+            font-size: 44px;
+            line-height: 53px;
+        }
+
+        &__item-text {
+            margin-top: 16px;
+            font-size: 15px;
+        }
+
+        &__button {
+            margin-top: 16px;
+        }
+    }
+
+    .offer {
+        margin-top: 60px;
+        &__main-title {
+            font-size: 30px;
+            &:before {
+                bottom: -13px;
+                width: 100px;
+            }
+        }
+
+        &__items {
+            margin-top: 100px;
+        }
+
+        &__item {
+            &:nth-child(1n) .offer__item-right-cont {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            &:nth-child(2n) .offer__item-right-cont {
+                padding-right: 50px;
+            }
+        }
+
+        &__item-title {
+            margin-top: 10px;
+            font-size: 32px;
+        }
+
+        &__item-text {
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+        &__item-btn {
+            margin-top: 20px;
+        }
+    }
+
+    .steps {
+        margin-top: 90px;
+        &__container {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        &__main-title {
+            font-size: 30px;
+            padding-top: 60px;
+        }
+        &__main-text {
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+        &__items {
+            margin-top: -30px;
+            transform: translateY(120px);
+        }
+
+        &__item {
+            width: calc(30% - 50px);
+            padding: 50px 25px;
+        }
+
+        &__item-number {
+            font-size: 44px;
+        }
+
+        &__item-title {
+            font-size: 20px;
+        }
+
+        &__item-text {
+            margin-top: 15px;
+        }
+    }
+
+    .maps {
+        margin-top: 220px;
+    }
+
+    .footer {
+        height: 120px;
+    }
+
+    .connect {
+        margin-top: 80px;
+        &__img-absolute {
+            bottom: -30px;
+            width: 40%;
+        }
+        &__left {
+            margin-left: 50px;
+        }
+
+        &__left-title {
+            font-size: 25px;
+        }
+
+        &__left-text {
+            margin-top: 15px;
+            font-size: 15px;
+        }
+
+        &__form {
+            margin-top: 30px;
+        }
+
+        &__input {
+            margin-top: 25px;
+            font-size: 15px;
+            &::placeholder {
+                font-size: 15px;
+            }
+        }
+
+        &__btn {
+            margin-top: 40px;
+            height: 42px;
+        }
+
+        &__right {
+            padding: 70px 20px;
+        }
+
+        &__right-title {
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        &__right-item {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        &__item-svg {
+            margin-right: 13px;
+        }
+
+        &__item-text {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .offer {
+        &__item {
+            display: block;
+        }
+
+        &__item-left {
+            width: auto;
+            margin: 50px 17% 40px 17%;
+        }
+
+        &__item-right {
+            width: auto;
+            margin-left: 17%;
+            margin-right: 17%;
+        }
+
+        &__item-title {
+            text-align: center;
+        }
+
+        &__item-text {
+            text-align: center;
+        }
+
+        &__item-btn {
+            margin: 20px auto 0 auto;
+        }
+    }
+
+    .steps {
+        &__item {
+            width: calc(30% - 10px);
+            padding: 40px 10px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        height: 70px;
+        &__inner {
+            height: 70px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        &__logo {
+            width: 20%;
+        }
+
+        &__menu {
+            width: 80%;
+            max-width: 400px;
+        }
+
+        &__menu-item {
+            font-size: 15px;
+        }
+    }
+
+    .slider {
+        &__item {
+            height: auto;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 100px;
+        }
+    }
+
+    .connect {
+        &__container {
+          flex-direction: column;
+        }
+      
+        &__img-absolute {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          display: none;
+        }
+        &__left {
+          width: 100%;
+          margin-left: 160px;
+        }
+      
+        &__left-title {
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 150%;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          color: #2b2b2b;
+          max-width: 360px;
+        }
+      
+        &__left-text {
+          margin-top: 20px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 120%;
+          color: #7e7e7e;
+          max-width: 360px;
+        }
+      
+        &__form {
+          max-width: 320px;
+          margin-top: 40px;
+        }
+      
+        &__input {
+          margin-top: 30px;
+          display: block;
+          width: 100%;
+          outline: none;
+          color: #2b2b2b;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 140%;
+          border: none;
+          border-bottom: 1px solid #989898;
+          padding: 10px 0;
+          &::placeholder {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            color: #adadad;
+          }
+        }
+      
+        &__btn {
+          outline: none;
+          border: none;
+          margin-top: 50px;
+          height: 52px;
+        }
+      
+        &__right {
+          background: #181818;
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          border-radius: 5px;
+          width: 45%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 90px 40px;
+        }
+      
+        &__right-title {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 140%;
+          letter-spacing: 0.01em;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+      
+        &__right-item {
+          display: flex;
+          margin-top: 40px;
+        }
+      
+        &__item-svg {
+          margin-right: 20px;
+        }
+      
+        &__item-text {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 140%;
+          color: #ffffff;
+        }
+      }
 }

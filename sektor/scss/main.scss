@@ -406,10 +406,16 @@ li {
   align-items: center;
   transition: all .3s;
   &:hover{
-    // background: #730101;
-    background: #fff;
+    background: #730101;
+    // background: #fff;
   }
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 
 
 // sclick style
