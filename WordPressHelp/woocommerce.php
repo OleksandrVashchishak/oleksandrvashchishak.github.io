@@ -432,4 +432,10 @@ WP-Recall
 // плагін для вибору часу самовивозу, з обмеженнями
 iconic-woo-delivery-slots-premium	
 	
+// плагін для фільтру продуктів
+WooBeWoo product filter
+// https://wordpress.org/plugins/woo-product-filter/
+	
+	
+	
 	?>
