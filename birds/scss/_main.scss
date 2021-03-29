@@ -1,0 +1,120 @@
+// height media
+
+
+
+* {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.standart-title {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 130%;
+  letter-spacing: 0.09em;
+}
+
+.standart-button-link {
+  border: 1px solid #c9af6e;
+  border-radius: 4px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.09em;
+  color: #c9af6e;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  max-width: 255px;
+  padding: 10px;
+  height: 60px;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    color: #f5c860;
+    border-color: #f5c860;
+  }
+}
+
+.inherit-block {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow-y: visible;
+}
+html {
+  overflow-x: hidden; 
+}
+
+.tooltip {
+  transform: translate(-50%, -100%);
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 50%;
+  text-align: center;
+  width: 121px;
+  height: 121px;
+  background: #c9af6e;
+  border-radius: 100%;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 121px;
+  text-align: center;
+  letter-spacing: 0.09em;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.image__animation-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+img.image__animation {
+  z-index: 1;
+  height: 100%;
+  position: relative;
+}
+
+// // animation img
+img.horizontal-block__right {
+  z-index: 1;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  
+}
+
+.our-concept__quadro-gradient{
+  height: 100%;
+}
+
+
