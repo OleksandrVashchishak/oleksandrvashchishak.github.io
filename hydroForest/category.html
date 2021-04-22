@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HydroForest</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- style -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__fr container">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="img/home/logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="header__search-cont">
+        <input type="text" class="header__search-input" placeholder="Search for product">
+        <button type="submit" class="header__search-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.9023 14.9597L11.2545 10.3118C12.136 9.22342 12.6667 7.8398 12.6667 6.33336C12.6667 2.84116 9.82552 0 6.33332 0C2.84113 0 0 2.84116 0 6.33336C0 9.82555 2.84116 12.6667 6.33336 12.6667C7.8398 12.6667 9.22342 12.136 10.3118 11.2545L14.9597 15.9024C15.0899 16.0325 15.3009 16.0325 15.4311 15.9024L15.9024 15.4311C16.0325 15.3009 16.0325 15.0898 15.9023 14.9597ZM6.33336 11.3334C3.57619 11.3334 1.33335 9.09052 1.33335 6.33336C1.33335 3.57619 3.57619 1.33335 6.33336 1.33335C9.09052 1.33335 11.3334 3.57619 11.3334 6.33336C11.3334 9.09052 9.09052 11.3334 6.33336 11.3334Z"
+              fill="white" />
+          </svg>
+        </button>
+      </div>
+      <div class="header__leng-cont">
+        <div class="header__leng-item header__leng-item--curently">
+          <span class="header__leng-flag">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.3039 29.7931H2.69613C1.20705 29.7931 0 28.586 0 27.097V8.90304C0 7.41403 1.20705 6.20691 2.69613 6.20691H33.3039C34.7929 6.20691 36 7.41396 36 8.90304V27.097C36 28.586 34.7929 29.7931 33.3039 29.7931Z"
+                fill="#F5F5F5" />
+              <path
+                d="M36 16.1379H14.8965V6.20691H11.1724V16.1379H0V19.8621H11.1724V29.7931H14.8965V19.8621H36V16.1379Z"
+                fill="#41479B" />
+            </svg>
+          </span>
+          <span class="header__leng-name">
+            FIN
+          </span>
+        </div>
+        <div class="header__leng-item">
+          <span class="header__leng-flag">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.3039 6.20691H2.69613C1.20705 6.20691 0 7.41396 0 8.90304V27.0971C0 28.5861 1.20705 29.7932 2.69613 29.7932H33.3039C34.7929 29.7932 36 28.5862 36 27.0971V8.90304C36 7.41396 34.7929 6.20691 33.3039 6.20691Z"
+                fill="#6283BE" />
+              <path
+                d="M36 16.1379H14.8965V6.20691H11.1724V16.1379H0V19.8621H11.1724V29.7932H14.8965V19.8621H36V16.1379Z"
+                fill="#F1D96A" />
+            </svg>
+
+
+          </span>
+          <span class="header__leng-name">
+            SWE
+          </span>
+        </div>
+        <div class="header__leng-item">
+          <span class="header__leng-flag">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.3039 6.20691H2.69613C1.20705 6.20691 0 7.41396 0 8.90304V27.097C0 28.586 1.20705 29.7932 2.69613 29.7932H33.3039C34.7929 29.7932 36 28.5861 36 27.097V8.90304C36 7.41396 34.7929 6.20691 33.3039 6.20691Z"
+                fill="#3F4495" />
+              <path
+                d="M35.9627 8.45728C35.7502 7.18047 34.641 6.20679 33.3039 6.20679H32.6024L21.1035 13.7406V6.20686H14.8965V13.7406L3.39764 6.20686H2.69613C1.359 6.20686 0.24982 7.18047 0.0373359 8.45735L9.86548 14.8966H0V21.1035H9.86548L0.0373359 27.5426C0.24982 28.8194 1.359 29.793 2.69613 29.793H3.39764L14.8965 22.2593V29.793H21.1035V22.2593L32.6024 29.793H33.3039C34.641 29.793 35.7502 28.8194 35.9627 27.5426L26.1345 21.1033H36V14.8964H26.1345L35.9627 8.45728Z"
+                fill="#F5F5F5" />
+              <path
+                d="M19.8621 6.20691H16.1379V16.1379H0V19.8621H16.1379V29.7931H19.8621V19.8621H36V16.1379H19.8621V6.20691Z"
+                fill="#DA424B" />
+              <path
+                d="M1.74313 29.6193L14.8623 21.1035H12.5822L0.648438 28.85C0.940445 29.1908 1.3157 29.4578 1.74313 29.6193Z"
+                fill="#DA424B" />
+              <path
+                d="M24.3553 21.1035H22.0752L34.7818 29.3515C35.1374 29.118 35.4341 28.8026 35.6457 28.4322L24.3553 21.1035Z"
+                fill="#DA424B" />
+              <path
+                d="M0.285156 7.69746L11.3755 14.8966H13.6556L1.08855 6.73889C0.751117 6.99005 0.475 7.31841 0.285156 7.69746Z"
+                fill="#DA424B" />
+              <path
+                d="M23.3836 14.8965L35.3392 7.13579C35.044 6.79611 34.6657 6.53061 34.2354 6.37219L21.1035 14.8965H23.3836Z"
+                fill="#DA424B" />
+            </svg>
+
+
+          </span>
+          <span class="header__leng-name">
+            ENG
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="header__tr">
+      <div class="header__tr-container">
+        <div class="header__menu">
+          <a href="index.html" class="header__menu-item ">HOME</a>
+          <a href="products.html" class="header__menu-item header__menu-item-prod">
+            <span class="header__menu-icon-prod">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="1.72424" width="4.73997" height="4.73997" rx="0.5" stroke="#E44747" />
+                <rect x="0.5" y="9.76013" width="4.73997" height="4.73997" rx="0.5" stroke="#E44747" />
+                <rect x="8.53613" y="9.76013" width="4.73997" height="4.73997" rx="0.5" stroke="#E44747" />
+                <rect x="7.55379" y="4.09412" width="4.73997" height="4.73997" rx="0.5"
+                  transform="rotate(-45 7.55379 4.09412)" stroke="#E44747" />
+              </svg>
+            </span>
+            <span class="header__menu-item-name header__menu-item--curently">
+              PRODUCTS
+            </span>
+          </a>
+          <a href="about-us.html" class="header__menu-item">ABOUT US</a>
+          <a href="financing.html" class="header__menu-item">FINANCING</a>
+          <a href="used.html" class="header__menu-item">USED</a>
+          <a href="contact.html" class="header__menu-item">CONTACT</a>
+        </div>
+        <div class="header__burger-cont">
+          <div class="header__burger-menu">
+            <span class="header__burger-menu-closed">
+              <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="1" x2="24" y2="1" stroke="white" stroke-width="2" />
+                <line y1="8" x2="24" y2="8" stroke="white" stroke-width="2" />
+                <line y1="16" x2="24" y2="16" stroke="white" stroke-width="2" />
+              </svg>
+            </span>
+            <span class="header__burger-menu-open hidden">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21 1.90043L20.0384 1L11 10.0678L1.96028 1L1 1.90043L10.0705 11.0006L1 20.0996L1.96028 21L11 11.9322L20.0384 21L21 20.0996L11.9295 11.0006L21 1.90043Z"
+                  fill="white" stroke="white" />
+              </svg>
+            </span>
+          </div>
+          <p class="header__burger-text header__burger-text-closed ">MENU</p>
+          <p class="header__burger-text header__burger-text-open hidden">CLOSE</p>
+        </div>
+        <div class="header__cart-cont">
+          <span class="header__cart-icon">
+            <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.08008 1.05261H6.95312L10.988 14.7368H22.692L25.9201 5.3284" stroke="white" stroke-width="2"
+                class="header__cart-icon--body" stroke-linecap="round" stroke-linejoin="round" />
+              <path class="header__cart-icon--wheel"
+                d="M12.4198 19.9999C13.3145 19.9999 14.0398 19.293 14.0398 18.421C14.0398 17.549 13.3145 16.842 12.4198 16.842C11.5251 16.842 10.7998 17.549 10.7998 18.421C10.7998 19.293 11.5251 19.9999 12.4198 19.9999Z"
+                fill="white" />
+              <path class="header__cart-icon--wheel"
+                d="M21.0604 19.9999C21.9551 19.9999 22.6804 19.293 22.6804 18.421C22.6804 17.549 21.9551 16.842 21.0604 16.842C20.1657 16.842 19.4404 17.549 19.4404 18.421C19.4404 19.293 20.1657 19.9999 21.0604 19.9999Z"
+                fill="white" />
+            </svg>
+          </span>
+          <span class="header__cart-text">
+            Shopping cart
+          </span>
+          &thinsp;
+          <span class="header__cart-price">
+            (0) 0,00 €
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu container hidden">
+    <div class="header__menu">
+      <a href="#" class="header__menu-item header__menu-item--curently">HOME</a>
+      <a href="#" class="header__menu-item header__menu-item-prod">
+        <span class="header__menu-icon-prod">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="1.72424" width="4.73997" height="4.73997" rx="0.5" stroke="#E44747" />
+            <rect x="0.5" y="9.76013" width="4.73997" height="4.73997" rx="0.5" stroke="#E44747" />
+            <rect x="8.53613" y="9.76013" width="4.73997" height="4.73997" rx="0.5" stroke="#E44747" />
+            <rect x="7.55379" y="4.09412" width="4.73997" height="4.73997" rx="0.5"
+              transform="rotate(-45 7.55379 4.09412)" stroke="#E44747" />
+          </svg>
+        </span>
+        <span class="header__menu-item-name header__menu-item--curently">
+          PRODUCTS
+        </span>
+      </a>
+      <a href="#" class="header__menu-item">ABOUT US</a>
+      <a href="#" class="header__menu-item">FINANCING</a>
+      <a href="#" class="header__menu-item">USED</a>
+      <a href="#" class="header__menu-item">CONTACT</a>
+    </div>
+    <div class="header__leng-cont">
+      <div class="header__leng-item header__leng-item--curently">
+        <span class="header__leng-flag">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M33.3039 29.7931H2.69613C1.20705 29.7931 0 28.586 0 27.097V8.90304C0 7.41403 1.20705 6.20691 2.69613 6.20691H33.3039C34.7929 6.20691 36 7.41396 36 8.90304V27.097C36 28.586 34.7929 29.7931 33.3039 29.7931Z"
+              fill="#F5F5F5" />
+            <path d="M36 16.1379H14.8965V6.20691H11.1724V16.1379H0V19.8621H11.1724V29.7931H14.8965V19.8621H36V16.1379Z"
+              fill="#41479B" />
+          </svg>
+        </span>
+        <span class="header__leng-name">
+          FIN
+        </span>
+      </div>
+      <div class="header__leng-item">
+        <span class="header__leng-flag">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M33.3039 6.20691H2.69613C1.20705 6.20691 0 7.41396 0 8.90304V27.0971C0 28.5861 1.20705 29.7932 2.69613 29.7932H33.3039C34.7929 29.7932 36 28.5862 36 27.0971V8.90304C36 7.41396 34.7929 6.20691 33.3039 6.20691Z"
+              fill="#6283BE" />
+            <path d="M36 16.1379H14.8965V6.20691H11.1724V16.1379H0V19.8621H11.1724V29.7932H14.8965V19.8621H36V16.1379Z"
+              fill="#F1D96A" />
+          </svg>
+
+
+        </span>
+        <span class="header__leng-name">
+          SWE
+        </span>
+      </div>
+      <div class="header__leng-item">
+        <span class="header__leng-flag">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M33.3039 6.20691H2.69613C1.20705 6.20691 0 7.41396 0 8.90304V27.097C0 28.586 1.20705 29.7932 2.69613 29.7932H33.3039C34.7929 29.7932 36 28.5861 36 27.097V8.90304C36 7.41396 34.7929 6.20691 33.3039 6.20691Z"
+              fill="#3F4495" />
+            <path
+              d="M35.9627 8.45728C35.7502 7.18047 34.641 6.20679 33.3039 6.20679H32.6024L21.1035 13.7406V6.20686H14.8965V13.7406L3.39764 6.20686H2.69613C1.359 6.20686 0.24982 7.18047 0.0373359 8.45735L9.86548 14.8966H0V21.1035H9.86548L0.0373359 27.5426C0.24982 28.8194 1.359 29.793 2.69613 29.793H3.39764L14.8965 22.2593V29.793H21.1035V22.2593L32.6024 29.793H33.3039C34.641 29.793 35.7502 28.8194 35.9627 27.5426L26.1345 21.1033H36V14.8964H26.1345L35.9627 8.45728Z"
+              fill="#F5F5F5" />
+            <path
+              d="M19.8621 6.20691H16.1379V16.1379H0V19.8621H16.1379V29.7931H19.8621V19.8621H36V16.1379H19.8621V6.20691Z"
+              fill="#DA424B" />
+            <path
+              d="M1.74313 29.6193L14.8623 21.1035H12.5822L0.648438 28.85C0.940445 29.1908 1.3157 29.4578 1.74313 29.6193Z"
+              fill="#DA424B" />
+            <path
+              d="M24.3553 21.1035H22.0752L34.7818 29.3515C35.1374 29.118 35.4341 28.8026 35.6457 28.4322L24.3553 21.1035Z"
+              fill="#DA424B" />
+            <path
+              d="M0.285156 7.69746L11.3755 14.8966H13.6556L1.08855 6.73889C0.751117 6.99005 0.475 7.31841 0.285156 7.69746Z"
+              fill="#DA424B" />
+            <path
+              d="M23.3836 14.8965L35.3392 7.13579C35.044 6.79611 34.6657 6.53061 34.2354 6.37219L21.1035 14.8965H23.3836Z"
+              fill="#DA424B" />
+          </svg>
+
+
+        </span>
+        <span class="header__leng-name">
+          ENG
+        </span>
+      </div>
+    </div>
+    <div class="header__search-cont">
+      <input type="text" class="header__search-input" placeholder="Search for product">
+      <button type="submit" class="header__search-btn">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15.9023 14.9597L11.2545 10.3118C12.136 9.22342 12.6667 7.8398 12.6667 6.33336C12.6667 2.84116 9.82552 0 6.33332 0C2.84113 0 0 2.84116 0 6.33336C0 9.82555 2.84116 12.6667 6.33336 12.6667C7.8398 12.6667 9.22342 12.136 10.3118 11.2545L14.9597 15.9024C15.0899 16.0325 15.3009 16.0325 15.4311 15.9024L15.9024 15.4311C16.0325 15.3009 16.0325 15.0898 15.9023 14.9597ZM6.33336 11.3334C3.57619 11.3334 1.33335 9.09052 1.33335 6.33336C1.33335 3.57619 3.57619 1.33335 6.33336 1.33335C9.09052 1.33335 11.3334 3.57619 11.3334 6.33336C11.3334 9.09052 9.09052 11.3334 6.33336 11.3334Z"
+            fill="white" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="gray--bg gray--bg-main-first">
+    <nav class="breadcrumbs container breadcrumbs__category">
+      <a href="index.html" class="breadcrumbs__home">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+            <path
+              d="M16.4816 8.27283V17.5905H12.9635V13.5607C12.9635 13.2074 12.6771 12.921 12.3239 12.921H7.82492C7.4716 12.921 7.18527 13.2074 7.18527 13.5607V17.5905H3.68848V8.27283H2.40918V18.2302C2.40918 18.5835 2.69555 18.8698 3.04883 18.8698H7.82496C8.17828 18.8698 8.46461 18.5835 8.46461 18.2302V14.2004H11.6842V18.2302C11.6842 18.5835 11.9706 18.8699 12.3239 18.8699H17.1213C17.4746 18.8699 17.761 18.5835 17.761 18.2302V8.27283H16.4816Z"
+              fill="#222222" />
+            <path
+              d="M19.7975 9.9808L10.5224 1.30279C10.2782 1.074 9.89871 1.07252 9.65246 1.29873L0.206833 9.97677C-0.0532847 10.2158 -0.070355 10.6203 0.168668 10.8804C0.294684 11.0179 0.46695 11.0874 0.639879 11.0874C0.79445 11.0874 0.949684 11.0316 1.0725 10.9188L10.0814 2.64201L18.9234 10.9149C19.1819 11.1565 19.5861 11.1427 19.8275 10.8849C20.0687 10.6269 20.0554 10.2222 19.7975 9.9808Z"
+              fill="#222222" />
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <rect width="20" height="20" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <span class="breadcrumbs__separator">
+        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="6" height="6" rx="2" fill="#222222" />
+        </svg>
+
+      </span>
+      <a href="products.html" class="breadcrumbs__cat">
+        Products
+      </a>
+      <span class="breadcrumbs__separator">
+        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="6" height="6" rx="2" fill="#B1BDC9" />
+        </svg>
+      </span>
+      <span class="breadcrumbs__this">
+        ATVS and snowmobiles
+      </span>
+    </nav>
+    <div class="container">
+      <h3 class="category-bunner-title st-title">
+        ATVS and snowmobiles
+        <span class="category-bunner-title--index">(1526)</span>
+      </h3>
+    </div>
+    <section class="slider-bunner slider-bunner-cat container">
+      <div class="slider-bunner__left">
+        <div class="slider-bunner__left-slider">
+          <div class="slider-bunner__left-item"> <a href="#"><img src="img/category/left-bunner-cat.jpg" alt="bunner">
+            </a> </div>
+          <div class="slider-bunner__left-item"> <a href="#"><img src="img/category/left-bunner-cat.jpg" alt="bunner">
+            </a> </div>
+          <div class="slider-bunner__left-item"> <a href="#"><img src="img/category/left-bunner-cat.jpg" alt="bunner">
+            </a> </div>
+          <div class="slider-bunner__left-item"> <a href="#"><img src="img/category/left-bunner-cat.jpg" alt="bunner">
+            </a> </div>
+
+        </div>
+      </div>
+      <div class="slider-bunner__right">
+        <div class="slider-bunner__right-slider">
+          <div class="slider-bunner__right-item"><a href="#"><img src="img/category/right-bunner-cat-mobile.jpg"
+                class="slider-bunner__mobile" alt="bunner"> <img src="img/category/right-bunner-cat.jpg"
+                class="slider-bunner__desck" alt="bunner"></a></div>
+          <div class="slider-bunner__right-item"><a href="#"><img src="img/category/right-bunner-cat-mobile.jpg"
+                class="slider-bunner__mobile" alt="bunner"> <img src="img/category/right-bunner-cat.jpg"
+                class="slider-bunner__desck" alt="bunner"></a></div>
+        </div>
+      </div>
+    </section>
+    <div class="products__filter-df-sort  container">
+    <div class="products__filter-icon products__filter-icon-close">
+      <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line y1="2.85718" x2="32.0002" y2="2.85718" stroke="white" stroke-width="2" />
+        <line y1="12.762" x2="32.0002" y2="12.762" stroke="white" stroke-width="2" />
+        <line y1="22.667" x2="32.0002" y2="22.667" stroke="white" stroke-width="2" />
+        <rect x="3.80957" y="0.0476074" width="6.09528" height="6.09528" rx="3.04764" fill="white" />
+        <rect x="3.80957" y="19.8572" width="6.09528" height="6.09528" rx="3.04764" fill="white" />
+        <rect x="21.3335" y="9.95264" width="6.09528" height="6.09528" rx="3.04764" fill="white" />
+      </svg>
+    </div>
+
+    <div class="products__sort-icon products__sort-icon-close">
+    <img src="img/icons/sort.svg" alt="">
+    </div>
+  </div>
+    <section class="cat-prod container">
+      <div class="products__filter cat-prod__filter">
+        <div class="products__filter-df">
+          <h4 class="products__filter-title st-subtitle">Filters</h4>
+          <div class="products__filter-icon products__filter-icon-open ">
+            <svg width="14" height="28" viewBox="0 0 14 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.62503 14L14 25.375V28L0 14L14 0V2.62498L2.62503 14Z" fill="white" />
+            </svg>
+          </div>
+        </div>
+        <div class="products__accordion">
+          <div class="accordion products__accordion-btn">BRAND</div>
+          <div class="accordion-panel products__accordion-panel">
+            <label class="checkbox-container cat-prod__label-brand">Husqvarna ATVS
+              <span class="products__panel-item-qty">(1526)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">HONDA
+              <span class="products__panel-item-qty">(126)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">HONDA
+              <span class="products__panel-item-qty">(1726)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">Husqvarna ATVS
+              <span class="products__panel-item-qty">(1526)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="accordion products__accordion-btn">condition</div>
+          <div class="accordion-panel products__accordion-panel">
+            <label class="radio-container cat-prod__label-brand">All conditions
+              <span class="products__panel-item-qty">(1526)</span>
+              <input type="radio" name="condition">
+              <span class="checkmark"></span>
+            </label>
+            <label class="radio-container cat-prod__label-brand">Used
+              <span class="products__panel-item-qty">(535)</span>
+              <input type="radio" name="condition">
+              <span class="checkmark"></span>
+            </label>
+            <label class="radio-container cat-prod__label-brand">New
+              <span class="products__panel-item-qty">(987)</span>
+              <input type="radio" name="condition">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="accordion products__accordion-btn">PRICE, €</div>
+          <div class="accordion-panel products__accordion-panel">
+            <div class="min-max-slider" data-legendnum="2">
+
+              <div class="min-max-slider-df">
+                <div class="min-max-slider-inp-cont"></div>
+                <div class="min-max-slider-ok">Ok</div>
+              </div>
+
+              <input id="min" class="min" name="min" type="range" step="10" min="300" max="33000" />
+
+              <input id="max" class="max" name="max" type="range" step="10" min="300" max="33000" />
+            </div>
+          </div>
+
+          <div class="accordion products__accordion-btn">Type</div>
+          <div class="accordion-panel products__accordion-panel products__accordion-panel-type">
+            <label class="checkbox-container cat-prod__label-brand">Type one
+              <span class="products__panel-item-qty">(1526)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">Type two
+              <span class="products__panel-item-qty">(126)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">Type three
+              <span class="products__panel-item-qty">(1726)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">Type four
+              <span class="products__panel-item-qty">(1526)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">Type one
+              <span class="products__panel-item-qty">(1526)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">Type two
+              <span class="products__panel-item-qty">(126)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">Type three
+              <span class="products__panel-item-qty">(1726)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">Type four
+              <span class="products__panel-item-qty">(1526)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">Type four
+              <span class="products__panel-item-qty">(1526)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">Type one
+              <span class="products__panel-item-qty">(1526)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">Type two
+              <span class="products__panel-item-qty">(126)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">Type three
+              <span class="products__panel-item-qty">(1726)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container cat-prod__label-brand">Type four
+              <span class="products__panel-item-qty">(1526)</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+     
+
+        </div>
+        <div class="cat-prod__top">
+          <h3 class="cat-prod__top-title">Top 5</h3>
+          <div class="cat-prod__top-items">
+            <div class="cat-prod__top-item">
+              <a href="#" class="cat-prod__top-img-cont">
+                <img src="img/products/car-1.png" class="cat-prod__top-img" alt="car">
+              </a>
+              <div class="cat-prod__top-content">
+                 <a href='#' class="cat-prod__top-name">Husqvarna HUV4414G </a>
+                <div class="cat-prod__top-bottom">
+                  <p class="cat-prod__top-price">
+                    € 10 699.00
+                  </p>
+                  <button class="cat-prod__top-btn">
+                    <span class="cat-prod__top-icon">
+                      <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.08008 1.05273H6.95312L10.988 14.7369H22.692L25.9201 5.32852" stroke="#E44747"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M12.4203 20.0002C13.315 20.0002 14.0403 19.2933 14.0403 18.4212C14.0403 17.5492 13.315 16.8423 12.4203 16.8423C11.5256 16.8423 10.8003 17.5492 10.8003 18.4212C10.8003 19.2933 11.5256 20.0002 12.4203 20.0002Z"
+                          fill="#E44747" />
+                        <path
+                          d="M21.0599 20.0002C21.9546 20.0002 22.6799 19.2933 22.6799 18.4212C22.6799 17.5492 21.9546 16.8423 21.0599 16.8423C20.1652 16.8423 19.4399 17.5492 19.4399 18.4212C19.4399 19.2933 20.1652 20.0002 21.0599 20.0002Z"
+                          fill="#E44747" />
+                      </svg>
+
+                    </span>
+                    <span class="cat-prod__top-icon-text">Buy</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="cat-prod__top-item">
+              <a href="#" class="cat-prod__top-img-cont">
+                <img src="img/products/car-2.png" class="cat-prod__top-img" alt="car">
+              </a>
+              <div class="cat-prod__top-content">
+                 <a href='#' class="cat-prod__top-name">Husqvarna HUV4414G </a>
+                <div class="cat-prod__top-bottom">
+                  <p class="cat-prod__top-price">
+                    € 10 699.00
+                  </p>
+                  <button class="cat-prod__top-btn">
+                    <span class="cat-prod__top-icon">
+                      <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.08008 1.05273H6.95312L10.988 14.7369H22.692L25.9201 5.32852" stroke="#E44747"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M12.4203 20.0002C13.315 20.0002 14.0403 19.2933 14.0403 18.4212C14.0403 17.5492 13.315 16.8423 12.4203 16.8423C11.5256 16.8423 10.8003 17.5492 10.8003 18.4212C10.8003 19.2933 11.5256 20.0002 12.4203 20.0002Z"
+                          fill="#E44747" />
+                        <path
+                          d="M21.0599 20.0002C21.9546 20.0002 22.6799 19.2933 22.6799 18.4212C22.6799 17.5492 21.9546 16.8423 21.0599 16.8423C20.1652 16.8423 19.4399 17.5492 19.4399 18.4212C19.4399 19.2933 20.1652 20.0002 21.0599 20.0002Z"
+                          fill="#E44747" />
+                      </svg>
+
+                    </span>
+                    <span class="cat-prod__top-icon-text">Buy</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="cat-prod__top-item">
+              <a href="#" class="cat-prod__top-img-cont">
+                <img src="img/products/car-3.png" class="cat-prod__top-img" alt="car">
+              </a>
+              <div class="cat-prod__top-content">
+                 <a href='#' class="cat-prod__top-name">Husqvarna HUV4414G </a>
+                <div class="cat-prod__top-bottom">
+                  <p class="cat-prod__top-price">
+                    € 10 699.00
+                  </p>
+                  <button class="cat-prod__top-btn">
+                    <span class="cat-prod__top-icon">
+                      <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.08008 1.05273H6.95312L10.988 14.7369H22.692L25.9201 5.32852" stroke="#E44747"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M12.4203 20.0002C13.315 20.0002 14.0403 19.2933 14.0403 18.4212C14.0403 17.5492 13.315 16.8423 12.4203 16.8423C11.5256 16.8423 10.8003 17.5492 10.8003 18.4212C10.8003 19.2933 11.5256 20.0002 12.4203 20.0002Z"
+                          fill="#E44747" />
+                        <path
+                          d="M21.0599 20.0002C21.9546 20.0002 22.6799 19.2933 22.6799 18.4212C22.6799 17.5492 21.9546 16.8423 21.0599 16.8423C20.1652 16.8423 19.4399 17.5492 19.4399 18.4212C19.4399 19.2933 20.1652 20.0002 21.0599 20.0002Z"
+                          fill="#E44747" />
+                      </svg>
+
+                    </span>
+                    <span class="cat-prod__top-icon-text">Buy</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="cat-prod__top-item">
+              <a href="#"class="cat-prod__top-img-cont">
+                <img src="img/products/car-1.png" class="cat-prod__top-img" alt="car">
+              </a>
+              <div class="cat-prod__top-content">
+                 <a href='#' class="cat-prod__top-name">Husqvarna HUV4414G </a>
+                <div class="cat-prod__top-bottom">
+                  <p class="cat-prod__top-price">
+                    € 10 699.00
+                  </p>
+                  <button class="cat-prod__top-btn">
+                    <span class="cat-prod__top-icon">
+                      <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.08008 1.05273H6.95312L10.988 14.7369H22.692L25.9201 5.32852" stroke="#E44747"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M12.4203 20.0002C13.315 20.0002 14.0403 19.2933 14.0403 18.4212C14.0403 17.5492 13.315 16.8423 12.4203 16.8423C11.5256 16.8423 10.8003 17.5492 10.8003 18.4212C10.8003 19.2933 11.5256 20.0002 12.4203 20.0002Z"
+                          fill="#E44747" />
+                        <path
+                          d="M21.0599 20.0002C21.9546 20.0002 22.6799 19.2933 22.6799 18.4212C22.6799 17.5492 21.9546 16.8423 21.0599 16.8423C20.1652 16.8423 19.4399 17.5492 19.4399 18.4212C19.4399 19.2933 20.1652 20.0002 21.0599 20.0002Z"
+                          fill="#E44747" />
+                      </svg>
+
+                    </span>
+                    <span class="cat-prod__top-icon-text">Buy</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="cat-prod__top-item">
+              <div class="cat-prod__top-img-cont">
+                <img src="img/products/car-2.png" class="cat-prod__top-img" alt="car">
+              </div>
+              <div class="cat-prod__top-content">
+                 <a href='#' class="cat-prod__top-name">Husqvarna HUV4414G </a>
+                <div class="cat-prod__top-bottom">
+                  <p class="cat-prod__top-price">
+                    € 10 699.00
+                  </p>
+                  <button class="cat-prod__top-btn">
+                    <span class="cat-prod__top-icon">
+                      <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.08008 1.05273H6.95312L10.988 14.7369H22.692L25.9201 5.32852" stroke="#E44747"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M12.4203 20.0002C13.315 20.0002 14.0403 19.2933 14.0403 18.4212C14.0403 17.5492 13.315 16.8423 12.4203 16.8423C11.5256 16.8423 10.8003 17.5492 10.8003 18.4212C10.8003 19.2933 11.5256 20.0002 12.4203 20.0002Z"
+                          fill="#E44747" />
+                        <path
+                          d="M21.0599 20.0002C21.9546 20.0002 22.6799 19.2933 22.6799 18.4212C22.6799 17.5492 21.9546 16.8423 21.0599 16.8423C20.1652 16.8423 19.4399 17.5492 19.4399 18.4212C19.4399 19.2933 20.1652 20.0002 21.0599 20.0002Z"
+                          fill="#E44747" />
+                      </svg>
+
+                    </span>
+                    <span class="cat-prod__top-icon-text">Buy</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <div class="cat-prod__main">
+        <div class="cat-prod__sort ">
+          <div class="products__sort-icon products__sort-icon-open">
+            <svg width="14" height="28" viewBox="0 0 14 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.375 14L0 25.375V28L14 14L0 0V2.62498L11.375 14Z" fill="#E44747"/>
+              </svg>
+              
+            </div>
+          <p class="cat-prod__srt-by">Sorting by:</p>
+          <ul class="cat-prod__sorting">
+            <li class="cat-prod__sort-item active">popularity</li>
+            <li class="cat-prod__sort-item">from cheap to expensive</li>
+            <li class="cat-prod__sort-item">from expensive to cheap</li>
+            <li class="cat-prod__sort-item">sale only</li>
+          </ul>
+        </div>
+        <div class="cat-prod__items">
+          <div class="card-product cat-prod__item">
+            <a href="#" class="card-product__img-wrap">
+              <img src="img/products/car-1.png" class="card-product__img" alt="product">
+              <span class="card-product__sale-percent">-9%</span>
+            </a>
+            <a href="#" class="card-product__title">2010 Husqvarna HUV4414G XP </a>
+            <div class="card-product__prices">
+              <p class="card-product__price-main">€ 10 699.00</p>
+              <p class="card-product__price-old">€ 11,099.00</p>
+            </div>
+            <div class="card-product__buttons">
+              <div class="card-product__stock-wrap">
+                <img src="img/icons/in-stock.svg" alt="icon" class="card-product__stock-icon">
+                <span class="card-product__stock-text">In store</span>
+              </div>
+              <button class="card-product__buy card-product__buy-in-cart">
+                <img src="img/icons/buy-icon.svg" class="card-product__buy-icon" alt="buy-product">
+                <span class="card-product__buy-text">IN CART</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-product cat-prod__item">
+            <a href="#" class="card-product__img-wrap">
+              <img src="img/products/car-2.png" class="card-product__img" alt="product">
+             
+            </a>
+            <a href="#" class="card-product__title">2016 Polaris RZR XP</a>
+            <div class="card-product__prices">
+              <p class="card-product__price-main">€ 7 099.00</p>
+              <p class="card-product__price-old"></p>
+            </div>
+            <div class="card-product__buttons">
+              <div class="card-product__stock-wrap">
+                <img src="img/icons/in-stock.svg" alt="icon" class="card-product__stock-icon">
+                <span class="card-product__stock-text">In store</span>
+              </div>
+              <button class="card-product__buy">
+                <img src="img/icons/buy-icon.svg" class="card-product__buy-icon" alt="buy-product">
+                <span class="card-product__buy-text">Buy</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-product cat-prod__item">
+            <a href="#" class="card-product__img-wrap">
+              <img src="img/products/car-3.png" class="card-product__img" alt="product">
+      
+            </a>
+            <a href="#" class="card-product__title out-stock-color--name">2020 Honda TRX250X</a>
+            <div class="card-product__prices">
+              <p class="card-product__price-main out-stock-color--price">€ 4 699.00</p>
+              <p class="card-product__price-old"></p>
+            </div>
+            <div class="card-product__buttons">
+              <div class="card-product__stock-wrap">
+                <span class="card-product__stock-text out-stock-color--stock">out of stock</span>
+              </div>
+           
+            </div>
+          </div>
+          <div class="card-product cat-prod__item">
+            <a href="#" class="card-product__img-wrap">
+              <img src="img/products/car-1.png" class="card-product__img" alt="product">
+              <span class="card-product__sale-percent">-9%</span>
+            </a>
+            <a href="#" class="card-product__title">2010 Husqvarna HUV4414G XP </a>
+            <div class="card-product__prices">
+              <p class="card-product__price-main">€ 10 699.00</p>
+              <p class="card-product__price-old">€ 11,099.00</p>
+            </div>
+            <div class="card-product__buttons">
+              <div class="card-product__stock-wrap">
+                <img src="img/icons/in-stock.svg" alt="icon" class="card-product__stock-icon">
+                <span class="card-product__stock-text">In store</span>
+              </div>
+              <button class="card-product__buy">
+                <img src="img/icons/buy-icon.svg" class="card-product__buy-icon" alt="buy-product">
+                <span class="card-product__buy-text">Buy</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-product cat-prod__item">
+            <a href="#" class="card-product__img-wrap">
+              <img src="img/products/car-2.png" class="card-product__img" alt="product">
+             
+            </a>
+            <a href="#" class="card-product__title">2016 Polaris RZR XP</a>
+            <div class="card-product__prices">
+              <p class="card-product__price-main">€ 7 099.00</p>
+              <p class="card-product__price-old"></p>
+            </div>
+            <div class="card-product__buttons">
+              <div class="card-product__stock-wrap">
+                <img src="img/icons/in-stock.svg" alt="icon" class="card-product__stock-icon">
+                <span class="card-product__stock-text">In store</span>
+              </div>
+              <button class="card-product__buy">
+                <img src="img/icons/buy-icon.svg" class="card-product__buy-icon" alt="buy-product">
+                <span class="card-product__buy-text">Buy</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-product cat-prod__item">
+            <a href="#" class="card-product__img-wrap">
+              <img src="img/products/car-3.png" class="card-product__img" alt="product">
+      
+            </a>
+            <a href="#" class="card-product__title">2020 Honda TRX250X</a>
+            <div class="card-product__prices">
+              <p class="card-product__price-main">€ 4 699.00</p>
+              <p class="card-product__price-old"></p>
+            </div>
+            <div class="card-product__buttons">
+              <div class="card-product__stock-wrap">
+                <img src="img/icons/in-stock.svg" alt="icon" class="card-product__stock-icon">
+                <span class="card-product__stock-text">In store</span>
+              </div>
+              <button class="card-product__buy">
+                <img src="img/icons/buy-icon.svg" class="card-product__buy-icon" alt="buy-product">
+                <span class="card-product__buy-text">Buy</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-product cat-prod__item">
+            <a href="#" class="card-product__img-wrap">
+              <img src="img/products/car-1.png" class="card-product__img" alt="product">
+              <span class="card-product__sale-percent">-9%</span>
+            </a>
+            <a href="#" class="card-product__title">2010 Husqvarna HUV4414G XP </a>
+            <div class="card-product__prices">
+              <p class="card-product__price-main">€ 10 699.00</p>
+              <p class="card-product__price-old">€ 11,099.00</p>
+            </div>
+            <div class="card-product__buttons">
+              <div class="card-product__stock-wrap">
+                <img src="img/icons/in-stock.svg" alt="icon" class="card-product__stock-icon">
+                <span class="card-product__stock-text">In store</span>
+              </div>
+              <button class="card-product__buy">
+                <img src="img/icons/buy-icon.svg" class="card-product__buy-icon" alt="buy-product">
+                <span class="card-product__buy-text">Buy</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-product cat-prod__item">
+            <a href="#" class="card-product__img-wrap">
+              <img src="img/products/car-2.png" class="card-product__img" alt="product">
+             
+            </a>
+            <a href="#" class="card-product__title">2016 Polaris RZR XP</a>
+            <div class="card-product__prices">
+              <p class="card-product__price-main">€ 7 099.00</p>
+              <p class="card-product__price-old"></p>
+            </div>
+            <div class="card-product__buttons">
+              <div class="card-product__stock-wrap">
+                <img src="img/icons/in-stock.svg" alt="icon" class="card-product__stock-icon">
+                <span class="card-product__stock-text">In store</span>
+              </div>
+              <button class="card-product__buy">
+                <img src="img/icons/buy-icon.svg" class="card-product__buy-icon" alt="buy-product">
+                <span class="card-product__buy-text">Buy</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-product cat-prod__item">
+            <a href="#" class="card-product__img-wrap">
+              <img src="img/products/car-3.png" class="card-product__img" alt="product">
+      
+            </a>
+            <a href="#" class="card-product__title">2020 Honda TRX250X</a>
+            <div class="card-product__prices">
+              <p class="card-product__price-main">€ 4 699.00</p>
+              <p class="card-product__price-old"></p>
+            </div>
+            <div class="card-product__buttons">
+              <div class="card-product__stock-wrap">
+                <img src="img/icons/in-stock.svg" alt="icon" class="card-product__stock-icon">
+                <span class="card-product__stock-text">In store</span>
+              </div>
+              <button class="card-product__buy">
+                <img src="img/icons/buy-icon.svg" class="card-product__buy-icon" alt="buy-product">
+                <span class="card-product__buy-text">Buy</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-product cat-prod__item">
+            <a href="#" class="card-product__img-wrap">
+              <img src="img/products/car-1.png" class="card-product__img" alt="product">
+              <span class="card-product__sale-percent">-9%</span>
+            </a>
+            <a href="#" class="card-product__title">2010 Husqvarna HUV4414G XP </a>
+            <div class="card-product__prices">
+              <p class="card-product__price-main">€ 10 699.00</p>
+              <p class="card-product__price-old">€ 11,099.00</p>
+            </div>
+            <div class="card-product__buttons">
+              <div class="card-product__stock-wrap">
+                <img src="img/icons/in-stock.svg" alt="icon" class="card-product__stock-icon">
+                <span class="card-product__stock-text">In store</span>
+              </div>
+              <button class="card-product__buy">
+                <img src="img/icons/buy-icon.svg" class="card-product__buy-icon" alt="buy-product">
+                <span class="card-product__buy-text">Buy</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-product cat-prod__item">
+            <a href="#" class="card-product__img-wrap">
+              <img src="img/products/car-2.png" class="card-product__img" alt="product">
+             
+            </a>
+            <a href="#" class="card-product__title">2016 Polaris RZR XP</a>
+            <div class="card-product__prices">
+              <p class="card-product__price-main">€ 7 099.00</p>
+              <p class="card-product__price-old"></p>
+            </div>
+            <div class="card-product__buttons">
+              <div class="card-product__stock-wrap">
+                <img src="img/icons/in-stock.svg" alt="icon" class="card-product__stock-icon">
+                <span class="card-product__stock-text">In store</span>
+              </div>
+              <button class="card-product__buy">
+                <img src="img/icons/buy-icon.svg" class="card-product__buy-icon" alt="buy-product">
+                <span class="card-product__buy-text">Buy</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-product cat-prod__item">
+            <a href="#" class="card-product__img-wrap">
+              <img src="img/products/car-3.png" class="card-product__img" alt="product">
+      
+            </a>
+            <a href="#" class="card-product__title">2020 Honda TRX250X</a>
+            <div class="card-product__prices">
+              <p class="card-product__price-main">€ 4 699.00</p>
+              <p class="card-product__price-old"></p>
+            </div>
+            <div class="card-product__buttons">
+              <div class="card-product__stock-wrap">
+                <img src="img/icons/in-stock.svg" alt="icon" class="card-product__stock-icon">
+                <span class="card-product__stock-text">In store</span>
+              </div>
+              <button class="card-product__buy">
+                <img src="img/icons/buy-icon.svg" class="card-product__buy-icon" alt="buy-product">
+                <span class="card-product__buy-text">Buy</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-product cat-prod__item">
+            <a href="#" class="card-product__img-wrap">
+              <img src="img/products/car-1.png" class="card-product__img" alt="product">
+              <span class="card-product__sale-percent">-9%</span>
+            </a>
+            <a href="#" class="card-product__title">2010 Husqvarna HUV4414G XP </a>
+            <div class="card-product__prices">
+              <p class="card-product__price-main">€ 10 699.00</p>
+              <p class="card-product__price-old">€ 11,099.00</p>
+            </div>
+            <div class="card-product__buttons">
+              <div class="card-product__stock-wrap">
+                <img src="img/icons/in-stock.svg" alt="icon" class="card-product__stock-icon">
+                <span class="card-product__stock-text">In store</span>
+              </div>
+              <button class="card-product__buy">
+                <img src="img/icons/buy-icon.svg" class="card-product__buy-icon" alt="buy-product">
+                <span class="card-product__buy-text">Buy</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-product cat-prod__item">
+            <a href="#" class="card-product__img-wrap">
+              <img src="img/products/car-2.png" class="card-product__img" alt="product">
+             
+            </a>
+            <a href="#" class="card-product__title">2016 Polaris RZR XP</a>
+            <div class="card-product__prices">
+              <p class="card-product__price-main">€ 7 099.00</p>
+              <p class="card-product__price-old"></p>
+            </div>
+            <div class="card-product__buttons">
+              <div class="card-product__stock-wrap">
+                <img src="img/icons/in-stock.svg" alt="icon" class="card-product__stock-icon">
+                <span class="card-product__stock-text">In store</span>
+              </div>
+              <button class="card-product__buy">
+                <img src="img/icons/buy-icon.svg" class="card-product__buy-icon" alt="buy-product">
+                <span class="card-product__buy-text">Buy</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-product cat-prod__item cat-prod__more-ajax">
+         <div class="cat-prod__more-ajax-img">
+          <svg width="83" height="85" viewBox="0 0 83 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M81.7864 40.5407L42.0956 0.852279C41.5291 0.284889 40.8758 0 40.1374 0C39.4 0 38.7476 0.284889 38.1799 0.852279L33.9209 5.11069C33.3532 5.67838 33.0698 6.33049 33.0698 7.06971C33.0698 7.80893 33.3532 8.46104 33.9209 9.02873L67.3937 42.5006L33.9212 75.9734C33.3535 76.541 33.0701 77.1944 33.0701 77.9315C33.0701 78.6704 33.3535 79.3237 33.9212 79.8914L38.1802 84.1486C38.7476 84.7169 39.4 85 40.1377 85C40.877 85 41.5294 84.7163 42.0956 84.1486L81.7864 44.4599C82.3537 43.8925 82.6368 43.2389 82.6368 42.5009C82.6368 41.7629 82.3537 41.1096 81.7864 40.5407Z" fill="#E44747"/>
+            <path d="M49.9315 42.5009C49.9315 41.7629 49.649 41.1093 49.0792 40.5407L9.39111 0.852279C8.82372 0.284889 8.17042 0 7.43239 0C6.69437 0 6.04077 0.284889 5.47338 0.852279L1.21526 5.11099C0.646678 5.67868 0.363281 6.33079 0.363281 7.07001C0.363281 7.80923 0.646678 8.46134 1.21526 9.02903L34.6871 42.5009L1.21526 75.9734C0.646678 76.541 0.363281 77.1944 0.363281 77.9315C0.363281 78.6704 0.646678 79.3237 1.21526 79.8914L5.47308 84.1486C6.04077 84.7169 6.69407 85 7.4321 85C8.17012 85 8.82343 84.7163 9.39111 84.1486L49.0792 44.4599C49.649 43.8925 49.9315 43.2389 49.9315 42.5009Z" fill="#E44747"/>
+            </svg>
+        </div>
+        <h3 class="cat-prod__more-ajax-title">Show more products</h3>
+          </div>
+         
+        </div>
+        <div class="cat-prod__pagination">
+          <ul>
+            <li class="cat-prod_arrow-prev cat-prod_arrow">
+              <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.87499 8L1 12.875V14L7 8L1 2V3.12499L5.87499 8Z" fill="#E44747" stroke="#E44747"/>
+              </svg>
+              </li>
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>...</li>
+            <li>18</li>
+            <li class="cat-prod_arrow cat-prod_arrow-next">
+              <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.87499 8L1 12.875V14L7 8L1 2V3.12499L5.87499 8Z" fill="#E44747" stroke="#E44747"/>
+              </svg>
+              </li>
+       
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+  <div class="footer-black-bg">
+    <footer class="footer container">
+      <div class="footer__left">
+        <div class="footer__logo-wrap">
+          <a href="#">
+            <img src="img/home/footer-logo.png" class="footer__logo" alt="logo">
+          </a>
+        </div>
+        <p class="footer__reserved">All Rights Reserved © HydroForest 2021</p>
+      </div>
+      <div class="footer__right">
+        <div class="footer__suscribe">
+          <div class="footer__suscribe-text-wrap">
+            <h3 class="footer__suscribe-title">Subscribe to our newsletter</h3>
+            <p class="footer__suscribe-text">100% Privacy. No spam guaranteed</p>
+          </div>
+          <div class="footer__email-wrap">
+            <input type="text" class="footer__search-input" placeholder="Enter your email">
+            <button type="submit" class="footer__search-btn">
+              <svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM0 4.5H16V3.5H0V4.5Z"
+                  fill="white" />
+              </svg>
+
+            </button>
+          </div>
+        </div>
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <a href="" class="footer__link ">
+              HOME
+            </a>
+          </li>
+          <li class="footer__menu-item footer__menu-item--product">
+            <a href="" class="footer__link">
+              <span class="footer__menu-icon-prod">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="1.72424" width="4.73997" height="4.73997" rx="0.5" stroke="#E44747" />
+                  <rect x="0.5" y="9.76013" width="4.73997" height="4.73997" rx="0.5" stroke="#E44747" />
+                  <rect x="8.53613" y="9.76013" width="4.73997" height="4.73997" rx="0.5" stroke="#E44747" />
+                  <rect x="7.55379" y="4.09412" width="4.73997" height="4.73997" rx="0.5"
+                    transform="rotate(-45 7.55379 4.09412)" stroke="#E44747" />
+                </svg>
+              </span>
+              <span class="footer__menu-item-name header__menu-item--curently">
+                PRODUCTS
+              </span>
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="" class="footer__link">
+              ABOUT US
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="" class="footer__link">
+              FINANCING
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="" class="footer__link">
+              USED
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="" class="footer__link">
+              CONTACT
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <nav class="nav ">
+    <div class="container nav__wrapper">
+      <div class="nav__main">
+        <div class="nav__list">
+          <a href="#" class="nav__title">
+            CUTTING GRASS
+          </a>
+          <ul class="nav__items">
+            <a href="#" class="nav__item">
+              Robotic lawnmowers
+            </a>
+            <a href="#" class="nav__item">
+              Clip
+            </a>
+            <a href="#" class="nav__item">
+              Mowers
+            </a>
+            <a href="#" class="nav__item">
+              Garden tractors
+            </a>
+            <a href="#" class="nav__item">
+              Riders
+            </a>
+            <a href="#" class="nav__item">
+              Front cutters
+            </a>
+          </ul>
+
+        </div>
+        <div class="nav__list">
+          <a href="#"class="nav__title">
+            BATTERY PRODUCTS
+          </a>
+          <ul class="nav__items">
+            <a href="#" class="nav__item">
+              Battery products
+            </a>
+          </ul>
+        </div>
+        <div class="nav__list">
+          <a href="#" class="nav__title">
+            WINTER TOOLS
+          </a>
+          <ul class="nav__items">
+            <a href="#" class="nav__item">
+              Snow thrower
+            </a>
+          </ul>
+        </div>
+        <div class="nav__list">
+          <a href="#" class="nav__title">
+            CLEANING
+          </a>
+          <ul class="nav__items">
+            <a href="#" class="nav__item">
+              Pressure washers
+            </a>
+            <a href="#" class="nav__item">
+              Vacuum cleaners
+            </a>
+          </ul>
+        </div>
+        <div class="nav__list">
+          <a href="#" class="nav__title">
+            LAWN CARE
+          </a>
+          <ul class="nav__items">
+            <a href="#" class="nav__item">
+              Lawn airers
+            </a>
+          </ul>
+        </div>
+        <div class="nav__list">
+          <a href="#" class="nav__title">
+            CUTTING
+          </a>
+          <ul class="nav__items">
+            <a href="#" class="nav__item">
+              Chainsaws
+            </a>
+            <a href="#" class="nav__item">
+              Forest clearing saws
+            </a>
+            <a href="#" class="nav__item">
+              Branch saws
+            </a>
+          </ul>
+        </div>
+        <div class="nav__list">
+          <a href="#" class="nav__title">
+            CUTTING GRASS
+          </a>
+          <ul class="nav__items">
+            <a href="#" class="nav__item">
+              LAWN CARE
+            </a>
+            <a href="#" class="nav__item">
+              Lawn airers
+            </a>
+          </ul>
+        </div>
+        <div class="nav__list">
+          <a href="#" class="nav__title">
+            EQUIPMENT AND ACCESSORIES
+          </a>
+          <ul class="nav__items">
+            <a href="#" class="nav__item">
+              Personal protective equipment
+            </a>
+            <a href="#" class="nav__item">
+              Aphids and forestry tools
+            </a>
+            <a href="#" class="nav__item">
+              Lubricants, fuels and fuel jugs
+            </a>
+            <a href="#" class="nav__item">
+              Uniforms
+            </a>
+            <a href="#" class="nav__item">
+              Xplorer Leisure Clothing
+            </a>
+
+          </ul>
+        </div>
+        <div class="nav__list">
+          <a href="#" class="nav__title">
+            TRIMMING AND GRUBBING-UP
+          </a>
+          <ul class="nav__items">
+            <a href="#" class="nav__item">
+              Hedge trimmer
+            </a>
+            <a href="#" class="nav__item">
+              Grass trimmers
+            </a>
+            <a href="#" class="nav__item">
+              Grass tracks
+            </a>
+          </ul>
+        </div>
+        <div class="nav__list">
+          <a href="#" class="nav__title">
+            EARTHMAKING AND TIDYING
+          </a>
+          <ul class="nav__items">
+            <a href="#" class="nav__item">
+              Fans
+            </a>
+            <a href="#" class="nav__item">
+              Garden milling
+            </a>
+          </ul>
+        </div>
+      </div>
+      <a href="#" class="nav__bunner">
+        <img src="img/home/nav-bunner.png" alt="bunner">
+      </a>
+
+    </div>
+  </nav>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/plugin-config.js"></script>
+<script src="js/range.js"></script>
+
+</html>
