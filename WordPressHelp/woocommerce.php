@@ -49,6 +49,27 @@ function custom_add_to_cart_message_html( $message, $products ) {
     return $message;
 }
 
+
+//  виводимо зображення категорії
+ 
+if ( is_product_category() ){
+  echo '123';
+  global $wp_query;
+
+  // get the query object
+  $cat = $wp_query->get_queried_object();
+
+  // get the thumbnail id using the queried category term_id
+  $thumbnail_id = get_term_meta( $cat->term_id, 'thumbnail_id', true ); 
+
+  // get the image URL
+  $image = wp_get_attachment_url( $thumbnail_id ); 
+
+  // print the IMG HTML
+  echo "<img src='{$image}' alt='' width='762' height='365' />";
+}
+
+
 // видаляємо поля чекаута
 add_filter( 'woocommerce_checkout_fields' , 'customize_checkout_fields' );
 function customize_checkout_fields( $fields ) {
