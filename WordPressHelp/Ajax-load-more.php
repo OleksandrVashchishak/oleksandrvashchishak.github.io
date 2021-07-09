@@ -18,6 +18,13 @@
     <?php } ?>
   </div>
 
+  <script>
+    var this_page = 1;
+  </script>
+
+  <div class="btn-loadmore" title="Load more" data-param-posts='<?php echo serialize($mypost_Query->query_vars); ?>' data-max-pages='<?php echo $mypost_Query->max_num_pages; ?>' data-tpl='doveryayut'>
+    <span class="fas fa-redo"></span> Load more
+  </div>
 
 // php
 
