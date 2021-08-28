@@ -1,0 +1,122 @@
+.footer__phone svg,
+.map__phone svg,
+.header__phone a:after {
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+.header__phone a:after {
+    animation-name: phone-anim;
+}
+
+.footer__phone svg,
+.map__phone svg {
+    animation-name: phone-anim-y;
+}
+
+.map__address svg,
+.footer__address svg,
+.welcome__address svg {
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-name: point-anim;
+}
+
+.services__link-all svg{
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-name: all-item;
+}
+
+.phone-block__number:hover {
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-name: rotates-phone;
+}
+
+@keyframes rotates-phone {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(-2deg);
+    }
+}
+@keyframes all-item {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(15px);
+    }
+}
+@keyframes point-anim {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+@keyframes phone-anim {
+    0% {
+        transform: scale3d(1, 1, 1) translateY(-50%);
+    }
+    10%,
+    5% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg) translateY(-50%);
+    }
+    15%,
+    25%,
+    35%,
+    45% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg) translateY(-50%);
+    }
+    20%,
+    30%,
+    40% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg) translateY(-50%);
+    }
+    50% {
+        transform: scale3d(1, 1, 1) translateY(-50%);
+    }
+}
+
+@keyframes phone-anim-y {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    5% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+    15%,
+    25%,
+    35%,
+    45% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    20%,
+    30%,
+    40% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    50% {
+        transform: scale3d(1, 1, 1);
+    }
+}
