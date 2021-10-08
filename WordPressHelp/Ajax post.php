@@ -1,0 +1,89 @@
+/// function php
+
+<?php
+function posts_filters(){
+    $args = array(
+     'orderby' => 'date',
+     'order' => $_POST['date'],
+     's'    =>  $_POST['s'],
+     'category_name' => $_POST['sa'],
+     'posts_per_page'    => 2
+    );
+   
+    if( isset( $_POST['categoryfilter'] ) )
+     $args['tax_query'] = array(
+     array(
+      'taxonomy' => 'category',
+      'field' => 'id',
+      'terms' => $_POST['categoryfilter']
+     )
+    );
+   
+    $query = new WP_Query( $args );
+   
+    if( $query->have_posts() ) :
+     echo '<ul>';
+     while( $query->have_posts() ): $query->the_post();
+       echo '<li><a href="' . get_permalink( $query->post->ID ) . '">' . $query->post->post_title . '</a></li>';
+       
+     endwhile;
+     echo '</ul>';
+    wp_reset_postdata();
+     
+    else :
+      echo 'Записів не знайдено';
+    endif;
+   
+    die();
+   }
+   add_action('wp_ajax_customfilter', 'posts_filters');
+   add_action('wp_ajax_nopriv_customfilter', 'posts_filters');
+
+// js
+
+<script>
+
+jQuery(function($){
+ $('#post-date-filter').submit(function(){
+  var filter = $('#post-date-filter');
+  $.ajax({
+   url:filter.attr('action'),
+   data:filter.serialize(), // дані форми
+   type:filter.attr('method'), // POST
+   beforeSend:function(xhr){ filter.find('button').text('Застосовуємо фільтр...'); },
+   success:function(data){ filter.find('button').text('Застосувати фільтр'); $('#filtering-results').html(data); }
+  });
+  return false;
+ });
+});
+
+</script>
+
+// html
+
+
+
+<form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="post-date-filter">
+<?php
+if( $terms = get_terms( 'category', 'orderby=name' ) ) :
+  echo '<select name="categoryfilter"><option>Оберіть категорію...</option>';
+  foreach ( $terms as $term ) :
+    echo '<option value="' . $term->term_id . '">' . $term->name . '</option>';
+  endforeach;
+  echo '</select>';
+endif;
+?>
+
+
+<label>
+  <input type="radio" name="date" value="ASC" /> Дата: за зростанням
+</label>
+<label>
+  <input type="radio" name="date" value="DESC" selected="selected" /> Дата: за зменшенням
+</label>
+<input type="text" name="s" value="" placeholder="ssssss" />
+<input type="text" name="sa" value="" placeholder="ssssss" />
+<button>Застосувати фільтр</button>
+<input type="hidden" name="action" value="customfilter">
+</form>
+<div id="filtering-results"></div>

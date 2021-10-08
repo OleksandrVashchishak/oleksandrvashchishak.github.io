@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-13 02:30+0500\n"
+"PO-Revision-Date: 2021-10-07 11:49+0300\n"
+"Last-Translator: Alex\n"
+"Language: uk_UK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10==1 && n % 100!=11 ? 0 : n % 10>=2 && n % 10<=4 && (n % 100<10 || n % 100>=20) ? 1 : 2);\n"
+"Project-Id-Version: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
+
+msgid "FREEBIES, COMPETITIONS, GREAT DEALS IN FRANCE"
+msgstr "FREEBIES, CONCOURS, BONS PLANS EN FRANCE"
+
+msgid "Do you love Freebies and Competitions? Find the best freebies and free competitions to enter online. Win prizes, holidays, and cash daily. Join The Golden Offer’s biggest computing community, and enter your first competition today!"
+msgstr "Aimez-vous les cadeaux et les concours ? Trouvez les meilleurs cadeaux et concours gratuits pour participer en ligne. Gagnez des prix, des vacances et de l'argent tous les jours. Rejoignez la plus grande communauté informatique de The Golden Offer et participez à votre premier concours dès aujourd'hui !"
+
+msgid "Newsletter signup"
+msgstr "Inscription à la newsletter"
+
+msgid "Be the first to hear about the new Freebies, Competitions, and Great Deals. Sign up for our newsletter today! Your data is safe & secure! We won’t sell or misuses your personal information in any way."
+msgstr "Soyez le premier à être informé des nouveaux cadeaux, concours et offres exceptionnelles. Inscrivez-vous à notre newsletter aujourd'hui! Vos données sont en sécurité et sécurisées ! Nous ne vendrons ni n'utiliserons à mauvais escient vos informations personnelles de quelque manière que ce soit."
+
+msgid "About Us"
+msgstr "À propos de nous"
+
+msgid "Welcome to The Golden Offer! We have spent a lot of time helping others save money, win sweepstakes and claim free stuff online. The Golden Offer only lists the best free samples, freebies, free stuff, and competitions you can claim and enter for FREE. We update our website with the best freebies, samples and free stuff offers every day."
+msgstr "Bienvenue à l'offre d'or ! Nous avons passé beaucoup de temps à aider les autres à économiser de l'argent, à gagner des tirages au sort et à réclamer des trucs gratuits en ligne. L'offre d'or ne répertorie que les meilleurs échantillons gratuits, cadeaux, trucs gratuits et concours que vous pouvez réclamer et participer GRATUITEMENT. Nous mettons à jour notre site Web avec les meilleurs cadeaux, échantillons et offres gratuites chaque jour."
+
+msgid "I read the Privacy Policy and agree to receive regular E-Mails from this website"
+msgstr "J'ai lu la politique de confidentialité et j'accepte de recevoir régulièrement des e-mails de ce site Web"
+
+msgid "I agree to receive commercial emails from this websites partners"
+msgstr "J'accepte de recevoir des e-mails commerciaux des partenaires de ce site"
+
+msgid "SUBSCRIBE"
+msgstr "S'ABONNER"
+
+msgid "Enter Your Name"
+msgstr "Entrez votre nom"
+
+msgid "Enter Your E-mail"
+msgstr "Entrer votre Email"
+
+msgid "Privacy Policy"
+msgstr "Politique de confidentialité"
+
+msgid "Take me there"
+msgstr "Emmène-moi là-bas"
+
+msgid "Thank you for joining our newsletter"
+msgstr "Merci de vous être inscrits à notre newsletter"
+
+msgid "Imprint"
+msgstr "Imprimer"

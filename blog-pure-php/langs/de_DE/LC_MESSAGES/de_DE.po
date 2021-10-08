@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-13 02:30+0500\n"
+"PO-Revision-Date: 2021-10-07 11:47+0300\n"
+"Last-Translator: Alex\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
+
+msgid "FREEBIES, COMPETITIONS, GREAT DEALS IN FRANCE"
+msgstr "FREEBIES, WETTBEWERBE, GROSSARTIGE ANGEBOTE IN DEUTSCHLAND"
+
+msgid "Do you love Freebies and Competitions? Find the best freebies and free competitions to enter online. Win prizes, holidays, and cash daily. Join The Golden Offer’s biggest computing community, and enter your first competition today!"
+msgstr "Liebst du Freebies und Wettbewerbe? Finden Sie die besten Werbegeschenke und kostenlosen Wettbewerbe, um online teilzunehmen. Gewinne täglich Preise, Feiertage und Bargeld. Treten Sie der größten Computing-Community von The Golden Offer bei und nehmen Sie noch heute an Ihrem ersten Wettbewerb teil!"
+
+msgid "Newsletter signup"
+msgstr "Newsletter abonnieren"
+
+msgid "Be the first to hear about the new Freebies, Competitions, and Great Deals. Sign up for our newsletter today! Your data is safe & secure! We won’t sell or misuses your personal information in any way."
+msgstr "Seien Sie der Erste, der von den neuen Werbegeschenken, Wettbewerben und tollen Angeboten erfährt. Melden Sie sich noch heute für unseren Newsletter an! Ihre Daten sind sicher und geschützt! Wir werden Ihre personenbezogenen Daten in keiner Weise verkaufen oder missbrauchen."
+
+msgid "About Us"
+msgstr "Über uns"
+
+msgid "Welcome to The Golden Offer! We have spent a lot of time helping others save money, win sweepstakes and claim free stuff online. The Golden Offer only lists the best free samples, freebies, free stuff, and competitions you can claim and enter for FREE. We update our website with the best freebies, samples and free stuff offers every day."
+msgstr "Willkommen beim Goldenen Angebot! Wir haben viel Zeit damit verbracht, anderen dabei zu helfen, Geld zu sparen, Gewinnspiele zu gewinnen und kostenlose Inhalte online zu beanspruchen. Das Goldene Angebot listet nur die besten Gratisproben, Werbegeschenke, Gratisartikel und Wettbewerbe auf, die Sie beanspruchen und KOSTENLOS teilnehmen können. Wir aktualisieren unsere Website täglich mit den besten Werbegeschenken, Mustern und kostenlosen Angeboten."
+
+msgid "I read the Privacy Policy and agree to receive regular E-Mails from this website"
+msgstr "Ich habe die Datenschutzerklärung gelesen und bin damit einverstanden, regelmäßig E-Mails von dieser Website zu erhalten"
+
+msgid "I agree to receive commercial emails from this websites partners"
+msgstr "Ich bin damit einverstanden, kommerzielle E-Mails von Partnern dieser Website zu erhalten"
+
+msgid "SUBSCRIBE"
+msgstr "ABONNIEREN"
+
+msgid "Enter Your Name"
+msgstr "Gib deinen Namen ein"
+
+msgid "Enter Your E-mail"
+msgstr "Geben sie ihre E-Mail Adresse ein"
+
+msgid "Privacy Policy"
+msgstr "Datenschutz-Bestimmungen"
+
+msgid "Take me there"
+msgstr "Bring mich dahin"
+
+msgid "Thank you for joining our newsletter"
+msgstr "Vielen Dank, dass Sie unseren Newsletter abonniert haben"
+
+msgid "Imprint"
+msgstr "Impressum"
