@@ -1,0 +1,41 @@
+//out:false
+
+body {
+  width: 100%;
+
+  .container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  *,
+  :after,
+  :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  header {
+    width: 100%;
+    position: relative;
+  }
+}
+
+.full_section {
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.default_container {
+  padding: 0px 20px;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
