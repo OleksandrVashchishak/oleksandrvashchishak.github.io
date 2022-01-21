@@ -1,0 +1,1796 @@
+.store_fa-star {
+    font-size: 18px !important;
+    position: relative;
+    top: -3px;
+    margin: 0px 0px 0px 2px;
+    background: linear-gradient(97.47deg, #FFC01F 16.6%, #FF7D1F 78.92%);
+        background-clip: border-box;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+}
+.store_item__heading_purple {
+    background: linear-gradient(97.47deg, #C426F7 16.6%, #8225F8 78.92%);
+        background-clip: border-box;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.store_item__heading {
+    font-family: Chakra Petch;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 1.3em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 0px 25px 0px;
+}
+.store_item__heading_orange {
+    background: linear-gradient(97.47deg, #FFC01F 16.6%, #FF7D1F 78.92%);
+        background-clip: border-box;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.store_demon__img_asc{
+	background: url('https://www.cyborglegends.io/wp-content/themes/legends/custom/store/assets/img/store-ascended.jpg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width:auto;
+	height:355px;
+}
+.store_demon__video_asc{
+	height:355px;
+}
+
+/*Matic popup styles*/
+.matic_popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  box-shadow: 0px 13px 35px rgb(31 94 255 / 21%);
+  padding: 40px 30px 20px 30px;
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.matic_popup.matic_popup__active {
+  animation: crypto 0.4s ease-in-out;
+  -webkit-animation: crypto 0.4s ease-in-out;
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+
+.matic_popup span.fa-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.matic_popup span.fa-close:active,
+.matic_popup span.fa-close:hover {
+  color: transparent;
+  background: linear-gradient(97.47deg, #1fa1ff 16.6%, #1f5eff 78.92%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.matic_popup__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.dapp_elem {
+  width: 25%;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.dapp_elem__img {
+  max-width: 140px;
+  margin: 0 auto;
+  padding: 0px 5px;
+}
+
+.dapp_elem svg,
+.dapp_elem img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.matic_popup .popup_heading {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5em;
+  color: #FFFFFF;
+  margin: 0px 0px 30px 0px;
+}
+
+.matic_popup .dapp_elem__label {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5em;
+  color: #FFFFFF;
+  margin: 10px 0px 20px 0px;
+}
+
+a.dapp_elem:hover img,
+a.dapp_elem:hover svg {
+  transform: scale(1.15);
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+/*Store hero styles*/
+.store_hero {
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important; 
+  z-index: 1;
+  padding: 100px 0px 60px 0px;
+}
+
+.store_hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.63) 0%, #040404 100%);
+}
+
+.store_container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.store_hero__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Timer styles*/
+.store_hero__timer {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0px 0px 25px 0px;
+}
+
+.store_hero__timer > div:not(:last-child) {
+  margin: 0px 30px 0px 0px;
+}
+
+.store_hero__timer .timer_counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.44);
+  border: 2px solid #1FA1FF;
+  -o-border-image: linear-gradient(97.47deg, #1FA1FF 16.6%, #1F5EFF 78.92%);
+  border-image: linear-gradient(97.47deg, #1FA1FF 16.6%, #1F5EFF 78.92%);
+  border-image-slice: 1;
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.4em;
+  color: #FFFFFF;
+}
+
+.store_hero__timer .timer_label {
+  text-align: center;
+  display: block;
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: #EDEDED;
+  text-transform: uppercase;
+  margin: 12px 0px 0px 0px;
+}
+
+.store_hero__image {
+  width: 40%;
+  text-align: center;
+}
+
+.store_hero__image img {
+  max-width: 430px;
+  text-align: center;
+}
+
+.store_hero__content {
+  width: 55%;
+}
+
+.store_hero__heading {
+  font-family: Chakra Petch;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 1.3em;
+  margin: 0 0 25px 0px;
+  color: #fff;
+}
+
+.store_hero__desc {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.8em;
+  margin: 0px 0px 25px 0px;
+  color: #fff;
+}
+
+.store_label {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #fff;
+  margin: 0px 0px 10px 0px;
+}
+
+.store_hero__progress_line {
+  display: block;
+  margin: 15px 0px 30px 0px;
+  width: 100%;
+  height: 20px;
+  background: #000;
+  border-radius: 100px;
+}
+
+.store_hero__progress_line_active {
+  width: 50%;
+  height: 20px;
+  display: block;
+  border-radius: 100px;
+  background: linear-gradient(97.47deg, #FFC01F 16.6%, #FF7D1F 78.92%);
+}
+
+.store_hero__price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.store_hero__price_eth {
+  font-family: Chakra Petch;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 1.3em;
+  color: #fff;
+}
+
+.store_hero__price_dollar {
+  font-family: Chakra Petch;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: #C4C4C4;
+  margin-left: 20px;
+}
+
+.store_input_wrap {
+  position: relative;
+  width: 100%;
+  max-width: 180px;
+}
+
+.store_input {
+  margin: 2px 2px;
+  width: 100%;
+  height: 80px;
+  outline: none;
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.44);
+  display: block;
+  padding: 15px 15px;
+  font-size: 20px;
+  color: #fff;
+  font-family: Chakra Petch;
+  font-weight: bold;
+  border: 2px solid #1FA1FF;
+  -o-border-image: linear-gradient(97.47deg, #1FA1FF 16.6%, #1F5EFF 78.92%);
+  border-image: linear-gradient(97.47deg, #1FA1FF 16.6%, #1F5EFF 78.92%);
+  border-image-slice: 1;
+}
+
+.store_input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.store_input::-moz-placeholder {
+  color: #fff;
+}
+
+.store_input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.store_input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.store_input::placeholder {
+  color: #fff;
+}
+
+.store_hero .store_form__desc {
+  margin: 20px 0px 40px 0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+
+.store_btn {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 0;
+  text-transform: uppercase;
+  margin: 0px 0px 25px 0px;
+  white-space: nowrap;
+  display: block;
+  -webkit-clip-path: polygon(2% 0%,100% 0%,98% 100%,0% 100%);
+          clip-path: polygon(2% 0%,100% 0%,98% 100%,0% 100%);
+  background: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+  color: #fff;
+  line-height: 1.6rem;
+  cursor: pointer;
+  font-family: "Chakra Petch";
+  border: none;
+  outline: none;
+  text-align: center;
+  box-shadow: 25px 25px 50px rgb(0 0 0 / 15%);
+  transition: all .4s ease-in;
+}
+
+.store_btn:hover {
+  -webkit-animation-name: shine;
+          animation-name: shine;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+}
+
+.store_form__btn {
+  width: 100%;
+}
+
+.store_form__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.matic_icon {
+  width: 50px;
+  height: auto;
+  border-radius: 40px
+}
+
+.store_form__balance_elem {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.store_form__balance_elem:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+
+.store_form__balance_lable {
+  color: #C4C4C4;
+  margin: 0px 10px 0px 0px;
+  background: none;
+  box-shadow: none;
+  outline: none !important;
+  appearance: none;
+  cursor: pointer;
+  border: 0px;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  padding: 0px;
+  line-height: inherit;
+  transition: all .4s ease-in;
+}
+
+.store_form__balance_lable:hover {
+  color: #1FA1FF;
+}
+
+.store_form__account {
+  margin: 0px 0px 20px 0px;
+}
+
+.store_form__account .store_account_link {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  background: linear-gradient(97.47deg, #1FA1FF 16.6%, #1F5EFF 78.92%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.store_form__account .store_account_link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(97.47deg, #1FA1FF 16.6%, #1F5EFF 78.92%);
+  transition: all .4s ease-in;
+}
+
+.store_form__account .store_account_link:hover::before {
+  opacity: 0;
+}
+
+/*Affiliate program section*/
+.store_program {
+  padding: 100px 0px 120px 0px;
+  background-color: #111111;
+}
+
+.store_program__row {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.store_program__head {
+  width: 100%;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+
+.store_program__head_heading {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.4em;
+  color: #FFFFFF;
+  margin: 0px 0px 30px 0px;
+}
+
+.store_program__head_desc {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.7em;
+  color: #FFFFFF;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.store_program__col {
+  width: calc(50% - 25px);
+  background: rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 13px 35px rgba(31, 94, 255, 0.21);
+  padding: 30px 40px;
+  border: 2px solid #1fa1ff;
+  -o-border-image: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+     border-image: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+  border-image-slice: 1;
+}
+
+.store_program__col .program_heading {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.4em;
+  color: #FFFFFF;
+  margin: 0px 0px 25px 0px;
+}
+
+.program_list {
+  padding: 0px;
+  margin: 0px;
+}
+
+.program_list .program_list__item {
+  padding: 10px 0px;
+  display: flex;
+}
+
+.program_list .program_list__step {
+  background: linear-gradient(97.47deg, #FFC01F 16.6%, #FF7D1F 78.92%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0px 25px 0px 0px;
+  white-space: nowrap;
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4em;
+}
+
+.program_list .program_list__desc {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+
+.program_list .program_list__desc a {
+  background: linear-gradient(97.47deg, #1FA1FF 16.6%, #1F5EFF 78.92%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.program_list .program_list__desc a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(97.47deg, #1FA1FF 16.6%, #1F5EFF 78.92%);
+  transition: all .4s ease-in;
+}
+
+.program_list .program_list__desc a:hover::before {
+  opacity: 0;
+}
+
+.program_description {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.5em;
+  color: #FFFFFF;
+  margin: 0px 0px;
+}
+
+.program_divider {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0px 20px 0px;
+  background: linear-gradient(97.47deg, rgba(255, 192, 31, 0.5) 16.6%, rgba(255, 125, 31, 0.5) 78.92%);
+}
+
+/*Affiliate code block*/
+.store_program__form {
+  width: 100%;
+  background-color: #000000;
+  box-shadow: 0px 13px 35px rgba(31, 94, 255, 0.21);
+  border: 2px solid #1fa1ff;
+  -o-border-image: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+     border-image: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+  border-image-slice: 1;
+  margin: 50px 0px;
+  padding: 30px 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.store_program__form_heading {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.4em;
+  color: #FFFFFF;
+  margin: 0px 0px 18px 0px;
+  width: 100%;
+}
+
+.store_program__form_col {
+  width: 100%;
+  max-width: 650px;
+}
+
+.store_program__form_input {
+  display: flex;
+  justify-content: center;
+}
+
+.store_program__form_line label {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: #FFFFFF;
+  margin: 0px 0px 15px 0px;
+  display: block;
+}
+
+input.affiliate_link {
+  height: 65px;
+  width: 60%;
+}
+
+.store_program__form_btn {
+  width: 35%;
+}
+
+.store_program__form_btn {
+  margin: 2px 0px 0px 0px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  -webkit-clip-path: polygon(5% 0%,100% 0%,95% 100%,0% 100%);
+  clip-path: polygon(5% 0%,100% 0%,95% 100%,0% 100%);
+  -webkit-filter: drop-shadow(0px 13px 35px rgba(31, 94, 255, 0.21));
+          filter: drop-shadow(0px 13px 35px rgba(31, 94, 255, 0.21));
+}
+
+.store_program__form_btn svg {
+  margin: -2px 0px 0px 10px;
+}
+
+.store_program__form_btn.copy_btn {
+  position: relative;
+  background: linear-gradient(97.47deg, #FFC01F 16.6%, #FF7D1F 78.92%);
+  -webkit-clip-path: polygon(5% 0%,100% 0%,95% 100%,0% 100%);
+  clip-path: polygon(5% 0%,100% 0%,95% 100%,0% 100%);
+  margin: 2px 0px 0px 20px;
+}
+
+.copy_btn .copy_btn_figure {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: #000000;
+  -webkit-clip-path: polygon(5% 0%,100% 0%,95% 100%,0% 100%);
+  clip-path: polygon(5% 0%,100% 0%,95% 100%,0% 100%);
+}
+
+.store_program__form_btn.copy_btn span,
+.store_program__form_btn.copy_btn svg {
+  z-index: 1;
+}
+
+/*Total earned block*/
+.store_program__members {
+  width: 100%;
+  background-color: #000;
+  box-shadow: 0px 13px 35px rgb(31 94 255 / 21%);
+  border: 2px solid #1fa1ff;
+  -o-border-image: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+     border-image: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+  border-image-slice: 1;
+  padding: 40px 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.store_program__members_col {
+  width: calc(50% - 25px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #16222B;
+  padding: 20px 30px;
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: #FFFFFF;
+}
+
+.total_earned .store_program__members_number {
+  background: linear-gradient(97.47deg, #FFC01F 16.6%, #FF7D1F 78.92%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  margin: 0 20px 0 auto;
+}
+
+.total_earned .claim_button {
+  background: #16222B;
+  outline: none;
+  color: #fff;
+  border: 1px solid #1fa1ff;
+  -o-border-image: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+     border-image: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+  border-image-slice: 1;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 6px 32px;
+  cursor: pointer;
+  margin: 0px 0px 0px 20px;
+  transition: all .4s ease-in;
+}
+
+.total_earned .claim_button:hover {
+  -webkit-animation-name: shine;
+          animation-name: shine;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+}
+
+/*NFTs section*/
+.store_demon {
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important; 
+  z-index: 1;
+  padding: 80px 0px 80px 0px;
+}
+
+.store_demon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66));
+}
+
+.store_demon__row {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.store_demon__col {
+  width: calc(50% - 25px);
+  background: rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 13px 35px rgba(31, 94, 255, 0.21);
+  padding: 25px 20px 40px 20px;
+  text-align: center;
+}
+
+.store_demon__col.store_demon__col_orange {
+  border: 2px solid #FF7D1F;
+  border-image-source: linear-gradient(97.47deg, #FFC01F 16.6%, #FF7D1F 78.92%);
+  border-image-slice: 1;
+}
+
+.store_demon__col.store_demon__col_blue {
+  border: 2px solid #E01FFF;
+  border-image-source: linear-gradient(97.47deg, #E01FFF 16.6%, #814EB1 78.92%);
+  border-image-slice: 1;
+}
+
+.store_demon__heading {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.4em;
+  color: #FFFFFF;
+  margin: 0px 0px 10px 0px;
+  text-transform: uppercase;
+}
+
+.store_demon__img {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.store_demon__price {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5em;
+  color: #FFFFFF;
+  margin: 10px 0px 10px 0px;
+}
+
+.store_demon__numbers {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: #FFFFFF;
+  margin: 0px 0px 30px 0px;
+}
+
+.store_demon__btn {
+  width: 240px;
+  margin: 0 auto 10px auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-clip-path: polygon(5% 0%,100% 0%,95% 100%,0% 100%);
+  clip-path: polygon(5% 0%,100% 0%,95% 100%,0% 100%);
+}
+
+.store_demon__btn.store_demon__orange {
+  background: linear-gradient(97.47deg, #FFC01F 16.6%, #FF7D1F 78.92%);
+}
+
+/*Mystery styles*/
+.store_mystery {
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important; 
+  z-index: 1;
+  padding: 80px 0px 100px 0px;
+}
+
+.store_mystery::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(0deg, rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.75));
+}
+
+.store_mystery .store_container {
+  max-width: 1500px;
+}
+
+.store_mystery__heading {
+  text-align: center;
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.4em;
+  color: #FFFFFF;
+  margin: 0px 0px 30px 0px;
+}
+
+.store_mystery__desc {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.7em;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 30px auto 30px auto;
+}
+
+.store_mystery__row > .store_mystery__desc {
+  max-width: 1000px;
+}
+
+.store_mystery__clans {
+  background: linear-gradient(97.47deg, #FFC01F 16.6%, #FF7D1F 78.92%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0px 0px 10px 0px;
+}
+
+.store_mystery__grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.store_mystery__item {
+  width: calc(25% - 30px);
+  position: relative;
+  margin: 20px 15px;
+}
+
+.store_mystery__desc_info {
+  font-family: Chakra Petch;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4em;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 20px 0px 30px 0px;
+}
+
+.store_mystery__heading_info {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.4em;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0px 0px 0px 0px;
+}
+
+/*Info section styles*/
+.store_info {
+  background-color: #111111;
+  padding: 0px 0px;
+  padding-bottom:100px;
+}
+
+.store_info__row {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.store_info__specs {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 13px 35px rgba(31, 94, 255, 0.21);
+  border: 2px solid #1fa1ff;
+  -o-border-image: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+     border-image: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+  border-image-slice: 1;
+  padding: 20px 0px;
+}
+
+.store_info__specs_heading {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5em;
+  color: #FFFFFF;
+  margin: 0px;
+  padding: 10px 0px 15px 50px;
+}
+
+.store_info__specs_item {
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.store_info__specs_item:nth-child(even) {
+  background-color: rgba(3, 34, 115, 0.21);
+}
+
+.store_info__specs_label {
+  width: 50%;
+  display: block;
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4em;
+  background: linear-gradient(97.47deg, #FFC01F 16.6%, #FF7D1F 78.92%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.store_info__specs_content {
+  width: 40%;
+  display: block;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+
+/*Store Rarity table styles*/
+.store_info__rarity {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 13px 35px rgba(31, 94, 255, 0.21);
+  border: 2px solid #1fa1ff;
+  -o-border-image: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+     border-image: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+  border-image-slice: 1;
+  padding: 30px 50px 40px 50px;
+  margin: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.store_info__rarity_col {
+  width: 28%;
+}
+
+.store_info__rarity_col:not(.rarity_probability) {
+  width: 42%;
+  max-width: 318px;
+}
+
+.rarity_probability {
+  text-align: center;
+}
+
+.store_info__rarity_figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.store_info__rarity_figure svg {
+  width: 100%;
+  height: 100%;
+}
+
+.store_info__rarity_heading {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.4em;
+  margin: 0px 0px 50px 0px;
+  color: #FFFFFF;
+}
+
+.store_info__rarity_elem {
+  padding: 25px 20px;
+  text-align: center;
+  color: #fff;
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4em;
+  margin: 0px 0px 30px 0px;
+  position: relative;
+}
+
+.store_info__rarity_elem:last-child {
+  margin: 0px;
+}
+
+/*Sale store block*/
+.sale_goals {
+  margin: 100px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.sale_goals__heading {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.4em;
+  color: #FFFFFF;
+  margin: 0px 0px 50px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.sale_goals__item {
+  width: calc(33.3% - 40px);
+  text-align: center;
+}
+
+.sale_goals__icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  background: linear-gradient(97.47deg, #FFC01F 16.6%, #FF7D1F 78.92%);
+  border-radius: 100%;
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.4em;
+  color: #FFFFFF;
+}
+
+.sale_goals__desc {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.7em;
+  color: #FFFFFF;
+}
+
+/*Community block*/
+.community_block {
+  width: 100%;
+  background-color: #000;
+  box-shadow: 0px 13px 35px rgb(31 94 255 / 21%);
+  border: 2px solid #1fa1ff;
+  -o-border-image: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+     border-image: linear-gradient(97.47deg,#1fa1ff 16.6%,#1f5eff 78.92%);
+  border-image-slice: 1;
+  padding: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.community_block__content {
+  width: 70%;
+}
+
+.community_block__content p {
+  font-family: Chakra Petch;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.8em;
+  color: #FFFFFF;
+  margin: 0px;
+}
+
+.community_block__btn {
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  margin: 0px;
+  max-width: 240px;
+  clip-path: polygon(5% 0%,100% 0%,95% 100%,0% 100%);
+  -webkit-clip-path: polygon(5% 0%,100% 0%,95% 100%,0% 100%);
+}
+
+/*Responsive*/
+@media (max-width: 1440px) {
+  .store_hero__heading {
+    font-size: 48px;
+  }
+
+  .store_hero__price_eth {
+    font-size: 55px;
+  }
+
+  .store_hero__image {
+    text-align: center;
+  }
+
+  .store_hero__price_eth a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .store_hero__price_eth a img {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .store_hero__row {
+    flex-flow: column nowrap;
+  }
+
+  .store_hero__image,
+  .store_hero__content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .store_hero__timer {
+    justify-content: center;
+  }
+
+  .store_hero__heading {
+    font-size: 44px;
+  }
+
+  .store_program__row {
+    flex-flow: column nowrap;
+  }
+
+  .store_program__col {
+    width: 100%;
+    padding: 20px 30px;
+  }
+
+  .store_program__col:not(:last-child) {
+    margin: 20px 0px 20px 0px;
+  }
+
+  .store_program__form {
+    margin: 20px 0px 40px 0px;
+    padding: 20px 30px;
+  }
+
+  .store_program__form_heading {
+    font-size: 35px;
+  }
+
+  .store_program__members {
+    padding: 30px;
+  }
+
+  input.affiliate_link {
+    width: 55%;
+  }
+
+  .store_program__form_btn {
+    width: 40%;
+  }
+
+  .store_demon {
+    padding: 60px 0px;
+  }
+
+  .store_demon__col {
+    width: calc(50% - 10px);
+  }
+
+  .store_demon__heading{
+    font-size: 35px;
+  }
+	
+  .store_demon__price {
+    font-size: 24px;
+  }
+
+  .store_mystery {
+    padding: 60px 0px;
+  }
+
+  .store_mystery__heading {
+    font-size: 35px;
+  }
+
+  .store_mystery__desc {
+    margin: 20px 0px;
+  }
+
+  .store_mystery__grid {
+    justify-content: flex-start;
+  }
+
+  .store_mystery__item {
+    width: calc(33.3% - 40px);
+    position: relative;
+    margin: 20px 20px;
+  }
+
+  .store_mystery__desc_info {
+    font-size: 22px;
+  }
+
+  .store_mystery__heading_info {
+    font-size: 28px;
+  }
+
+  .store_info {
+    padding: 60px 0px 70px;
+  }
+
+  .store_info__specs {
+    padding: 15px 0px;
+  }
+
+  .store_info__specs_heading {
+    padding: 0px 0 10px 30px;
+    font-size: 28px;
+  }
+
+  .store_info__specs_item {
+    padding: 12px 30px;
+  }
+
+  .store_info__rarity {
+    padding: 30px 30px 30px;
+  }
+
+  .store_info__rarity_heading {
+    font-size: 28px;
+    margin: 0px 0px 30px 0px
+  }
+
+  .store_info__rarity_elem {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .sale_goals {
+    margin: 50px 0px;
+  }
+
+  .sale_goals__heading {
+    font-size: 35px;
+  }
+
+  .sale_goals__item {
+    width: calc(33.3% - 14px);
+  }
+
+  .community_block {
+    padding: 30px;
+  }
+}
+
+/*Mobile responsive 767px*/
+@media (max-width: 767px) {
+	.store_demon__heading{
+		padding-bottom:30px;
+	}
+  .sm_hidden {
+    display: none;
+  }
+
+  .store_hero {
+    padding: 50px 0px;
+  }
+
+  .store_hero__image img {
+    width: 100%;
+  }
+
+  .store_hero__timer>div:not(:last-child) {
+    margin: 0 15px 0 0;
+  }
+
+  .store_hero__timer .timer_counter {
+    width: 65px;
+    height: 65px;
+    font-size: 32px;
+  }
+
+  .store_hero__timer .timer_label {
+    font-size: 16px;
+  }
+
+  .store_hero__heading {
+    font-size: 35px;
+  } 
+
+  .store_hero__desc {
+    font-size: 15px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .store_label {
+    font-size: 16px;
+  }
+
+  .store_hero__price {
+    flex-flow: column-reverse nowrap;
+  }
+
+  .store_input {
+    margin: 0px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .store_hero__price_quinity {
+    margin: 0px 0px 40px 0px;
+  }
+
+  .store_hero__price_eth {
+    font-size: 40px;
+  }
+
+  .store_hero__price_eth img {
+    max-width: 35px;
+  }
+
+  .store_hero__price_dollar {
+    margin: 0px;
+  }
+
+  .store_hero .store_form__desc {
+    margin: 20px 0 30px;
+    font-size: 15px;
+  }
+
+  .store_btn {
+    font-size: 17px;
+  }
+
+  .store_form__bottom {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+
+  .store_form__balance_elem,
+  .store_form__account .store_account_link {
+    font-size: 16px;
+  }
+
+  .store_form__balance_elem:not(:last-child) {
+    margin: 0 0 10px;
+  }
+
+  .store_form__account {
+    margin: 0px 0px 10px 0px;
+  }
+
+  .store_program {
+    padding: 50px 0px 60px 0px;
+  }
+
+  .store_program__head {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .store_program__head_heading {
+    font-size: 32px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .store_program__col .program_heading {
+    font-size: 25px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .store_program__head_desc {
+    font-size: 15px;
+  }
+
+  .store_program__col {
+    padding: 15px 15px;
+  }
+
+  .program_list__item {
+    flex-flow: column nowrap;
+  }
+
+  .program_list .program_list__step {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .program_list .program_list__desc {
+    font-size: 15px;
+    line-height: 1.7em;
+  }
+
+  .program_description {
+    padding: 10px 0px 0px 0px;
+    font-size: 16px;
+    line-height: 1.7em;
+  }
+
+  .store_program__form {
+    padding: 15px 15px 30px 15px;
+    flex-flow: column nowrap;
+  }
+
+  .store_program__form_heading {
+    font-size: 28px;
+  }
+
+  .store_program__form_col {
+    width: 100%;
+  }
+
+  .store_program__form_line label {
+    font-size: 15px;
+  }
+
+  .store_program__form_col:not(:last-child) {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .store_program__form_input {
+    flex-flow: column nowrap;
+  }
+
+  .store_program__form_btn.copy_btn {
+    margin: 5px 0px 0px 0px;
+  }
+
+  input.affiliate_link,
+  .store_program__form_btn {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  input.affiliate_link {
+    margin: 0px 0px 15px 0px;
+  }
+
+  .store_program__members {
+    padding: 15px;
+    flex-flow: column nowrap;
+  }
+
+  .store_program__members_col {
+    width: 100%;
+    padding: 15px 15px;
+    font-size: 16px;
+    margin: 5px 0px;
+    flex-flow: row wrap;
+  }
+
+  .total_earned .store_program__members_number {
+    margin: 0px;
+  }
+
+  .total_earned .claim_button {
+    margin: 10px 0px 0px auto;
+    width: 45%;
+  }
+
+  .store_demon {
+    padding: 40px 0 50px 0px;
+  }
+
+  .store_demon__row {
+    flex-flow: column nowrap;
+  }
+
+  .store_demon__col {
+    width: 100%;
+    padding: 20px 15px 20px 15px;
+    margin: 15px 0px;
+  }
+
+  .store_demon__img {
+    /*margin: -20px 0px -20px -10px;*/
+	margin: auto;
+  }
+
+  .store_demon__heading{
+    font-size: 25px;
+  }
+	
+  .store_demon__price {
+    font-size: 24px;
+  }
+
+  .store_demon__numbers {
+    margin: 0px 0px 20px 0px;
+    font-size: 17px;
+  }
+
+  .store_demon__btn {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .store_mystery {
+    padding: 40px 0px 50px 0px;
+  }
+
+  .store_mystery__heading {
+    font-size: 29px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .store_mystery__desc {
+    font-size: 15px;
+    margin: 10px 0px 15px 0px;
+  }
+
+  .store_mystery__clans {
+    margin: 30px 0px 20px 0px;
+    font-size: 27px;
+  }
+
+  .store_mystery__item {
+    width: calc(50% - 20px);
+    position: relative;
+    margin: 10px;
+  }
+
+  .store_mystery__desc_info {
+    font-size: 16px;
+    margin: 10px 0px 20px 0px;
+  }
+
+  .store_mystery__heading_info {
+    font-size: 20px;
+  }
+
+  .store_info {
+    padding: 40px 0px 50px 0px;
+  }
+
+  .store_info__specs_heading {
+    padding: 0 0 10px 20px;
+    font-size: 25px;
+  }
+
+  .store_info__specs_item {
+    padding: 10px 20px;
+    flex-flow: column nowrap;
+  }
+
+  .store_info__specs_label,
+  .store_info__specs_content {
+    width: 100%;
+  }
+
+  .store_info__specs_label {
+    font-size: 18px;
+  }
+
+  .store_info__specs_content {
+    font-size: 16px;
+  }
+
+  .store_info__rarity_wrap {
+    overflow: scroll;
+  }
+
+  .store_info__rarity {
+    margin: 40px 0px;
+    padding: 20px;
+    min-width: 550px;
+  }
+
+  .store_info__rarity_col:not(.rarity_probability) {
+    width: 33%;
+  }
+
+  .store_info__rarity_col {
+    width: 30%;
+  }
+
+  .store_info__rarity_heading {
+    font-size: 23px;
+    margin: 0 0 15px;
+  }
+
+  .store_info__rarity_elem {
+    margin: 15px 0 15px;
+    padding: 10px 10px;
+    font-size: 18px;
+  }
+
+  .sale_goals {
+    margin: 20px 0 10px 0;
+    flex-flow: column nowrap;
+  }
+
+  .sale_goals__heading {
+    font-size: 30px;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .sale_goals__item {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 20px;
+  }
+
+  .sale_goals__icon {
+    margin: 0 auto 10px;
+    width: 55px;
+    height: 55px;
+    font-size: 28px;
+  }
+
+  .sale_goals__desc {
+    font-size: 15px;
+  }
+
+  .community_block {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .community_block__content,
+  .community_block__btn {
+    width: 100%;
+  }
+
+  .community_block__content {
+    margin: 0px 0px 15px 0px;
+  }
+
+  .community_block__content p {
+    font-size: 16px;
+  }
+
+  .community_block__btn {
+    height: 50px;
+    max-width: 100%;
+  }
+
+  .matic_popup {
+    padding: 30px 20px;
+    overflow: scroll;
+  }
+
+  .matic_popup__wrapper {
+    max-height: calc(100vh - 80px);
+  }
+
+  .matic_popup .popup_heading {
+    font-size: 18px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .matic_popup span.fa-close {
+    top: 5px;
+    right: 5px;
+    font-size: 30px;
+  }
+
+  .dapp_elem {
+    width: 50%;
+  }
+
+  .dapp_elem__img {
+    max-width: 100px;
+  }
+
+  .matic_popup .dapp_elem__label {
+    font-size: 18px;
+    margin: 5px 0px 10px 0px;
+  }
+}
+
+/*Firefox fixes*/
+body.firefox .store_program__col,
+body.firefox .store_program__form,
+body.firefox .store_program__members,
+body.firefox .store_demon__col,
+body.firefox .store_info__specs,
+body.firefox .store_info__rarity,
+body.firefox .community_block,
+body.firefox .total_earned .claim_button {
+  -o-border-image: none;
+  border-image: none;
+  border-image-slice: 100%;
+  border-image-slice: unset;
+}

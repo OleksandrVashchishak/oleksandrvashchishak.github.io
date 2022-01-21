@@ -1,0 +1,12 @@
+[19-Nov-2021 21:18:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/metamask/metamask-functions.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/metamask/metamask-functions.php on line 4
+[19-Nov-2021 21:24:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/metamask/metamask-functions.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/metamask/metamask-functions.php on line 4
+[19-Nov-2021 21:24:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/metamask/metamask-functions.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/metamask/metamask-functions.php on line 4

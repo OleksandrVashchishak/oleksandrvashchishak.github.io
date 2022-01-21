@@ -1,0 +1,48 @@
+[12-Nov-2021 01:47:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php on line 8
+[12-Nov-2021 01:51:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php on line 8
+[12-Nov-2021 02:16:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php on line 8
+[12-Nov-2021 02:17:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php on line 8
+[12-Nov-2021 02:19:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php on line 8
+[12-Nov-2021 02:27:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php on line 8
+[12-Nov-2021 02:34:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php on line 8
+[12-Nov-2021 02:34:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php on line 8
+[12-Nov-2021 02:35:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php on line 8
+[12-Nov-2021 02:39:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php on line 8
+[12-Nov-2021 05:21:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php on line 8
+[12-Nov-2021 05:21:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/cyborglegends/public_html/wp-content/themes/legends/custom/store/store-affiliate-dynamic.php on line 8

@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2019 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="tooth" unicode="&#xe800;" d="M8 805c0 0 334 105 602-5 0 0-22-768-62-920 0 0-134-134-162 187 0 0-69 83-154 0 0 0-77-314-174-187 0 3-84 795-50 925z" horiz-adv-x="610" />
+
+<glyph glyph-name="blink" unicode="&#xe801;" d="M831 508c-225-202-262-306-215-658-209 285-308 342-616 342 225 202 261 306 214 658 209-290 308-347 617-342z" horiz-adv-x="831" />
+</font>
+</defs>
+</svg>
